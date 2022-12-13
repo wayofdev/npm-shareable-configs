@@ -30,7 +30,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-          cache: 'npm'
           registry-url: 'https://registry.npmjs.org/'
 
       - name: Load cached frontend dependencies
