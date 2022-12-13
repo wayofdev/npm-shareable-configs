@@ -5,12 +5,12 @@ const path = require('node:path');
 const filePath = path.join(process.env.INIT_CWD, '.eslintrc.js');
 
 const fileConfigObject = {
-  extends: '@wayofdev/eslint-config',
+    extends: '@wayofdev/eslint-config',
 };
 
 if (!fs.existsSync(filePath)) {
-  fs.writeFileSync(
-    filePath,
-    `module.exports = ${JSON.stringify(fileConfigObject, undefined, 2)}`
-  );
+    fs.writeFileSync(
+        filePath,
+        `module.exports = ${JSON.stringify(fileConfigObject, undefined, 2)}`
+    );
 }
