@@ -1,3 +1,5 @@
+-include .env
+
 # BuildKit enables higher performance docker builds and caching possibility
 # to decrease build times and increase productivity for free.
 export DOCKER_BUILDKIT ?= 1
@@ -83,6 +85,10 @@ build:
 purge:
 	rm -rf .pnpm-store node_modules pnpm-lock.yaml
 .PHONY: purge
+
+login:
+	pnpm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+.PHONY: login
 
 
 # Testing and Code Quality

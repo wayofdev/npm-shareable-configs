@@ -33,3 +33,6 @@ build/
 
 # Jest folder of detailed test coverage
 coverage/
+
+# Environment
+.env
