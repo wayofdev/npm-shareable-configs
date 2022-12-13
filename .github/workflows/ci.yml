@@ -20,32 +20,43 @@ jobs:
       matrix:
         os: ["ubuntu-22.04"]
         node: ["18"]
+        pnpm: ["7"]
     steps:
       - name: Check out the codebase
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+          version: ${{ matrix.pnpm }}
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
       - name: Setup node
         uses: actions/setup-node@v3
         with:
+          cache: "pnpm"
           node-version: ${{ matrix.node }}
-          cache: 'npm'
           registry-url: 'https://registry.npmjs.org/'
 
       - name: Load cached frontend dependencies
-        id: cached-yarn-dependencies
+        id: cached-pnpm-dependencies
         uses: actions/cache@v3
         with:
           path: node_modules
           key: yarn-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install frontend dependencies
-        if: steps.cached-yarn-dependencies.outputs.cache-hit != 'true'
-        run: yarn install
-
-      - name: Mix frontend code
-        run: pnpm run build
+        if: steps.cached-pnpm-dependencies.outputs.cache-hit != 'true'
+        run: pnpm install
 
       - if: github.event_name == 'pull_request'
         name: Validate all commits from PR
@@ -53,12 +64,19 @@ jobs:
         env:
           NODE_PATH: ${{ github.workspace }}/node_modules
 
-      - name: Linting
-        run: pnpm run lint
+      #- name: Linting
+      #  run: pnpm run lint
 
       - name: Config git user
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+      - name: Create Release pull request or publish to npm
+        id: changesets
+        uses: changesets/action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 ...
