@@ -52,7 +52,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: node_modules
-          key: yarn-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+          key: pnpm-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: Install frontend dependencies
         if: steps.cached-pnpm-dependencies.outputs.cache-hit != 'true'
@@ -64,8 +64,8 @@ jobs:
         env:
           NODE_PATH: ${{ github.workspace }}/node_modules
 
-      #- name: Linting
-      #  run: pnpm run lint
+      - name: Linting
+        run: pnpm run lint
 
       - name: Config git user
         run: |

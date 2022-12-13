@@ -13,7 +13,7 @@
     "scripts": {
         "prepare": "husky install",
         "lint": "pnpm run lint:md && pnpm run lint:js && pnpm run lint:secrets",
-        "lint:md": "markdownlint --fix **/*.md --ignore node_modules --ignore **/CHANGELOG.md",
+        "lint:md": "markdownlint --fix **/*.md",
         "lint:js": "eslint --fix **/*.js",
         "lint:secrets": "secretlint **/*"
     },
