@@ -58,9 +58,6 @@ jobs:
         if: steps.cached-pnpm-dependencies.outputs.cache-hit != 'true'
         run: pnpm install
 
-      - name: Mix frontend code
-        run: pnpm run build
-
       - if: github.event_name == 'pull_request'
         name: Validate all commits from PR
         uses: wagoid/commitlint-github-action@v5
@@ -74,5 +71,12 @@ jobs:
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+      - name: Create Release pull request or publish to npm
+        id: changesets
+        uses: changesets/action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 ...

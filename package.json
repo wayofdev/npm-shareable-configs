@@ -18,6 +18,7 @@
         "lint:secrets": "secretlint **/*"
     },
     "devDependencies": {
+        "@changesets/cli": "^2.25.2",
         "commitizen": "^4.2.6",
         "eslint": "^8.29.0",
         "husky": "^8.0.2",

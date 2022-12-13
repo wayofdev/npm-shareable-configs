@@ -1,6 +1,6 @@
 {
     "name": "@wayofdev/markdownlint-config",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A shareable markdownlint configuration for projects.",
     "keywords": [
         "markdownlint",
