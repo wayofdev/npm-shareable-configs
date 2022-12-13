@@ -94,7 +94,7 @@ importers:
 
   packages/secretlint-config:
     specifiers:
-      '@secretlint/secretlint-rule-preset-recommend': ^5.2.4
+      '@secretlint/secretlint-rule-preset-recommend': ^5.3.0
       secretlint: '>= 5'
     dependencies:
       '@secretlint/secretlint-rule-preset-recommend': 5.3.0
