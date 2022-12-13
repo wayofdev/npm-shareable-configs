@@ -53,8 +53,8 @@ jobs:
         env:
           NODE_PATH: ${{ github.workspace }}/node_modules
 
-      - name: Linting
-        run: pnpm run lint
+      #- name: Linting
+      #  run: pnpm run lint
 
       - name: Config git user
         run: |
