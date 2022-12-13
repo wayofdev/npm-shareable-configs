@@ -1,0 +1,64 @@
+---
+
+name: CI
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+      - develop
+
+jobs:
+  integration:
+    name: Node ${{ matrix.node }} - ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: true
+      matrix:
+        os: ["ubuntu-22.04"]
+        node: ["18"]
+    steps:
+      - name: Check out the codebase
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'npm'
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: Load cached frontend dependencies
+        id: cached-yarn-dependencies
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: yarn-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install frontend dependencies
+        if: steps.cached-yarn-dependencies.outputs.cache-hit != 'true'
+        run: yarn install
+
+      - name: Mix frontend code
+        run: pnpm run build
+
+      - if: github.event_name == 'pull_request'
+        name: Validate all commits from PR
+        uses: wagoid/commitlint-github-action@v5
+        env:
+          NODE_PATH: ${{ github.workspace }}/node_modules
+
+      - name: Linting
+        run: pnpm run lint
+
+      - name: Config git user
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+...

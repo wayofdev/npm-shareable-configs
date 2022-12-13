@@ -1,0 +1,37 @@
+{
+    "name": "@wayofdev/commitlint-config",
+    "version": "1.0.0",
+    "description": "A shareable commitlint configuration for projects.",
+    "keywords": [
+        "commitlint",
+        "commitlint-config"
+    ],
+    "author": "lotyp7@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
+    },
+    "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/commitlint-config#readme",
+    "main": "index.js",
+    "files": [
+        "index.js",
+        "scripts/*"
+    ],
+    "scripts": {
+        "test": "echo \"No test specified\""
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
+        "directory": "packages/commitlint-config"
+    },
+    "dependencies": {
+        "@commitlint/config-conventional": "^17.3.0"
+    },
+    "peerDependencies": {
+        "@commitlint/cli": ">= 17"
+    }
+}

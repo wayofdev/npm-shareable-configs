@@ -1,0 +1,35 @@
+# https://github.com/toptal/gitignore/blob/master/templates/Node.gitignore
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Turborepo task cache
+.turbo
+
+# Custom Additions
+
+# Bundle output directories
+dist/
+build/
+
+# Jest folder of detailed test coverage
+coverage/
