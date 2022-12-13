@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Request rebase
-        uses: 'bbeesley/gha-auto-dependabot-rebase@1.2.0'
+        uses: 'bbeesley/gha-auto-dependabot-rebase@v1.2.0'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
