@@ -14,7 +14,7 @@ yarn add -D secretlint @wayofdev/secretlint-config
 
 ```js
 module.exports = {
-  ...require('@wayofdev/secretlint-config'),
+    ...require('@wayofdev/secretlint-config'),
 };
 ```
 
@@ -32,7 +32,7 @@ Will create:
 
 ```json
 "scripts": {
-  "lint:secrets": "npx secretlint **/*"
+"lint:secrets": "npx secretlint **/*"
 },
 ```
 
@@ -42,7 +42,7 @@ Will create:
 
 ```js
 module.exports = {
-  '*': ['secretlint'],
+    '*': ['secretlint'],
 };
 ```
 

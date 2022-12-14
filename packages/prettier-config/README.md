@@ -22,8 +22,8 @@ module.exports = '@wayofdev/prettier-config';
 
 ```js
 module.exports = {
-  ...require('@wayofdev/prettier-config'),
-  semi: false,
+    ...require('@wayofdev/prettier-config'),
+    semi: false,
 };
 ```
 
@@ -41,7 +41,7 @@ Will create:
 
 ```json
 "scripts": {
-  "lint:prettier": "prettier --write ."
+"lint:prettier": "prettier --write ."
 },
 ```
 
@@ -51,7 +51,7 @@ Will create:
 
 ```js
 module.exports = {
-  '**/*': ['prettier --cache --write --ignore-unknown'],
+    '**/*': ['prettier --cache --write --ignore-unknown'],
 };
 ```
 

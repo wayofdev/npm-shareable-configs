@@ -14,7 +14,7 @@ yarn add -D @commitlint/cli @wayofdev/commitlint-config
 
 ```js
 module.exports = {
-  extends: ['@wayofdev/commitlint-config'],
+    extends: ['@wayofdev/commitlint-config'],
 };
 ```
 
@@ -24,10 +24,10 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: ['@wayofdev/commitlint-config'],
-  rules: {
-    'body-leading-blank': [2, 'always'],
-  },
+    extends: ['@wayofdev/commitlint-config'],
+    rules: {
+        'body-leading-blank': [2, 'always'],
+    },
 };
 ```
 

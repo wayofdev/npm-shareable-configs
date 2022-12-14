@@ -2,15 +2,15 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const filePath = path.join(process.env.INIT_CWD, '.czrc');
+const filePath = path.join(process.env.INIT_CWD, '.stylelintrc.js');
 
 const fileConfigObject = {
-    path: 'cz-conventional-changelog',
+    extends: '@wayofdev/stylelint-config',
 };
 
 if (!fs.existsSync(filePath)) {
     fs.writeFileSync(
         filePath,
-        `${JSON.stringify(fileConfigObject, undefined, 2)}`
+        `module.exports = ${JSON.stringify(fileConfigObject, undefined, 2)}`
     );
 }

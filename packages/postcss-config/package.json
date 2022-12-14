@@ -1,0 +1,45 @@
+{
+    "name": "@wayofdev/postcss-config",
+    "version": "1.0.0",
+    "description": "A shareable postcss configuration for projects.",
+    "keywords": [
+        "postcss",
+        "postcss-config"
+    ],
+    "author": "lotyp7@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
+    },
+    "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/postcss-config#readme",
+    "main": "index.js",
+    "files": [
+        "index.js",
+        "scripts/*"
+    ],
+    "scripts": {
+        "test": "echo \"No test specified\""
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
+        "directory": "packages/postcss-config"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.4.12",
+        "browserslist": "^4.21.4",
+        "postcss-100vh-fix": "^1.0.2",
+        "postcss-cli": "^10.0.0",
+        "postcss-flexbugs-fixes": "^5.0.2",
+        "postcss-normalize": "^10.0.1",
+        "postcss-preset-env": "^7.8.2",
+        "postcss-reporter": "^7.0.5"
+    },
+    "peerDependencies": {
+        "postcss": ">= 8",
+        "sanitize.css": ">= 13"
+    }
+}
