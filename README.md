@@ -147,7 +147,7 @@ $ pnpm pkg set scripts.prepare="husky install" # pnpm
 
 Which will add lines to your root `package.json`:
 
-```json
+```bash
 ...
 
 "scripts": {
@@ -197,7 +197,7 @@ $ pnpm pkg set scripts.commit="git-cz"
 
 Which will add lines to your root `package.json`:
 
-```json
+```bash
 ...
 
 "scripts": {
