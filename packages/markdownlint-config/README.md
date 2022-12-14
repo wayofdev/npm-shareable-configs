@@ -43,7 +43,7 @@ Will create:
 
 ```json
 "scripts": {
-  "lint:md": "markdownlint --fix **/*.md --ignore node_modules --ignore **/CHANGELOG.md"
+"lint:md": "markdownlint --fix **/*.md --ignore node_modules --ignore **/CHANGELOG.md"
 },
 ```
 
@@ -53,7 +53,7 @@ Will create:
 
 ```js
 module.exports = {
-  '*.md': ['prettier --cache --write', 'markdownlint'],
+    '*.md': ['prettier --cache --write', 'markdownlint'],
 };
 ```
 

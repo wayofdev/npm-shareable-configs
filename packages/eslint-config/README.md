@@ -16,7 +16,7 @@ yarn add -D eslint @wayofdev/eslint-config
 
 ```js
 module.exports = {
-  extends: '@wayofdev/eslint-config',
+    extends: '@wayofdev/eslint-config',
 };
 ```
 
@@ -24,7 +24,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: '@wayofdev/eslint-config/ts',
+    extends: '@wayofdev/eslint-config/ts',
 };
 ```
 
@@ -32,7 +32,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: '@wayofdev/eslint-config/jest',
+    extends: '@wayofdev/eslint-config/jest',
 };
 ```
 
@@ -44,36 +44,36 @@ An example configuring a mixed JS/TS, `tsconfig`-compatible configuration.
 
 ```js
 module.exports = {
-  // ignore linting in dist bundle output folder
-  ignorePatterns: ['dist/**'],
-  // enable global variables
-  env: {
-    browser: true,
-    node: true,
-    jest: true,
-  }
-  overrides: [
-    {
-      files: ['**/*.ts'],
-      extends: [
-        '@wayofdev/eslint-config/ts',
-        // add jest linting
-        '@wayofdev/eslint-config/jest',
-      ],
-      parserOptions: {
-        project: 'tsconfig.json',
-        tsconfigRootDir: __dirname,
-      },
-    },
-    {
-      files: ['**/*.js'],
-      extends: [
-        '@wayofdev/eslint-config',
-        // add jest linting
-        '@wayofdev/eslint-config/jest',
-      ],
-    },
-  ],
+    // ignore linting in dist bundle output folder
+    ignorePatterns: ['dist/**'],
+    // enable global variables
+    env: {
+        browser: true,
+        node: true,
+        jest: true,
+    }
+    overrides: [
+        {
+            files: ['**/*.ts'],
+            extends: [
+                '@wayofdev/eslint-config/ts',
+                // add jest linting
+                '@wayofdev/eslint-config/jest',
+            ],
+            parserOptions: {
+                project: 'tsconfig.json',
+                tsconfigRootDir: __dirname,
+            },
+        },
+        {
+            files: ['**/*.js'],
+            extends: [
+                '@wayofdev/eslint-config',
+                // add jest linting
+                '@wayofdev/eslint-config/jest',
+            ],
+        },
+    ],
 };
 ```
 
@@ -91,7 +91,7 @@ Will create:
 
 ```json
 "scripts": {
-  "lint:js": "eslint --fix **/*.{js,jsx,ts,tsx}"
+"lint:js": "eslint --fix **/*.{js,jsx,ts,tsx}"
 },
 ```
 
@@ -101,7 +101,7 @@ Will create:
 
 ```js
 module.exports = {
-  '*.{js,jsx,ts,tsx}': ['prettier --cache --write', 'eslint --cache --fix'],
+    '*.{js,jsx,ts,tsx}': ['prettier --cache --write', 'eslint --cache --fix'],
 };
 ```
 
@@ -110,50 +110,50 @@ module.exports = {
 ### `index.js`
 
 - Plugins
-  - `eslint-plugin-prettier`
+    - `eslint-plugin-prettier`
 - Parser
-  - default `eslint` parser
+    - default `eslint` parser
 - Extends
-  - `eslint-plugin-unicorn`
-  - `eslint-plugin-promise`
-  - `eslint-plugin-sonarjs`
-  - `eslint-plugin-security`,
-  - default `eslint` ruleset
-  - `eslint-config-airbnb-base`
-  - `eslint-config-prettier`
+    - `eslint-plugin-unicorn`
+    - `eslint-plugin-promise`
+    - `eslint-plugin-sonarjs`
+    - `eslint-plugin-security`,
+    - default `eslint` ruleset
+    - `eslint-config-airbnb-base`
+    - `eslint-config-prettier`
 - Rules
-  - [Prettier Special Rules](https://github.com/prettier/eslint-config-prettier#special-rules)
-  - Other rules can be found in the config
+    - [Prettier Special Rules](https://github.com/prettier/eslint-config-prettier#special-rules)
+    - Other rules can be found in the config
 
 ### `ts.js`
 
 - Plugins
-  - `@typescript-eslint/eslint-plugin`
-  - `eslint-plugin-prettier`
+    - `@typescript-eslint/eslint-plugin`
+    - `eslint-plugin-prettier`
 - Parser
-  - `@typescript-eslint/parser`
+    - `@typescript-eslint/parser`
 - Extends
-  - `eslint-plugin-unicorn`
-  - `eslint-plugin-promise`
-  - `eslint-plugin-sonarjs`
-  - `eslint-plugin-security`,
-  - `@typescript-eslint/eslint-plugin`
-  - `eslint-config-airbnb-typescript`
-  - `eslint-config-prettier`
+    - `eslint-plugin-unicorn`
+    - `eslint-plugin-promise`
+    - `eslint-plugin-sonarjs`
+    - `eslint-plugin-security`,
+    - `@typescript-eslint/eslint-plugin`
+    - `eslint-config-airbnb-typescript`
+    - `eslint-config-prettier`
 - Rules
-  - [Prettier Special Rules](https://github.com/prettier/eslint-config-prettier#special-rules)
-  - Other rules can be found in the config
+    - [Prettier Special Rules](https://github.com/prettier/eslint-config-prettier#special-rules)
+    - Other rules can be found in the config
 
 ### `jest.js`
 
 - Plugins
-  - `jest`
-  - `jest-dom`
-  - `jest-formatting`
+    - `jest`
+    - `jest-dom`
+    - `jest-formatting`
 - Extends
-  - `plugin:jest/recommended`
-  - `plugin:jest-dom/recommended`
-  - `plugin:jest-formatting/recommended`
+    - `plugin:jest/recommended`
+    - `plugin:jest-dom/recommended`
+    - `plugin:jest-formatting/recommended`
 
 ## License
 

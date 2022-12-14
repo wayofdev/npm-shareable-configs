@@ -1,0 +1,33 @@
+{
+    "name": "@wayofdev/htmlhint-config",
+    "version": "1.0.0",
+    "description": "A shareable htmlhint configuration for projects.",
+    "keywords": [
+        "htmlhint",
+        "htmlhint-config"
+    ],
+    "author": "lotyp7@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
+    },
+    "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/htmlhint-config#readme",
+    "main": "index.json",
+    "files": [
+        "index.json"
+    ],
+    "scripts": {
+        "test": "echo \"No test specified\""
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
+        "directory": "packages/htmlhint-config"
+    },
+    "peerDependencies": {
+        "htmlhint": ">= 1"
+    }
+}
