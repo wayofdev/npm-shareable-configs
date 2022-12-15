@@ -15,7 +15,8 @@
         "lint": "pnpm run lint:md && pnpm run lint:js && pnpm run lint:secrets",
         "lint:md": "markdownlint --fix **/*.md",
         "lint:js": "eslint --fix **/*.js",
-        "lint:secrets": "secretlint **/*"
+        "lint:secrets": "secretlint **/*",
+        "ci:publish": "changeset publish"
     },
     "devDependencies": {
         "@changesets/cli": "^2.25.2",
