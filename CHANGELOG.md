@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.2.0](https://github.com/wayofdev/npm-shareable-configs/compare/v1.1.0...v1.2.0) (2022-12-15)
+
+
+### Features
+
+* auto-release ([7d1b6bc](https://github.com/wayofdev/npm-shareable-configs/commit/7d1b6bc16cb6c2321ece3a8f5506ef5d52b7bec4))
+
+
+### Bug Fixes
+
+* npm publishing ([debccdc](https://github.com/wayofdev/npm-shareable-configs/commit/debccdcce875774fb74653827d46da4ba1e56cda))
+* publish action ([ded55ca](https://github.com/wayofdev/npm-shareable-configs/commit/ded55ca354d9053fa956dd2f4b1a723058a22ed0))
+* wrong lock file, updating deps ([6dff4ad](https://github.com/wayofdev/npm-shareable-configs/commit/6dff4adb10e1c521c3fa79aa7510d244971be9cf))
+
+
+### Continuous Integration
+
+* auto publish packages ([83818bc](https://github.com/wayofdev/npm-shareable-configs/commit/83818bc86162da2d5235f589c43b5f0d8b3554d6))
+* missing dep ([2eceb76](https://github.com/wayofdev/npm-shareable-configs/commit/2eceb766a60a416a5132652af013ddd4bb6e3a15))
+* publish packages ([6cac87d](https://github.com/wayofdev/npm-shareable-configs/commit/6cac87d55bc1488b1eee040c793d72fab12f5564))
+* wrong lock file ([a854deb](https://github.com/wayofdev/npm-shareable-configs/commit/a854deb5a6990ecfd4082b70a2e426abc96e6828))
+
 ## [1.1.0](https://github.com/wayofdev/npm-shareable-configs/compare/v1.0.0...v1.1.0) (2022-12-15)
 
 
