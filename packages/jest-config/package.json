@@ -1,0 +1,40 @@
+{
+    "name": "@wayofdev/jest-config",
+    "version": "1.0.0",
+    "description": "A shareable jest configuration for projects.",
+    "keywords": [
+        "jest",
+        "jest-config"
+    ],
+    "author": "lotyp7@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
+    },
+    "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/jest-config#readme",
+    "main": "jest-preset.js",
+    "files": [
+        "jest-preset.js",
+        "scripts/*"
+    ],
+    "scripts": {
+        "test": "echo \"No test specified\""
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
+        "directory": "packages/jest-config"
+    },
+    "peerDependencies": {
+        "jest": ">= 29"
+    },
+    "dependencies": {
+        "@types/jest": "^29.2.4",
+        "jest-environment-jsdom": "^29.3.1",
+        "jest-transform-stub": "^2.0.0",
+        "ts-jest": "^29.0.3"
+    }
+}
