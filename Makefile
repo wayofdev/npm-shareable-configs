@@ -83,7 +83,7 @@ build:
 .PHONY: build
 
 purge:
-	rm -rf .pnpm-store node_modules pnpm-lock.yaml
+	rm -rf .pnpm-store node_modules **/node_modules pnpm-lock.yaml
 .PHONY: purge
 
 login:
