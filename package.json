@@ -1,6 +1,6 @@
 {
     "name": "@wayofdev/npm-shareable-configs",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": "lotyp7@gmail.com",
     "description": "Shareable configurations with fully automated package publishing to NPM Registry.",
     "keywords": [],
