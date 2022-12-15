@@ -65,6 +65,7 @@ $ yarn add -D \
     @commitlint/cli \
     eslint \
     htmlhint \
+    jest \
     lint-staged \
     markdownlint \
     postcss \
@@ -76,6 +77,7 @@ $ yarn add -D \
     @wayofdev/commitlint-config \
     @wayofdev/eslint-config \
     @wayofdev/htmlhint-config \
+    @wayofdev/jest-config \
     @wayofdev/lint-staged-config \
     @wayofdev/markdownlint-config \
     @wayofdev/postcss-config \
@@ -95,6 +97,7 @@ $ pnpm add -Dw \
     @commitlint/cli \
     eslint \
     htmlhint \
+    jest \
     lint-staged \
     markdownlint \
     postcss \
@@ -106,6 +109,7 @@ $ pnpm add -Dw \
     @wayofdev/commitlint-config \
     @wayofdev/eslint-config \
     @wayofdev/htmlhint-config \
+    @wayofdev/jest-config \
     @wayofdev/lint-staged-config \
     @wayofdev/markdownlint-config \
     @wayofdev/postcss-config \
