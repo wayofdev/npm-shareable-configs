@@ -20,6 +20,11 @@ module.exports = {
         */
         'airbnb-typescript/base',
         /*
+          Needed to avoid warning in next.js build:
+          'The Next.js plugin was not detected in your ESLint configuration'
+         */
+        "next/core-web-vitals",
+        /*
           Enables eslint-plugin-prettier and displays prettier errors as
           ESLint errors. Make sure this is always the last configuration
           in the extends array.
@@ -33,7 +38,7 @@ module.exports = {
         'max-len': [
             'error',
             {
-                code: 80,
+                code: 120,
                 ignoreUrls: true,
             },
         ],

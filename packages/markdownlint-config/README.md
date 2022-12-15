@@ -1,11 +1,15 @@
 # Markdownlint Config
 
-My personal shareable markdownlint configuration.
+Shareable markdownlint configuration.
 
 ## Install
 
 ```bash
-yarn add -D markdownlint @wayofdev/markdownlint-config
+# using yarn
+$ yarn add -D markdownlint @wayofdev/markdownlint-config
+
+# using pnpm
+$ pnpm add -Dw markdownlint @wayofdev/markdownlint-config
 ```
 
 ## Usage
@@ -34,17 +38,25 @@ yarn add -D markdownlint @wayofdev/markdownlint-config
 Running this command:
 
 ```bash
-npm set-script lint:md "markdownlint --fix **/*.md --ignore node_modules --ignore **/CHANGELOG.md"
+# using yarn, npm
+npm pkg set scripts.lint:md="markdownlint --fix **/*.md --ignore node_modules --ignore **/CHANGELOG.md"
+
+# using pnpm
+pnpm pkg set scripts.lint:md="markdownlint --fix **/*.md --ignore node_modules --ignore **/CHANGELOG.md"
 ```
 
 Will create:
 
 **`package.json`**
 
-```json
+```bash
+...
 "scripts": {
-"lint:md": "markdownlint --fix **/*.md --ignore node_modules --ignore **/CHANGELOG.md"
+    ...
+    "lint:md": "markdownlint --fix **/*.md --ignore node_modules --ignore **/CHANGELOG.md"
+    ...
 },
+...
 ```
 
 ## Add a Pre-commit Hook

@@ -1,11 +1,15 @@
 # Secretlint Config
 
-My personal shareable secretlint configuration.
+Shareable secretlint configuration.
 
 ## Install
 
 ```bash
-yarn add -D secretlint @wayofdev/secretlint-config
+# using yarn
+$ yarn add -D secretlint @wayofdev/secretlint-config
+
+# using pnpm
+$ pnpm add -Dw secretlint @wayofdev/secretlint-config
 ```
 
 ## Usage
@@ -23,17 +27,25 @@ module.exports = {
 Running this command:
 
 ```bash
-npm set-script lint:secrets "npx secretlint **/*"
+# using yarn, npm
+npm pkg set scripts.lint:secrets="npx secretlint **/*"
+
+# using pnpm
+pnpm pkg set scripts.lint:secrets="npx secretlint **/*"
 ```
 
 Will create:
 
 **`package.json`**
 
-```json
+```bash
+...
 "scripts": {
-"lint:secrets": "npx secretlint **/*"
+    ...
+    "lint:secrets": "npx secretlint **/*"
+    ...
 },
+...
 ```
 
 ## Add a Pre-commit Hook

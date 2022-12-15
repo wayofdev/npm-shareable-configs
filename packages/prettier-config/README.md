@@ -1,11 +1,15 @@
 # Prettier Config
 
-My personal shareable prettier configuration.
+Shareable prettier configuration.
 
 ## Install
 
 ```bash
-yarn add -D prettier @wayofdev/prettier-config
+# using yarn
+$ yarn add -D prettier @wayofdev/prettier-config
+
+# using pnpm
+$ pnpm add -Dw prettier @wayofdev/prettier-config
 ```
 
 ## Usage
@@ -39,10 +43,14 @@ Will create:
 
 **`package.json`**
 
-```json
+```bash
+...
 "scripts": {
-"lint:prettier": "prettier --write ."
+    ...
+    "lint:prettier": "prettier --write ."
+    ...
 },
+...
 ```
 
 ## Add a Pre-commit Hook

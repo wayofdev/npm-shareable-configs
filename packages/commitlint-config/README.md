@@ -1,11 +1,15 @@
 # Commitlint Config
 
-My personal shareable commitlint configuration.
+Shareable commitlint configuration.
 
 ## Install
 
 ```bash
-yarn add -D @commitlint/cli @wayofdev/commitlint-config
+# install with yarn
+$ yarn add -D @commitlint/cli @wayofdev/commitlint-config
+
+# install with pnpm
+$ pnpm add -Dw @commitlint/cli @wayofdev/commitlint-config
 ```
 
 ## Usage
@@ -36,13 +40,24 @@ module.exports = {
 Install husky:
 
 ```bash
-yarn add -D husky && npm set-script prepare "husky install" && yarn prepare
+# using yarn
+$ yarn dlx husky-init --yarn2 && yarn && npm pkg set scripts.prepare="husky install" && yarn prepare
+
+# using pnpm
+$ pnpm dlx husky-init && pnpm install && pnpm pkg set scripts.prepare="husky install" && pnpm prepare
 ```
 
 Add the hook:
 
 ```bash
-npx husky add .husky/commit-msg 'npx --no-install commitlint --edit'
+# using npm
+$ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "${1}"'
+
+# using yarn
+$ yarn dlx husky add .husky/pre-commit 'npx --no -- commitlint --edit "${1}"'
+
+# using pnpm
+$ pnpm dlx husky add .husky/pre-commit 'npx --no -- commitlint --edit "${1}"'
 ```
 
 ## Under The Hood

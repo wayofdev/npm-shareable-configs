@@ -1,11 +1,15 @@
 # Postcss Config
 
-My personal shareable postcss configuration.
+Shareable postcss configuration.
 
 ## Install
 
 ```bash
-yarn add -D postcss @wayofdev/postcss-config
+# using yarn
+$ yarn add -D postcss @wayofdev/postcss-config
+
+# using pnpm
+$ pnpm add -Dw postcss @wayofdev/postcss-config
 ```
 
 ## Usage

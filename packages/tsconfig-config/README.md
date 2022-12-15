@@ -1,17 +1,22 @@
 # Tsconfig Config
 
-My personal shareable tsconfig configuration.
+Shareable tsconfig configuration.
 
 ## Install
 
 ```bash
-yarn add -D typescript @wayofdev/tsconfig-config
+# using yarn
+$ yarn add -D typescript @wayofdev/tsconfig-config
+
+# using pnpm
+$ pnpm add -Dw typescript @wayofdev/tsconfig-config
 ```
 
 Optionally include types for `node`:
 
 ```bash
-yarn add -D @types/node
+yarn add -D @types/node  # yarn
+pnpm add -Dw @types/node # pnpm
 ```
 
 ## Usage
@@ -39,7 +44,8 @@ Useful defaults for code publishing and distribution:
 Add the `tslib` package:
 
 ```bash
-yarn add -D tslib
+$ yarn add -D tslib  # yarn
+$ pnpm add -Dw tslib # pnpm
 ```
 
 ## Extending
@@ -125,10 +131,14 @@ Exclude test and configuration/dot files from compilation, but still have them t
 
 **`package.json`**
 
-```json
+```bash
+...
 "scripts": {
-"compile": "tsc --project tsconfig.build.json"
+    ...
+    "compile": "tsc --project tsconfig.build.json"
+    ...
 },
+...
 ```
 
 Clean up bundle and artifacts with your build script:
@@ -136,23 +146,29 @@ Clean up bundle and artifacts with your build script:
 Install `rimraf` and `npm-run-all`:
 
 ```bash
-yarn add -D rimraf npm-run-all
+$ yarn add -D rimraf npm-run-all  # yarn
+$ pnpm add -Dw rimraf npm-run-all # pnpm
 ```
 
 **`package.json`**
 
-```json
+```bash
+...
 "scripts": {
-"clean": "rimraf dist coverage tsconfig.build.tsbuildinfo",
-"compile": "tsc --project tsconfig.build.json",
-"build": "run-s clean compile",
+    ...
+    "clean": "rimraf dist coverage tsconfig.build.tsbuildinfo",
+    "compile": "tsc --project tsconfig.build.json",
+    "build": "run-s clean compile",
+    ...
 },
+...
 ```
 
 And then you can run:
 
 ```bash
-yarn build
+$ yarn build # yarn
+$ pnpm build # pnpm
 ```
 
 ## License

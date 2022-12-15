@@ -1,11 +1,15 @@
 # Stylelint Config
 
-My personal shareable stylelint configuration.
+Shareable stylelint configuration.
 
 ## Install
 
 ```bash
-yarn add -D stylelint @wayofdev/stylelint-config
+# using yarn
+$ yarn add -D stylelint @wayofdev/stylelint-config
+
+# using pnpm
+$ pnpm add -Dw stylelint @wayofdev/stylelint-config
 ```
 
 ## Usage
@@ -53,17 +57,25 @@ module.exports = {
 Running this command:
 
 ```bash
-npm set-script lint:css "stylelint --fix **/*.{css,scss}"
+# using yarn, npm
+$ npm pkg set scripts.lint:css="stylelint --fix **/*.{css,scss}"
+
+# using pnpm
+$ pnpm pkg set scripts.lint:css="stylelint --fix **/*.{css,scss}"
 ```
 
 Will create:
 
 **`package.json`**
 
-```json
+```bash
+...
 "scripts": {
-"lint:css": "stylelint --fix **/*.{css,scss}"
+    ...
+    "lint:css": "stylelint --fix **/*.{css,scss}"
+    ...
 },
+...
 ```
 
 ## Add a Pre-commit Hook

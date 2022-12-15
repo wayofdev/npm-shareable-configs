@@ -1,11 +1,15 @@
 # Lint-Staged Config
 
-My personal shareable lint-staged configuration.
+Shareable lint-staged configuration.
 
 ## Install
 
 ```bash
-yarn add -D lint-staged @wayofdev/lint-staged-config
+# using yarn
+$ yarn add -D lint-staged @wayofdev/lint-staged-config
+
+# using pnpm
+$ pnpm add -Dw lint-staged @wayofdev/lint-staged-config
 ```
 
 ## Usage
@@ -59,13 +63,24 @@ module.exports = {
 Install husky:
 
 ```bash
-yarn add -D husky && npm set-script prepare "husky install" && yarn prepare
+# using yarn
+$ yarn dlx husky-init --yarn2 && yarn && npm pkg set scripts.prepare="husky install" && yarn prepare
+
+# using pnpm
+$ pnpm dlx husky-init && pnpm install && pnpm pkg set scripts.prepare="husky install" && pnpm prepare
 ```
 
 Add the hook:
 
 ```bash
-npx husky add .husky/pre-commit 'npx --no-install lint-staged'
+# using npm
+$ npx husky add .husky/pre-commit 'npx --no-install lint-staged'
+
+# using yarn
+$ yarn dlx husky add .husky/pre-commit 'npx --no-install lint-staged'
+
+# using pnpm
+$ pnpm dlx husky add .husky/pre-commit 'npx --no-install lint-staged'
 ```
 
 ## License

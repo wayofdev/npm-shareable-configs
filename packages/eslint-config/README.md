@@ -1,11 +1,15 @@
 # Eslint Config
 
-My personal shareable eslint configuration.
+Shareable eslint configuration.
 
 ## Install
 
 ```bash
-yarn add -D eslint @wayofdev/eslint-config
+# install with yarn
+$ yarn add -D @wayofdev/eslint-config
+
+# install with pnpm
+$ pnpm add -Dw @wayofdev/eslint-config
 ```
 
 ## Usage
@@ -51,7 +55,7 @@ module.exports = {
         browser: true,
         node: true,
         jest: true,
-    }
+    },
     overrides: [
         {
             files: ['**/*.ts'],
@@ -82,17 +86,25 @@ module.exports = {
 Running this command:
 
 ```bash
-npm set-script lint:js "eslint --fix **/*.{js,jsx,ts,tsx}"
+# using yarn, npm
+$ npm pkg set scripts.lint:js="eslint --fix **/*.{js,jsx,ts,tsx}"
+
+# using pnpm
+$ pnpm pkg set scripts.lint:js="eslint --fix **/*.{js,jsx,ts,tsx}"
 ```
 
 Will create:
 
 **`package.json`**
 
-```json
+```bash
+...
 "scripts": {
-"lint:js": "eslint --fix **/*.{js,jsx,ts,tsx}"
+    ...
+    "lint:js": "eslint --fix **/*.{js,jsx,ts,tsx}"
+    ...
 },
+...
 ```
 
 ## Add a Pre-commit Hook
