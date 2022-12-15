@@ -25,29 +25,29 @@ This repository shareable configurations with fully automated package publishing
 
 ## 🚀 Featured Packages
 
-* browserslist-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fbrowserslist-config%2Fpackage.json&style=flat-square)
+* browserslist-config [README.md](packages/browserslist-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fbrowserslist-config%2Fpackage.json&style=flat-square)
   * [browserslist/browserslist](https://github.com/browserslist/browserslist) — share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-preset-env
-* commitlint-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fcommitlint-config%2Fpackage.json&style=flat-square)
+* commitlint-config [README.md](packages/commitlint-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fcommitlint-config%2Fpackage.json&style=flat-square)
   * [commitlint.js](https://commitlint.js.org/#/) — helps your team adhere to a commit convention.
-* eslint-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Feslint-config%2Fpackage.json&style=flat-square)
+* eslint-config [README.md](packages/eslint-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Feslint-config%2Fpackage.json&style=flat-square)
   * [eslint](https://eslint.org/) — statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
-* htmlhint-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fhtmlhint-config%2Fpackage.json&style=flat-square)
+* htmlhint-config [README.md](packages/htmlhint-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fhtmlhint-config%2Fpackage.json&style=flat-square)
   * [htmlhint](https://htmlhint.com) — static code analysis tool you need for your HTML
-* jest-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fjest-config%2Fpackage.json&style=flat-square)
+* jest-config [README.md](packages/jest-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fjest-config%2Fpackage.json&style=flat-square)
   * [jest](https://jestjs.io/) — delightful JavaScript Testing Framework with a focus on simplicity
-* lint-staged-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Flint-staged-config%2Fpackage.json&style=flat-square)
+* lint-staged-config [README.md](packages/lint-staged-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Flint-staged-config%2Fpackage.json&style=flat-square)
   * [lint-staged](https://github.com/okonet/lint-staged) — run linters on git staged files
-* markdownlint-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fmarkdownlint-config%2Fpackage.json&style=flat-square)
+* markdownlint-config [README.md](packages/markdownlint-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fmarkdownlint-config%2Fpackage.json&style=flat-square)
   * [davidanson/markdownlint](https://github.com/DavidAnson/markdownlint) — a Node.js style checker and lint tool for Markdown/CommonMark files
-* postcss-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fpostcss-config%2Fpackage.json&style=flat-square)
+* postcss-config [README.md](packages/postcss-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fpostcss-config%2Fpackage.json&style=flat-square)
   * [postcss](https://postcss.org/) — add vendor prefixes to CSS rules using values from Can I Use. [Autoprefixer](https://github.com/postcss/autoprefixer) will use the data based on current browser popularity and property support to apply prefixes for you.
-* prettier-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fprettier-config%2Fpackage.json&style=flat-square)
+* prettier-config [README.md](packages/prettier-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fprettier-config%2Fpackage.json&style=flat-square)
   * [prettier](https://prettier.io/) — an opinionated code formatter, supports many langauges
-* secretlint-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fsecretlint-config%2Fpackage.json&style=flat-square)
+* secretlint-config [README.md](packages/secretlint-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fsecretlint-config%2Fpackage.json&style=flat-square)
   * [secretlint/secretlint](https://github.com/secretlint/secretlint) — pluggable linting tool to prevent committing credential
-* stylelint-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fsecretlint-config%2Fpackage.json&style=flat-square)
+* stylelint-config [README.md](packages/stylelint-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Fsecretlint-config%2Fpackage.json&style=flat-square)
   * [stylelint](https://stylelint.io) — a mighty, modern linter that helps you avoid errors and enforce conventions in your styles
-* tsconfig-config ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Ftsconfig-config%2Fpackage.json&style=flat-square)
+* tsconfig-config [README.md](packages/tsconfig-config/README.md) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/wayofdev/npm-shareable-configs?filename=packages%2Ftsconfig-config%2Fpackage.json&style=flat-square)
   * [tsconfig](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) — typescript configuration for projects
 
 
