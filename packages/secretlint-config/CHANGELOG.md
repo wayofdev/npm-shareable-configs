@@ -1,5 +1,11 @@
 # @wayofdev/secretlint-config
 
+## 1.0.6
+
+### Patch Changes
+
+- version bump
+
 ## 1.0.5
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
     "name": "@wayofdev/eslint-config",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A shareable eslint configuration for projects.",
     "keywords": [
         "eslint",

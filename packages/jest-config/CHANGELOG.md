@@ -1,5 +1,11 @@
 # @wayofdev/jest-config
 
+## 1.0.2
+
+### Patch Changes
+
+- version bump
+
 ## 1.0.1
 
 ### Patch Changes
