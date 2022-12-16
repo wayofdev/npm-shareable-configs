@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/wayofdev/npm-shareable-configs/compare/v1.2.0...v1.2.1) (2022-12-16)
+
+
+### Bug Fixes
+
+* do not require next deps ([aaaa3cb](https://github.com/wayofdev/npm-shareable-configs/commit/aaaa3cbcf74f06788c000e0f868d78d3db43913c))
+
 ## [1.2.0](https://github.com/wayofdev/npm-shareable-configs/compare/v1.1.0...v1.2.0) (2022-12-15)
 
 
