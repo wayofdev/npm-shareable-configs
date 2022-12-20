@@ -1,6 +1,6 @@
 {
     "name": "@wayofdev/jest-config",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "A shareable jest configuration for projects.",
     "keywords": [
         "jest",

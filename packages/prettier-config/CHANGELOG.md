@@ -1,5 +1,11 @@
 # @wayofdev/prettier-config
 
+## 1.1.0
+
+### Minor Changes
+
+- version bump
+
 ## 1.0.3
 
 ### Patch Changes
