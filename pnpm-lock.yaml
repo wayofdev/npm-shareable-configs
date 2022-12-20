@@ -135,8 +135,11 @@ importers:
   packages/prettier-config:
     specifiers:
       prettier: '>= 2'
+      prettier-plugin-tailwindcss: ^0.2.1
     dependencies:
       prettier: 2.8.1
+    devDependencies:
+      prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.1
 
   packages/secretlint-config:
     specifiers:
@@ -6204,6 +6207,15 @@ packages:
     dependencies:
       fast-diff: 1.2.0
     dev: false
+
+  /prettier-plugin-tailwindcss/0.2.1_prettier@2.8.1:
+    resolution: {integrity: sha512-aIO8IguumORyRsmT+E7JfJ3A9FEoyhqZR7Au7TBOege3VZkgMvHJMkufeYp4zjnDK2iq4ktkvGMNOQR9T8lisQ==}
+    engines: {node: '>=12.17.0'}
+    peerDependencies:
+      prettier: '>=2.2.0'
+    dependencies:
+      prettier: 2.8.1
+    dev: true
 
   /prettier/2.8.1:
     resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}

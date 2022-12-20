@@ -1,7 +1,7 @@
 module.exports = {
     endOfLine: 'auto',
     // https://prettier.io/docs/en/options.html#print-width
-    printWidth: 80,
+    printWidth: 100,
     tabWidth: 2,
     arrowParens: 'avoid',
     singleQuote: true,
@@ -20,4 +20,5 @@ module.exports = {
             },
         },
     ],
+    plugins: [require('prettier-plugin-tailwindcss')]
 };
