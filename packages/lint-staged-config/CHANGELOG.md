@@ -1,5 +1,11 @@
 # @wayofdev/lint-staged-config
 
+## 1.2.0
+
+### Minor Changes
+
+- [`ef63f3f`](https://github.com/wayofdev/npm-shareable-configs/commit/ef63f3fb7c77354145db78e87cf9d9ccac9cc5d9) Thanks [@lotyp](https://github.com/lotyp)! - feat: make eslint optional
+
 ## 1.1.0
 
 ### Minor Changes
