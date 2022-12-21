@@ -87,9 +87,16 @@ purge:
 .PHONY: purge
 
 login:
-	pnpm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+	$(NPM_BIN) config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
 .PHONY: login
 
+version:
+	$(NPM_BIN) changeset
+.PHONY: version
+
+publish:
+	$(NPM_BIN) changeset publish
+.PHONY: publish
 
 # Testing and Code Quality
 # ------------------------------------------------------------------------------------
