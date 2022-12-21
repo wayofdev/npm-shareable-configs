@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.3.0](https://github.com/wayofdev/npm-shareable-configs/compare/v1.2.1...v1.3.0) (2022-12-21)
+
+
+### Features
+
+* load tailwind plugin by default ([364590b](https://github.com/wayofdev/npm-shareable-configs/commit/364590b946ba5fc4845e428b1d1deaa8035609c7))
+* rework tsconfig, add nextjs preset ([58e83bc](https://github.com/wayofdev/npm-shareable-configs/commit/58e83bcb5d3fb5a8c79dc2863cb20e30054a0ab7))
+* version bump ([e4f1811](https://github.com/wayofdev/npm-shareable-configs/commit/e4f181114431d6fe07105b3b3be494a2a9e0236a))
+* version bump ([75617ec](https://github.com/wayofdev/npm-shareable-configs/commit/75617ec7b920832463a087819c10ac85e44d158f))
+
+
+### Bug Fixes
+
+* make root repo private ([7f8e614](https://github.com/wayofdev/npm-shareable-configs/commit/7f8e6140e501a0a3d9eeaa37a195a95c6f078c40))
+* remove tailwind ([86ea324](https://github.com/wayofdev/npm-shareable-configs/commit/86ea3240db015c9f59f7e6f7515ae25032f99582))
+
 ## [1.2.1](https://github.com/wayofdev/npm-shareable-configs/compare/v1.2.0...v1.2.1) (2022-12-16)
 
 
