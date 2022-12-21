@@ -1,13 +1,31 @@
-// https://github.com/tsconfig/bases/blob/main/bases/recommended.json
 {
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "recommended base tsconfig",
     "compilerOptions": {
-        "target": "ES2015",
         "module": "commonjs",
         "strict": true,
+        "allowJs": false,
+        "alwaysStrict": true,
+        "strictNullChecks": true,
+        "noUncheckedIndexedAccess": true,
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "incremental": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "target": "es5",
         "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
-    },
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "Recommended"
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "allowUnreachableCode": false,
+        "noFallthroughCasesInSwitch": true
+    }
 }

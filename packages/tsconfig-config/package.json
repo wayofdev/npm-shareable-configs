@@ -16,6 +16,7 @@
     "files": [
         "base.json",
         "lib.json",
+        "next.json",
         "scripts/*"
     ],
     "scripts": {
