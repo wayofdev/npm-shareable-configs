@@ -1,5 +1,11 @@
 # @wayofdev/postcss-config
 
+## 1.1.1
+
+### Patch Changes
+
+- feat: support for tailwind css
+
 ## 1.1.0
 
 ### Minor Changes
