@@ -54,7 +54,7 @@ A basic configuration for projects:
 
 **`tsconfig.json`**
 
-```json
+```bash
 {
     "extends": "@wayofdev/tsconfig-config/base.json",
     "compilerOptions": {

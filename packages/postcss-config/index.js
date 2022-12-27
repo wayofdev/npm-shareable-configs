@@ -5,6 +5,9 @@ const postcssReporterFormatter = require('postcss-reporter/lib/formatter');
 
 module.exports = {
     plugins: [
+        'tailwindcss/nesting',
+        'tailwindcss',
+        'autoprefixer',
         'postcss-flexbugs-fixes',
         'postcss-100vh-fix',
         [
@@ -14,6 +17,9 @@ module.exports = {
                     flexbox: 'no-2009',
                 },
                 stage: 3,
+                features: {
+                    'custom-properties': false,
+                },
             },
         ],
         postcssNormalize({
@@ -22,5 +28,5 @@ module.exports = {
         postcssReporter({
             formatter: postcssReporterFormatter(),
         }),
-    ],
-};
+    ]
+}
