@@ -1,3 +1,5 @@
+// module.exports = require('@wayofdev/postcss-config');
+
 // https://nextjs.org/docs/advanced-features/customizing-postcss-config
 const postcssNormalize = require('postcss-normalize');
 const postcssReporter = require('postcss-reporter');
@@ -5,6 +7,7 @@ const postcssReporterFormatter = require('postcss-reporter/lib/formatter');
 
 module.exports = {
     plugins: [
+        'postcss-import',
         'tailwindcss/nesting',
         'tailwindcss',
         'autoprefixer',
