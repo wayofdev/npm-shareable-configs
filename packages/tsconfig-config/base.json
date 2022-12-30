@@ -4,7 +4,7 @@
     "compilerOptions": {
         "module": "commonjs",
         "strict": true,
-        "allowJs": false,
+        "allowJs": true,
         "alwaysStrict": true,
         "strictNullChecks": true,
         "noUncheckedIndexedAccess": true,
