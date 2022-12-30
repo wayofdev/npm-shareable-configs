@@ -1,5 +1,11 @@
 # @wayofdev/tsconfig-config
 
+## 1.3.0
+
+### Minor Changes
+
+- [`a97d705`](https://github.com/wayofdev/npm-shareable-configs/commit/a97d705b261e23e2ba135dae191b710d54e7e05b) Thanks [@lotyp](https://github.com/lotyp)! - feat: allow js, stricter settings for commitlint
+
 ## 1.2.0
 
 ### Minor Changes
