@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.0](https://github.com/wayofdev/npm-shareable-configs/compare/v1.3.0...v1.4.0) (2022-12-30)
+
+
+### Features
+
+* add tailwind support ([2bcc6fa](https://github.com/wayofdev/npm-shareable-configs/commit/2bcc6fa6ce06de46d8082e18509a273846d37012))
+* add tailwind support ([a105735](https://github.com/wayofdev/npm-shareable-configs/commit/a10573571faffcb75ee363bf753fa9b501478703))
+* **lint-staged-config:** make eslint optional ([ef63f3f](https://github.com/wayofdev/npm-shareable-configs/commit/ef63f3fb7c77354145db78e87cf9d9ccac9cc5d9))
+* update postcss config ([f9f7415](https://github.com/wayofdev/npm-shareable-configs/commit/f9f7415add254745f589dfee411eb9ebb6744893))
+* update postcss config ([7ddd589](https://github.com/wayofdev/npm-shareable-configs/commit/7ddd589e3ac81ce08bed797dddc003e09254525a))
+* updating configs ([a97d705](https://github.com/wayofdev/npm-shareable-configs/commit/a97d705b261e23e2ba135dae191b710d54e7e05b))
+
 ## [1.3.0](https://github.com/wayofdev/npm-shareable-configs/compare/v1.2.1...v1.3.0) (2022-12-21)
 
 
