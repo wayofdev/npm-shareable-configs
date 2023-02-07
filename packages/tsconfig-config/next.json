@@ -1,17 +1,13 @@
 {
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "tsconfig for nextjs",
-    "extends": "./base.json",
-    "compilerOptions": {
-        "lib": [
-            "dom",
-            "dom.iterable",
-            "esnext"
-        ],
-        "noEmit": true,
-        "importHelpers": true,
-        "module": "esnext",
-        "isolatedModules": true,
-        "jsx": "preserve"
-    }
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "tsconfig for nextjs",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noEmit": true,
+    "importHelpers": true,
+    "module": "esnext",
+    "isolatedModules": true,
+    "jsx": "preserve"
+  }
 }

@@ -1,16 +1,12 @@
-/* eslint-disable security/detect-non-literal-fs-filename */
-const fs = require('node:fs');
-const path = require('node:path');
+const fs = require('node:fs')
+const path = require('node:path')
 
-const filePath = path.join(process.env.INIT_CWD, 'jest.config.js');
+const filePath = path.join(process.env.INIT_CWD, 'jest.config.js')
 
 const fileConfigObject = {
-    preset: '@wayofdev/jest-config',
-};
+  preset: '@wayofdev/jest-config',
+}
 
 if (!fs.existsSync(filePath)) {
-    fs.writeFileSync(
-        filePath,
-        `module.exports = ${JSON.stringify(fileConfigObject, undefined, 2)}`
-    );
+  fs.writeFileSync(filePath, `module.exports = ${JSON.stringify(fileConfigObject, undefined, 2)}`)
 }

@@ -20,16 +20,16 @@ $ pnpm add -Dw stylelint @wayofdev/stylelint-config
 
 ```js
 module.exports = {
-    extends: '@wayofdev/stylelint-config',
-};
+  extends: "@wayofdev/stylelint-config",
+}
 ```
 
 ### SCSS
 
 ```js
 module.exports = {
-    extends: '@wayofdev/stylelint-config/scss',
-};
+  extends: "@wayofdev/stylelint-config/scss",
+}
 ```
 
 ## Extending
@@ -40,16 +40,16 @@ An example configuring a mixed CSS/SCSS configuration.
 
 ```js
 module.exports = {
-    // ignore linting in dist bundle output folder
-    ignoreFiles: ['dist/**'],
-    extends: '@wayofdev/stylelint-config/scss',
-    overrides: [
-        {
-            files: ['**/*.css'],
-            extends: '@wayofdev/stylelint-config',
-        },
-    ],
-};
+  // ignore linting in dist bundle output folder
+  ignoreFiles: ["dist/**"],
+  extends: "@wayofdev/stylelint-config/scss",
+  overrides: [
+    {
+      files: ["**/*.css"],
+      extends: "@wayofdev/stylelint-config",
+    },
+  ],
+}
 ```
 
 ## Add an NPM Script
@@ -84,8 +84,8 @@ Will create:
 
 ```js
 module.exports = {
-    '*.{css,scss}': ['prettier --cache --write', 'stylelint --cache --fix'],
-};
+  "*.{css,scss}": ["prettier --cache --write", "stylelint --cache --fix"],
+}
 ```
 
 ## Under The Hood
@@ -93,25 +93,25 @@ module.exports = {
 ### `index.js`
 
 - Plugins
-    - `stylelint-order`
-    - `stylelint-no-unsupported-browser-features`
-    - `stylelint-high-performance-animation`
+  - `stylelint-order`
+  - `stylelint-no-unsupported-browser-features`
+  - `stylelint-high-performance-animation`
 - Extends
-    - `stylelint-config-standard`
-    - `stylelint-a11y`
-    - `stylelint-prettier`
+  - `stylelint-config-standard`
+  - `stylelint-a11y`
+  - `stylelint-prettier`
 
 ### `scss.js`
 
 - Plugins
-    - `stylelint-order`
-    - `stylelint-no-unsupported-browser-features`
-    - `stylelint-high-performance-animation`
+  - `stylelint-order`
+  - `stylelint-no-unsupported-browser-features`
+  - `stylelint-high-performance-animation`
 - Extends
-    - `stylelint-config-standard-scss`
-    - `stylelint-config-sass-guidelines`
-    - `stylelint-a11y`
-    - `stylelint-prettier`
+  - `stylelint-config-standard-scss`
+  - `stylelint-config-sass-guidelines`
+  - `stylelint-a11y`
+  - `stylelint-prettier`
 
 ## License
 

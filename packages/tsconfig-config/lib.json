@@ -1,9 +1,9 @@
 {
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "tsconfig for react libraries",
-    "extends": "./base.json",
-    "compilerOptions": {
-        "noEmit": false,
-        "importHelpers": true
-    }
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "tsconfig for react libraries",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "importHelpers": true
+  }
 }

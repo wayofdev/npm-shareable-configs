@@ -17,7 +17,7 @@ $ pnpm add -Dw htmlhint @wayofdev/htmlhint-config
 Running this command:
 
 ```bash
-$ pnpm pkg set scripts.lint:html="htmlhint --config ./node_modules/@wayofdev/htmlhint-config/index.json **/*.html"
+pnpm pkg set scripts.lint:html="htmlhint --config ./node_modules/@wayofdev/htmlhint-config/index.json **/*.html"
 ```
 
 Will create:

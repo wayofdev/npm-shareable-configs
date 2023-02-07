@@ -1,46 +1,47 @@
 {
-    "name": "@wayofdev/stylelint-config",
-    "version": "1.1.0",
-    "description": "A shareable stylelint configuration for projects.",
-    "keywords": [
-        "stylelint",
-        "stylelint-config"
-    ],
-    "author": "lotyp7@gmail.com",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
-    },
-    "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/stylelint-config#readme",
-    "main": "index.js",
-    "files": [
-        "index.js",
-        "scss.js",
-        "scripts/*"
-    ],
-    "scripts": {
-        "test": "echo \"No test specified\""
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
-        "directory": "packages/stylelint-config"
-    },
-    "dependencies": {
-        "@ronilaukkarinen/stylelint-a11y": "^1.2.4",
-        "stylelint-config-prettier": "^9.0.4",
-        "stylelint-config-sass-guidelines": "^9.0.1",
-        "stylelint-config-standard": "^29.0.0",
-        "stylelint-config-standard-scss": "^6.1.0",
-        "stylelint-high-performance-animation": "^1.7.0",
-        "stylelint-no-unsupported-browser-features": "^6.0.1",
-        "stylelint-order": "^5.0.0",
-        "stylelint-prettier": "^2.0.0"
-    },
-    "peerDependencies": {
-        "stylelint": ">= 14"
-    }
+  "name": "@wayofdev/stylelint-config",
+  "version": "1.1.0",
+  "private": false,
+  "description": "A shareable stylelint configuration for projects.",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/stylelint-config#readme",
+  "bugs": {
+    "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
+    "directory": "packages/stylelint-config"
+  },
+  "license": "MIT",
+  "author": "lotyp7@gmail.com",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "scss.js",
+    "scripts/*"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "dependencies": {
+    "@ronilaukkarinen/stylelint-a11y": "^1.2.4",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "stylelint-high-performance-animation": "^1.7.0",
+    "stylelint-no-unsupported-browser-features": "^6.0.1",
+    "stylelint-order": "^6.0.1",
+    "stylelint-prettier": "^2.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">= 14"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
