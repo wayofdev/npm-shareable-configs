@@ -1,33 +1,34 @@
 {
-    "name": "@wayofdev/htmlhint-config",
-    "version": "1.1.0",
-    "description": "A shareable htmlhint configuration for projects.",
-    "keywords": [
-        "htmlhint",
-        "htmlhint-config"
-    ],
-    "author": "lotyp7@gmail.com",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
-    },
-    "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/htmlhint-config#readme",
-    "main": "index.json",
-    "files": [
-        "index.json"
-    ],
-    "scripts": {
-        "test": "echo \"No test specified\""
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
-        "directory": "packages/htmlhint-config"
-    },
-    "peerDependencies": {
-        "htmlhint": ">= 1"
-    }
+  "name": "@wayofdev/htmlhint-config",
+  "version": "1.1.0",
+  "private": false,
+  "description": "A shareable htmlhint configuration for projects.",
+  "keywords": [
+    "htmlhint",
+    "htmlhint-config"
+  ],
+  "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/htmlhint-config#readme",
+  "bugs": {
+    "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
+    "directory": "packages/htmlhint-config"
+  },
+  "license": "MIT",
+  "author": "lotyp7@gmail.com",
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "peerDependencies": {
+    "htmlhint": ">= 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

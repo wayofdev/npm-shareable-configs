@@ -27,7 +27,7 @@ pnpm add -Dw @types/node # pnpm
 
 ```json
 {
-    "extends": "@wayofdev/tsconfig-config/base.json"
+  "extends": "@wayofdev/tsconfig-config/base.json"
 }
 ```
 
@@ -37,15 +37,15 @@ Useful defaults for code publishing and distribution:
 
 ```json
 {
-    "extends": "@wayofdev/tsconfig-config/lib.json"
+  "extends": "@wayofdev/tsconfig-config/lib.json"
 }
 ```
 
 Add the `tslib` package:
 
 ```bash
-$ yarn add -D tslib  # yarn
-$ pnpm add -Dw tslib # pnpm
+yarn add -D tslib  # yarn
+pnpm add -Dw tslib # pnpm
 ```
 
 ## Extending
@@ -83,16 +83,12 @@ that [shouldn't be part of your existing `tsconfig` file:](https://typescript-es
 
 ```json
 {
-    "extends": "./tsconfig.json",
-    "include": [
-        ".*.js",
-        "*.js",
-        "src/*"
-    ],
-    "compilerOptions": {
-        "noEmit": true,
-        "allowJs": true
-    }
+  "extends": "./tsconfig.json",
+  "include": [".*.js", "*.js", "src/*"],
+  "compilerOptions": {
+    "noEmit": true,
+    "allowJs": true
+  }
 }
 ```
 
@@ -100,18 +96,18 @@ that [shouldn't be part of your existing `tsconfig` file:](https://typescript-es
 
 ```js
 module.exports = {
-    root: true,
-    extends: ['my-config'],
-    plugins: ['import'],
-    parserOptions: {
-        project: ['tsconfig.eslint.json'],
-        tsconfigRootDir: __dirname,
-    },
-    rules: {
-        'import/extensions': 'off',
-    },
-    ignorePatterns: ['dist/**'],
-};
+  root: true,
+  extends: ["my-config"],
+  plugins: ["import"],
+  parserOptions: {
+    project: ["tsconfig.eslint.json"],
+    tsconfigRootDir: __dirname,
+  },
+  rules: {
+    "import/extensions": "off",
+  },
+  ignorePatterns: ["dist/**"],
+}
 ```
 
 Exclude test and configuration/dot files from compilation, but still have them type checked:
@@ -120,12 +116,8 @@ Exclude test and configuration/dot files from compilation, but still have them t
 
 ```json
 {
-    "extends": "./tsconfig.json",
-    "exclude": [
-        ".*.js",
-        "*.js",
-        "src/*.spec.ts"
-    ]
+  "extends": "./tsconfig.json",
+  "exclude": [".*.js", "*.js", "src/*.spec.ts"]
 }
 ```
 
@@ -146,8 +138,8 @@ Clean up bundle and artifacts with your build script:
 Install `rimraf` and `npm-run-all`:
 
 ```bash
-$ yarn add -D rimraf npm-run-all  # yarn
-$ pnpm add -Dw rimraf npm-run-all # pnpm
+yarn add -D rimraf npm-run-all  # yarn
+pnpm add -Dw rimraf npm-run-all # pnpm
 ```
 
 **`package.json`**
@@ -167,8 +159,8 @@ $ pnpm add -Dw rimraf npm-run-all # pnpm
 And then you can run:
 
 ```bash
-$ yarn build # yarn
-$ pnpm build # pnpm
+yarn build # yarn
+pnpm build # pnpm
 ```
 
 ## License

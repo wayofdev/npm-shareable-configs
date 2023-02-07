@@ -1,16 +1,20 @@
 {
-    "$schema": "https://unpkg.com/@changesets/config@2.2.0/schema.json",
-    "changelog": [
-        "@changesets/changelog-github",
-        {
-            "repo": "wayofdev/npm-shareable-configs"
-        }
-    ],
-    "commit": false,
-    "fixed": [],
-    "linked": [],
-    "access": "restricted",
-    "baseBranch": "master",
-    "updateInternalDependencies": "patch",
-    "ignore": []
+  "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "wayofdev/npm-shareable-configs"
+    }
+  ],
+  "privatePackages": {
+    "version": true,
+    "tag": true
+  },
+  "commit": false,
+  "fixed": [],
+  "linked": [],
+  "access": "public",
+  "baseBranch": "master",
+  "updateInternalDependencies": "patch",
+  "ignore": []
 }

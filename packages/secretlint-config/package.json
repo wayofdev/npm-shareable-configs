@@ -1,37 +1,38 @@
 {
-    "name": "@wayofdev/secretlint-config",
-    "version": "1.1.0",
-    "description": "A shareable secretlint configuration for projects.",
-    "keywords": [
-        "secretlint",
-        "secretlint-config"
-    ],
-    "author": "lotyp7@gmail.com",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
-    },
-    "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/secretlint-config#readme",
-    "main": "index.json",
-    "files": [
-        "index.json",
-        "scripts/*"
-    ],
-    "scripts": {
-        "test": "echo \"No test specified\""
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
-        "directory": "packages/secretlint-config"
-    },
-    "peerDependencies": {
-        "secretlint": ">= 5"
-    },
-    "dependencies": {
-        "@secretlint/secretlint-rule-preset-recommend": "^5.3.0"
-    }
+  "name": "@wayofdev/secretlint-config",
+  "version": "1.1.0",
+  "private": false,
+  "description": "A shareable secretlint configuration for projects.",
+  "keywords": [
+    "secretlint",
+    "secretlint-config"
+  ],
+  "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/secretlint-config#readme",
+  "bugs": {
+    "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
+    "directory": "packages/secretlint-config"
+  },
+  "license": "MIT",
+  "author": "lotyp7@gmail.com",
+  "main": "index.json",
+  "files": [
+    "index.json",
+    "scripts/*"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "dependencies": {
+    "@secretlint/secretlint-rule-preset-recommend": "^6.0.2"
+  },
+  "peerDependencies": {
+    "secretlint": ">= 5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

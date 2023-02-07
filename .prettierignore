@@ -1,0 +1,6 @@
+**/dist/**
+**/.next/**
+**/build/**
+**/tmp/**
+pnpm-lock.yaml
+.changeset/*.md

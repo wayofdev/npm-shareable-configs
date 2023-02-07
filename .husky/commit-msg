@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# run directly, without docker support
+# pnpm commitlint --edit "${1}"
+
+# through docker-compose
+pnpm commitlint --edit "${1}"
