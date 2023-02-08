@@ -3,14 +3,26 @@
   "version": "1.3.0",
   "private": true,
   "description": "Shareable configurations with fully automated package publishing to NPM Registry.",
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "browserslist",
+    "commitlint",
+    "htmlhint",
+    "jest",
+    "lint-staged",
+    "markdownlint",
+    "postcss",
+    "secretlint",
+    "stylelint",
+    "tsconfig"
+  ],
   "homepage": "https://github.com/wayofdev/npm-shareable-configs",
   "bugs": {
     "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wayofdev/npm-shareable-configs"
+    "url": "git+https://github.com/wayofdev/npm-shareable-configs"
   },
   "license": "MIT",
   "author": {
@@ -31,6 +43,7 @@
     "deps:check": "pnpm dlx npm-check-updates@latest --configFileName .ncurc.yml --deep --mergeConfig",
     "deps:update": "pnpm dlx npm-check-updates@latest --configFileName .ncurc.yml -u --deep --mergeConfig && pnpm install",
     "preinstall": "npx only-allow pnpm",
+    "lint": "pnpm run lint:md && pnpm run lint:js && pnpm run lint:secrets",
     "lint:fix": "turbo run lint:fix && pnpm lint:package-json",
     "lint:js": "eslint --fix **/*.js",
     "lint:md": "markdownlint --fix **/*.md --ignore '**/node_modules/**' --ignore '**/CHANGELOG.md'",
@@ -39,30 +52,29 @@
     "lint:turbo": "turbo lint",
     "lint:types": "turbo run lint:types --parallel",
     "prepare": "is-ci || husky install",
-    "test-unit": "turbo test-unit",
-    "lint": "pnpm run lint:md && pnpm run lint:js && pnpm run lint:secrets"
+    "test-unit": "turbo test-unit"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.0",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
-    "@types/node": "^18.11.19",
+    "@types/node": "^18.13.0",
     "@types/prettier": "^2.7.2",
     "@types/shell-quote": "^1.7.1",
     "@wayofdev/eslint-config-bases": "workspace:*",
     "commitizen": "^4.3.0",
-    "eslint": "^8.32.0",
+    "eslint": "^8.33.0",
     "husky": "^8.0.3",
     "is-ci": "3.0.1",
-    "lint-staged": "^13.1.0",
+    "lint-staged": "^13.1.1",
     "markdownlint": "^0.27.0",
     "markdownlint-cli": "^0.33.0",
-    "prettier": "^2.8.3",
+    "prettier": "^2.8.4",
     "rimraf": "^4.1.2",
-    "secretlint": "^6.0.2",
+    "secretlint": "^6.2.0",
     "shell-quote": "^1.8.0",
-    "sort-package-json": "^2.2.0",
+    "sort-package-json": "^2.4.1",
     "typescript": "^4.9.5"
   },
   "packageManager": "pnpm@7.26.3",
