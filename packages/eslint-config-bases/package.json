@@ -2,7 +2,39 @@
   "name": "@wayofdev/eslint-config-bases",
   "version": "1.1.0",
   "private": false,
-  "homepage": "https://github.com/wayofdev/next-starter-tpl",
+  "description": "A shareable eslint base configuration for projects.",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslint-config-bases",
+    "eslint-plugin",
+    "eslint-grapql",
+    "eslint-html",
+    "eslint-jest",
+    "eslint-mdx",
+    "eslint-typescript",
+    "eslint-prettier-plugin",
+    "eslint-prettier-config",
+    "eslint-react",
+    "eslint-react-query",
+    "eslint-regexp",
+    "eslint-react-testing-library",
+    "eslint-rtl",
+    "eslint-sonar",
+    "eslint-storybook",
+    "eslint-tailwind",
+    "eslint-tailwindcss",
+    "eslint-typescript"
+  ],
+  "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/eslint-config-bases#readme",
+  "bugs": {
+    "url": "https://github.com/wayofdev/npm-shareable-configs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wayofdev/npm-shareable-configs.git",
+    "directory": "packages/eslint-config-bases"
+  },
   "license": "MIT",
   "author": {
     "name": "Andrij Orlenko",
@@ -58,23 +90,28 @@
     },
     "./mdx": {
       "require": "./src/bases/mdx.js"
+    },
+    "./html": {
+      "require": "./src/bases/html.js"
     }
   },
   "main": "./src/index.js",
   "scripts": {
-    "clean": "rimraf --no-glob ./dist ./coverage ./tsconfig.tsbuildinfo",
+    "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
     "lint": "eslint --ext .ts,.js,.cjs,.mjs --cache --cache-location ../../.cache/eslint/eslint-config-bases.eslintcache",
     "lint:dist": "es-check -v",
     "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/eslint-config-bases.eslintcache",
     "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@html-eslint/eslint-plugin": "^0.16.0",
+    "@html-eslint/parser": "^0.16.0",
     "@rushstack/eslint-patch": "^1.2.0",
     "@tanstack/eslint-plugin-query": "4.24.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "@typescript-eslint/parser": "^5.50.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
@@ -94,14 +131,14 @@
     "eslint-plugin-tailwindcss": "^3.8.3",
     "eslint-plugin-testing-library": "^5.10.0",
     "eslint-plugin-unicorn": "^45.0.2",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.4"
   },
   "devDependencies": {
     "@graphql-eslint/eslint-plugin": "^3.15.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.4.0",
-    "@types/node": "^18.11.18",
+    "@types/node": "^18.13.0",
     "@types/prettier": "^2.7.2",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",

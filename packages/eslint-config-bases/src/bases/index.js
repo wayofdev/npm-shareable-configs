@@ -12,4 +12,5 @@ module.exports = {
   tailwind: require('./tailwind'),
   typescript: require('./typescript'),
   mdx: require('./mdx'),
+  html: require('./html'),
 }

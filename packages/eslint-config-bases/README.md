@@ -14,10 +14,9 @@
 <a href="https://www.npmjs.com/package/@wayofdev/eslint-config-bases?activeTab=versions"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@wayofdev/eslint-config-bases?style=flat-square"></a>
 <a href="LICENSE.md"><img src="https://img.shields.io/github/license/wayofdev/npm-shareable-configs.svg?style=flat-square&color=blue" alt="Software License"/></a>
 </div>
-
 <br>
 
-# Shareable Configs
+# Shareable ESLint Config Bases
 
 ## 📄 About
 
@@ -342,9 +341,21 @@ Generic typescript project, mostly based on
 
 ### → Regexp
 
-| Type/Plugin                                                                           | Comment |
-| :------------------------------------------------------------------------------------ | :------ |
-| [eslint-plugin-regexp/recommended](https://github.com/ota-meshi/eslint-plugin-regexp) |         |
+| Type/Plugin                                                                           | Comment                                                              |
+| :------------------------------------------------------------------------------------ | :------------------------------------------------------------------- |
+| [eslint-plugin-regexp/recommended](https://github.com/ota-meshi/eslint-plugin-regexp) | ESLint plugin for finding regex mistakes and style guide violations. |
+
+### → MDX
+
+| Type/Plugin                                                                                      | Comment                                                                                                               |
+| :----------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
+| [mdx-js/eslint-mdx](https://github.com/mdx-js/eslint-mdx/tree/master/packages/eslint-plugin-mdx) | [ESLint](https://eslint.org/) Parser/Plugin for [MDX](https://github.com/mdx-js/mdx), helps you lint all ES syntaxes. |
+
+### → HTML
+
+| Type/Plugin                                                        | Comment                        |
+| :----------------------------------------------------------------- | :----------------------------- |
+| [html-eslint/recommended](https://github.com/yeonjuan/html-eslint) | ESLint plugin for linting HTML |
 
 <br>
 
