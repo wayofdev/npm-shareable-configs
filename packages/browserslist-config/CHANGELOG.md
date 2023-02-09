@@ -1,5 +1,11 @@
 # @wayofdev/browserslist-config
 
+## 1.2.1
+
+### Patch Changes
+
+- [#31](https://github.com/wayofdev/npm-shareable-configs/pull/31) [`25b54fa`](https://github.com/wayofdev/npm-shareable-configs/commit/25b54faf82cc89faa9531cc71bc28d7d29e35560) Thanks [@lotyp](https://github.com/lotyp)! - docs: updating documentation, small fixes
+
 ## 1.2.0
 
 ### Minor Changes
