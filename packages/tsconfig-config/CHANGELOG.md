@@ -1,5 +1,11 @@
 # @wayofdev/tsconfig-config
 
+## 1.3.1
+
+### Patch Changes
+
+- [`336f467`](https://github.com/wayofdev/npm-shareable-configs/commit/336f467362a10239bc6f5610ef53786b1d89f5b9) Thanks [@lotyp](https://github.com/lotyp)! - chore: updating versions
+
 ## 1.3.0
 
 ### Minor Changes
