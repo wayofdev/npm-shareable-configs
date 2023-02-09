@@ -160,8 +160,11 @@ importers:
   packages/htmlhint-config:
     specifiers:
       htmlhint: '>= 1'
+      rimraf: ^4.1.2
     dependencies:
       htmlhint: 1.1.4
+    devDependencies:
+      rimraf: 4.1.2
 
   packages/jest-config:
     specifiers:
