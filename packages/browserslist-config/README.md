@@ -4,7 +4,6 @@
 <img width="456" src="https://raw.githubusercontent.com/wayofdev/next-starter-tpl/master/assets/logo.gh-light-mode-only.png#gh-light-mode-only">
 <img width="456" src="https://raw.githubusercontent.com/wayofdev/next-starter-tpl/master/assets/logo.gh-dark-mode-only.png#gh-dark-mode-only">
 </div>
-
 <br>
 
 <br>
@@ -47,7 +46,7 @@ Add as dev-dependency to your monorepo
 $ pnpm add -wD browserslist @wayofdev/browserslist-config
 ```
 
-Assuming that you have the following structure:
+This package should be added to the root of your monorepo, where you have a file `.browserslistrc` and a `package.json` file. Within your monorepo, you should have a structure with directories for your apps and packages, such as:
 
 ```bash
 .

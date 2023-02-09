@@ -44,6 +44,7 @@
     "deps:update": "pnpm dlx npm-check-updates@latest --configFileName .ncurc.yml -u --deep --mergeConfig && pnpm install",
     "preinstall": "npx only-allow pnpm",
     "lint": "pnpm run lint:md && pnpm run lint:js && pnpm run lint:secrets",
+    "lint:commits": "pnpm commitlint --from HEAD~1 --to HEAD --verbose",
     "lint:fix": "turbo run lint:fix && pnpm lint:package-json",
     "lint:js": "eslint --fix **/*.js",
     "lint:md": "markdownlint --fix **/*.md --ignore '**/node_modules/**' --ignore '**/CHANGELOG.md'",

@@ -17,17 +17,31 @@
     "directory": "packages/commitlint-config"
   },
   "license": "MIT",
-  "author": "lotyp7@gmail.com",
-  "main": "index.js",
+  "author": {
+    "name": "Andrij Orlenko",
+    "email": "lotyp7@gmail.com",
+    "url": "https://github.com/lotyp"
+  },
+  "exports": {
+    ".": {
+      "require": "./src/index.js"
+    }
+  },
+  "main": "src/index.js",
   "files": [
-    "index.js",
+    "src/*",
     "scripts/*"
   ],
   "scripts": {
-    "test": "echo \"No test specified\""
+    "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
+    "lint": "eslint --ext .ts,.js,.cjs,.mjs --cache --cache-location ../../.cache/eslint/commitlint-config.eslintcache",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/commitlint-config.eslintcache"
   },
   "dependencies": {
     "@commitlint/config-conventional": "^17.4.2"
+  },
+  "devDependencies": {
+    "rimraf": "^4.1.2"
   },
   "peerDependencies": {
     "@commitlint/cli": ">= 17"
