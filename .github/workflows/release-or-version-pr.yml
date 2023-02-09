@@ -9,7 +9,7 @@ on: # yamllint disable-line rule:truthy
 jobs:
   release:
     # Basic security: the release job can only be executed from this repo and from the master branch (not a remote thing)
-    if: ${{ github.repository == 'wayofdev/next-starter-tpl' && contains('refs/heads/master',github.ref)}}
+    if: ${{ github.repository == 'wayofdev/npm-shareable-configs' && contains('refs/heads/master',github.ref)}}
     name: Release using ${{ matrix.node }} - ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
@@ -45,6 +45,7 @@ jobs:
           cwd: ${{ github.workspace }}
           publish: pnpm run cs:release
           version: pnpm run cs:version
+          setupGitUser: true
           # Optional, might be used in conjunction with GITHUB_TOKEN to
           # allow running the workflows on a Version package action.
           # Be aware of security implications.
