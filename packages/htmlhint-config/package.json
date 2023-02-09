@@ -17,13 +17,18 @@
     "directory": "packages/htmlhint-config"
   },
   "license": "MIT",
-  "author": "lotyp7@gmail.com",
-  "main": "index.json",
-  "files": [
-    "index.json"
-  ],
+  "author": {
+    "name": "Andrij Orlenko",
+    "email": "lotyp7@gmail.com",
+    "url": "https://github.com/lotyp"
+  },
   "scripts": {
-    "test": "echo \"No test specified\""
+    "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
+    "lint": "eslint --ext .ts,.js,.cjs,.mjs --cache --cache-location ../../.cache/eslint/htmlhint-config.eslintcache",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/htmlhint-config.eslintcache"
+  },
+  "devDependencies": {
+    "rimraf": "^4.1.2"
   },
   "peerDependencies": {
     "htmlhint": ">= 1"
