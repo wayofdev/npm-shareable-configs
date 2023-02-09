@@ -23,8 +23,7 @@
     "eslint-sonar",
     "eslint-storybook",
     "eslint-tailwind",
-    "eslint-tailwindcss",
-    "eslint-typescript"
+    "eslint-tailwindcss"
   ],
   "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/eslint-config-bases#readme",
   "bugs": {

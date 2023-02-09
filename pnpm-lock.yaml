@@ -61,9 +61,12 @@ importers:
     specifiers:
       '@commitlint/cli': '>= 17'
       '@commitlint/config-conventional': ^17.4.2
+      rimraf: ^4.1.2
     dependencies:
       '@commitlint/cli': 17.4.2
       '@commitlint/config-conventional': 17.4.2
+    devDependencies:
+      rimraf: 4.1.2
 
   packages/eslint-config-bases:
     specifiers:
