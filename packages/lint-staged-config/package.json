@@ -22,11 +22,6 @@
     "email": "lotyp7@gmail.com",
     "url": "https://github.com/lotyp"
   },
-  "exports": {
-    ".": {
-      "require": "./src/common.js"
-    }
-  },
   "main": "src/common.js",
   "files": [
     "src/*",

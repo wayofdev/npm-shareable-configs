@@ -88,6 +88,7 @@ importers:
       '@types/react-dom': ^18.0.10
       '@typescript-eslint/eslint-plugin': ^5.51.0
       '@typescript-eslint/parser': ^5.51.0
+      '@wayofdev/lint-staged-config': workspace:*
       es-check: ^7.1.0
       eslint: ^8.33.0
       eslint-config-prettier: ^8.6.0
@@ -125,6 +126,7 @@ importers:
       '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
       '@typescript-eslint/eslint-plugin': 5.51.0_b635kmla6dsb4frxfihkw4m47e
       '@typescript-eslint/parser': 5.51.0_4vsywjlpuriuw3tl5oq6zy5a64
+      '@wayofdev/lint-staged-config': link:../lint-staged-config
       eslint-config-prettier: 8.6.0_eslint@8.33.0
       eslint-import-resolver-typescript: 3.5.3_ohdts44xlqyeyrlje4qnefqeay
       eslint-plugin-import: 2.27.5_kuqv7qxblf6fgldep4hddd7xwa
