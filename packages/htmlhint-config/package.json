@@ -22,10 +22,14 @@
     "email": "lotyp7@gmail.com",
     "url": "https://github.com/lotyp"
   },
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
   "scripts": {
     "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
-    "lint": "eslint --ext .ts,.js,.cjs,.mjs --cache --cache-location ../../.cache/eslint/htmlhint-config.eslintcache",
-    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/htmlhint-config.eslintcache"
+    "lint": "eslint --ext .json --cache --cache-location ../../.cache/eslint/htmlhint-config.eslintcache",
+    "lint:fix": "eslint --ext .json --fix --cache --cache-location ../../.cache/eslint/htmlhint-config.eslintcache"
   },
   "devDependencies": {
     "rimraf": "^4.1.2"
