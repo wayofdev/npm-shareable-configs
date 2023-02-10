@@ -1,1 +1,3 @@
-module.exports = {...require('./packages/secretlint-config/index.json')};
+module.exports = {
+  ...require('@wayofdev/secretlint-config'),
+}

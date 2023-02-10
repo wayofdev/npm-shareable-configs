@@ -17,15 +17,25 @@
     "directory": "packages/lint-staged-config"
   },
   "license": "MIT",
-  "author": "lotyp7@gmail.com",
-  "main": "index.js",
+  "author": {
+    "name": "Andrij Orlenko",
+    "email": "lotyp7@gmail.com",
+    "url": "https://github.com/lotyp"
+  },
+  "exports": {
+    ".": {
+      "require": "./src/common.js"
+    }
+  },
+  "main": "src/common.js",
   "files": [
-    "index.js",
-    "yml.js",
+    "src/*",
     "scripts/*"
   ],
   "scripts": {
-    "test": "echo \"No test specified\""
+    "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
+    "lint": "eslint --ext .ts,.js,.cjs,.mjs --cache --cache-location ../../.cache/eslint/lint-staged-config.eslintcache",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/lint-staged-config.eslintcache"
   },
   "peerDependencies": {
     "lint-staged": ">= 13"

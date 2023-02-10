@@ -67,7 +67,7 @@ This package should be added to the root of your monorepo, where you have a file
    }
    ```
 
-   This extends the `@wayofdev/commitlint-config` configuration and uses its [pre-defined configuration](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/commitlint-config/src/index.js).
+   This extends the `@wayofdev/commitlint-config` configuration and uses its [pre-defined configuration](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/commitlint-config/index.js).
 
    Alternatively the configuration can be defined in a `commitlint.config.js`, `.commitlintrc.js`, `.commitlintrc`, `.commitlintrc.json`, `.commitlintrc.yml` file or a `commitlint` field in `package.json`.
 

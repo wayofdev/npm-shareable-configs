@@ -64,6 +64,8 @@
     "@types/prettier": "^2.7.2",
     "@types/shell-quote": "^1.7.1",
     "@wayofdev/eslint-config-bases": "workspace:*",
+    "@wayofdev/lint-staged-config": "workspace:*",
+    "@wayofdev/secretlint-config": "workspace:*",
     "commitizen": "^4.3.0",
     "eslint": "^8.33.0",
     "husky": "^8.0.3",

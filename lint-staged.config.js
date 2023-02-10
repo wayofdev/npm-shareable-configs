@@ -1,17 +1,3 @@
-// const jsConfig = require('./packages/lint-staged-config');
-// const ymlConfig = require('./packages/lint-staged-config/yml');
-//
-// module.exports = {
-//     // check for credentials
-//     '*': ['secretlint'],
-//     ...ymlConfig,
-//     ...jsConfig,
-//     // lint and fix changed markdown files
-//     '*.md': ['prettier --cache --write', 'markdownlint'],
-//     // lint and fix changed json files
-//     '*.json': ['prettier --cache --write'],
-// };
-
 // @ts-check
 
 /**
@@ -22,7 +8,7 @@
  * {@link https://github.com/okonet/lint-staged#how-to-use-lint-staged-in-a-multi-package-monorepo}
  */
 
-const { concatFilesForPrettier } = require('./lint-staged.common.js')
+const { concatFilesForPrettier } = require('@wayofdev/lint-staged-config')
 
 /**
  * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
@@ -30,6 +16,9 @@ const { concatFilesForPrettier } = require('./lint-staged.common.js')
 const rules = {
   '**/*.{json,md,mdx,css,html,yml,yaml,scss,ts,js,tsx,jsx,mjs}': filenames => {
     return [`prettier --write ${concatFilesForPrettier(filenames)}`]
+  },
+  '**/*': filenames => {
+    return [`secretlint ${concatFilesForPrettier(filenames)}`]
   },
 }
 
