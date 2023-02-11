@@ -23,13 +23,14 @@
     "url": "https://github.com/lotyp"
   },
   "main": "src/common.js",
+  "types": "src/index.d.ts",
   "files": [
     "src/*",
     "scripts/*"
   ],
   "scripts": {
     "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
-    "lint": "eslint --ext .ts,.js,.cjs,.mjs --cache --cache-location ../../.cache/eslint/lint-staged-config.eslintcache",
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --cache --cache-location ../../.cache/eslint/lint-staged-config.eslintcache",
     "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/lint-staged-config.eslintcache"
   },
   "peerDependencies": {
