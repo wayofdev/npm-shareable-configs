@@ -17,13 +17,20 @@
     "directory": "packages/markdownlint-config"
   },
   "license": "MIT",
-  "author": "lotyp7@gmail.com",
+  "author": {
+    "name": "Andrij Orlenko",
+    "email": "lotyp7@gmail.com",
+    "url": "https://github.com/lotyp"
+  },
   "main": "index.json",
   "files": [
     "index.json",
     "scripts/*"
   ],
   "scripts": {
+    "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --cache --cache-location ../../.cache/eslint/markdownlint-config.eslintcache",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/markdownlint-config.eslintcache",
     "test": "echo \"No test specified\""
   },
   "dependencies": {

@@ -29,8 +29,8 @@
   ],
   "scripts": {
     "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
-    "lint": "eslint --ext .js,.json --cache --cache-location ../../.cache/eslint/secretlint-config.eslintcache",
-    "lint:fix": "eslint --ext .js,.json --fix --cache --cache-location ../../.cache/eslint/secretlint-config.eslintcache"
+    "lint": "eslint --ext .js --cache --cache-location ../../.cache/eslint/secretlint-config.eslintcache",
+    "lint:fix": "eslint --ext .js --fix --cache --cache-location ../../.cache/eslint/secretlint-config.eslintcache"
   },
   "dependencies": {
     "@secretlint/secretlint-rule-preset-recommend": "^6.2.0"

@@ -35,7 +35,8 @@
   "scripts": {
     "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
     "lint": "eslint --ext .ts,.js,.cjs,.mjs --cache --cache-location ../../.cache/eslint/browserslist-config.eslintcache",
-    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/browserslist-config.eslintcache"
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/browserslist-config.eslintcache",
+    "test": "echo \"No test specified\""
   },
   "dependencies": {
     "browserslist": "^4.21.5"

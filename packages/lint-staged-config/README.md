@@ -40,7 +40,10 @@ To use this configuration, you'll need to install `@wayofdev/lint-staged-config`
 
 ```bash
 # Install as dev-dependency in the root of the mono-repository
-$ pnpm add -wD @lint-staged @wayofdev/lint-staged-config
+$ pnpm add -wD lint-staged @wayofdev/lint-staged-config
+
+# Optional, to lint for secrets and sort package.json files
+$ pnpm add -wD secretlint sort-package-json
 ```
 
 This package should be installed in the root of your mono-repository, where you will create a file `lint-staged.config.js`. Within your monorepo, you should have a structure with directories for your apps and packages, such as:
@@ -89,23 +92,69 @@ This package should be installed in the root of your mono-repository, where you 
      "**/*.{json,md,mdx,css,html,yml,yaml,scss,ts,js,tsx,jsx,mjs}": filenames => {
        return [`prettier --write ${concatFilesForPrettier(filenames)}`]
      },
-     "*": () => {
-       return [`secretlint`]
+     '**/*': () => [`secretlint`],
+     'package.json,packages/*/package.json,apps/*/package.json': () => [`sort-package-json`],
+   }
+
+   module.exports = rules
+   ```
+
+2. If needed, override the base `lint-staged.config.js` in each package or application.
+
+   Example `lint-staged.config.js` in folder `./packages/eslint-config-bases/`
+
+   ```typescript
+   // @ts-check
+
+   /**
+    * This files overrides the base lint-staged.config.js present in the root directory.
+    * It allows to run eslint based the package specific requirements.
+    * {@link https://github.com/okonet/lint-staged#how-to-use-lint-staged-in-a-multi-package-monorepo}
+    * {@link https://github.com/belgattitude/nextjs-monorepo-example/blob/main/docs/about-lint-staged.md}
+    */
+
+   const { concatFilesForPrettier, getEslintFixCmd } = require('@wayofdev/lint-staged-config')
+
+   /**
+    * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
+    */
+   const rules = {
+     '**/*.{js,jsx,ts,tsx}': filenames => {
+       return getEslintFixCmd({
+         cwd: __dirname,
+         fix: true,
+         cache: true,
+         // when autofixing staged-files a good tip is to disable react-hooks/exhaustive-deps, cause
+         // a change here can potentially break things without proper visibility.
+         rules: ['react-hooks/exhaustive-deps: off'],
+         maxWarnings: 25,
+         files: filenames,
+       })
+     },
+     '**/*.{json,md,mdx,css,html,yml,yaml,scss}': filenames => {
+       return [`prettier --write ${concatFilesForPrettier(filenames)}`]
      },
    }
 
    module.exports = rules
    ```
 
-2. @todo
-
-3. @todo
+3. Set up the `pre-commit` git hook to run *lint-staged*
+   * [Husky](https://github.com/typicode/husky) is a popular choice for configuring git hooks
+   * Read more about git hooks [here](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+4. Don't forget to commit changes to `package.json` and `.husky` to share this setup with your team!
 
 <br>
 
 ## 💻 Usage
 
-@todo
+After installing `@wayofdev/lint-staged-config` and setting up the `pre-commit` git hook with Husky, you can now run the following command:
+
+```
+git add . && git commit -am 'feat: adding lint-staged'
+```
+
+This will automatically trigger the checks defined in your `lint-staged.config.js` file for all the files that have been staged for commit. This will help you catch common errors and enforce a consistent coding style before the code is committed to source control.
 
 <br>
 

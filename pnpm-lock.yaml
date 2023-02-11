@@ -215,10 +215,13 @@ importers:
   packages/secretlint-config:
     specifiers:
       '@secretlint/secretlint-rule-preset-recommend': ^6.2.0
+      rimraf: ^4.1.2
       secretlint: '>= 6'
     dependencies:
       '@secretlint/secretlint-rule-preset-recommend': 6.2.0
       secretlint: 6.2.0
+    devDependencies:
+      rimraf: 4.1.2
 
   packages/stylelint-config:
     specifiers:
