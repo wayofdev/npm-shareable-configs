@@ -92,8 +92,8 @@ This package should be installed in the root of your mono-repository, where you 
      "**/*.{json,md,mdx,css,html,yml,yaml,scss,ts,js,tsx,jsx,mjs}": filenames => {
        return [`prettier --write ${concatFilesForPrettier(filenames)}`]
      },
-     '**/*': () => [`secretlint`],
-     'package.json,packages/*/package.json,apps/*/package.json': () => [`sort-package-json`],
+     "**/*": () => [`secretlint`],
+     "package.json,packages/*/package.json,apps/*/package.json": () => [`sort-package-json`],
    }
 
    module.exports = rules
@@ -113,25 +113,25 @@ This package should be installed in the root of your mono-repository, where you 
     * {@link https://github.com/belgattitude/nextjs-monorepo-example/blob/main/docs/about-lint-staged.md}
     */
 
-   const { concatFilesForPrettier, getEslintFixCmd } = require('@wayofdev/lint-staged-config')
+   const { concatFilesForPrettier, getEslintFixCmd } = require("@wayofdev/lint-staged-config")
 
    /**
     * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
     */
    const rules = {
-     '**/*.{js,jsx,ts,tsx}': filenames => {
+     "**/*.{js,jsx,ts,tsx}": filenames => {
        return getEslintFixCmd({
          cwd: __dirname,
          fix: true,
          cache: true,
          // when autofixing staged-files a good tip is to disable react-hooks/exhaustive-deps, cause
          // a change here can potentially break things without proper visibility.
-         rules: ['react-hooks/exhaustive-deps: off'],
+         rules: ["react-hooks/exhaustive-deps: off"],
          maxWarnings: 25,
          files: filenames,
        })
      },
-     '**/*.{json,md,mdx,css,html,yml,yaml,scss}': filenames => {
+     "**/*.{json,md,mdx,css,html,yml,yaml,scss}": filenames => {
        return [`prettier --write ${concatFilesForPrettier(filenames)}`]
      },
    }
@@ -139,9 +139,9 @@ This package should be installed in the root of your mono-repository, where you 
    module.exports = rules
    ```
 
-3. Set up the `pre-commit` git hook to run *lint-staged*
-   * [Husky](https://github.com/typicode/husky) is a popular choice for configuring git hooks
-   * Read more about git hooks [here](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+3. Set up the `pre-commit` git hook to run _lint-staged_
+   - [Husky](https://github.com/typicode/husky) is a popular choice for configuring git hooks
+   - Read more about git hooks [here](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 4. Don't forget to commit changes to `package.json` and `.husky` to share this setup with your team!
 
 <br>

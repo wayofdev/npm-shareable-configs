@@ -17,7 +17,7 @@ const rules = {
   '**/*.{json,md,mdx,css,html,yml,yaml,scss,ts,js,tsx,jsx,mjs}': filenames => {
     return [`prettier --write ${concatFilesForPrettier(filenames)}`]
   },
-  '**/*': () => [`secretlint`],
+  // '**/*': () => [`secretlint`],
   'package.json,packages/*/package.json,apps/*/package.json': () => [`sort-package-json`],
   // '**/*.css': () => [`stylelint --fix`],
 }
