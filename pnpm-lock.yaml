@@ -189,8 +189,7 @@ importers:
   packages/postcss-config:
     specifiers:
       autoprefixer: ^10.4.13
-      browserslist: ^4.21.5
-      postcss: '>= 8'
+      postcss: ^8.4.21
       postcss-100vh-fix: ^1.0.2
       postcss-cli: ^10.1.0
       postcss-flexbugs-fixes: ^5.0.2
@@ -201,7 +200,6 @@ importers:
       tailwindcss: '>= 3'
     dependencies:
       autoprefixer: 10.4.13_postcss@8.4.21
-      browserslist: 4.21.5
       postcss: 8.4.21
       postcss-100vh-fix: 1.0.2_postcss@8.4.21
       postcss-cli: 10.1.0_postcss@8.4.21
