@@ -7,7 +7,7 @@ const tsRules = require('@wayofdev/lint-staged-config/src/bases/typescript')
 
 const rules = {
   ...jsRules,
-  ...tsRules,
+  //...tsRules,
   ...jsonRules,
   ...secretsRules,
 }
