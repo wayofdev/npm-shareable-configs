@@ -66,6 +66,7 @@
     "@wayofdev/eslint-config-bases": "workspace:*",
     "@wayofdev/lint-staged-config": "workspace:*",
     "@wayofdev/secretlint-config": "workspace:*",
+    "actionlint": "^2.0.6",
     "commitizen": "^4.3.0",
     "eslint": "^8.33.0",
     "husky": "^8.0.3",
@@ -79,6 +80,12 @@
     "shell-quote": "^1.8.0",
     "sort-package-json": "^2.4.1",
     "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "actionlint": "^2.0.6",
+    "secretlint": "^6.2.0",
+    "sort-package-json": "^2.4.1",
+    "markdownlint": "^0.27.0"
   },
   "packageManager": "pnpm@7.27.0",
   "engines": {

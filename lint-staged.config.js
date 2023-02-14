@@ -1,25 +1,15 @@
 // @ts-check
 
-/**
- * This is the base lint-staged rules config and just includes prettier by default.
- * A good practice is to override this base configuration in each package and/or application
- * where we are able to add customization depending on the nature of the project (eslint...).
- *
- * {@link https://github.com/okonet/lint-staged#how-to-use-lint-staged-in-a-multi-package-monorepo}
- */
+const jsonRules = require('@wayofdev/lint-staged-config/src/bases/json')
+const secretsRules = require('@wayofdev/lint-staged-config/src/bases/secrets')
+const jsRules = require('@wayofdev/lint-staged-config/src/bases/javascript')
+const tsRules = require('@wayofdev/lint-staged-config/src/bases/typescript')
 
-const { concatFilesForPrettier } = require('@wayofdev/lint-staged-config')
-
-/**
- * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
- */
 const rules = {
-  '**/*.{json,md,mdx,css,html,yml,yaml,scss,ts,js,tsx,jsx,mjs}': filenames => {
-    return [`prettier --write ${concatFilesForPrettier(filenames)}`]
-  },
-  // '**/*': () => [`secretlint`],
-  'package.json,packages/*/package.json,apps/*/package.json': () => [`sort-package-json`],
-  // '**/*.css': () => [`stylelint --fix`],
+  ...jsRules,
+  ...tsRules,
+  ...jsonRules,
+  ...secretsRules,
 }
 
 module.exports = rules

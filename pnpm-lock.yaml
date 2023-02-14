@@ -14,6 +14,7 @@ importers:
       '@wayofdev/eslint-config-bases': workspace:*
       '@wayofdev/lint-staged-config': workspace:*
       '@wayofdev/secretlint-config': workspace:*
+      actionlint: ^2.0.6
       commitizen: ^4.3.0
       eslint: ^8.33.0
       husky: ^8.0.3
@@ -38,6 +39,7 @@ importers:
       '@wayofdev/eslint-config-bases': link:packages/eslint-config-bases
       '@wayofdev/lint-staged-config': link:packages/lint-staged-config
       '@wayofdev/secretlint-config': link:packages/secretlint-config
+      actionlint: 2.0.6
       commitizen: 4.3.0
       eslint: 8.33.0
       husky: 8.0.3
@@ -2305,6 +2307,10 @@ packages:
     resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+
+  /actionlint/2.0.6:
+    resolution: {integrity: sha512-tNx8f48yJNSLXTIygGntu5dSZlIZblDt8sR7pIs7EEmmb2PkEF87d+3UKZV2GUgCuN9Awj7k4ZPrwdAxFWEqgw==}
+    dev: true
 
   /aggregate-error/3.1.0:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
