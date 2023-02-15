@@ -1,5 +1,8 @@
 const { concatFilesForPrettier } = require('../common')
 
+/**
+ * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
+ */
 const rules = {
   '**/*.{gql,graphql}': filenames => {
     return [`prettier --write ${concatFilesForPrettier(filenames)}`]

@@ -7,7 +7,12 @@
  * {@link https://github.com/belgattitude/nextjs-monorepo-example/blob/main/docs/about-lint-staged.md}
  */
 
-const { concatFilesForPrettier, getEslintFixCmd } = require('@wayofdev/lint-staged-config')
+const { getEslintFixCmd } = require('@wayofdev/lint-staged-config')
+const jsonRules = require('@wayofdev/lint-staged-config/src/bases/json')
+const secretsRules = require('@wayofdev/lint-staged-config/src/bases/secrets')
+const mdRules = require('@wayofdev/lint-staged-config/src/bases/md')
+const yamlRules = require('@wayofdev/lint-staged-config/src/bases/yaml')
+const htmlRules = require('@wayofdev/lint-staged-config/src/bases/html')
 
 /**
  * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
@@ -25,9 +30,11 @@ const rules = {
       files: filenames,
     })
   },
-  '**/*.{json,md,mdx,css,html,yml,yaml,scss}': filenames => {
-    return [`prettier --write ${concatFilesForPrettier(filenames)}`]
-  },
+  ...jsonRules,
+  ...secretsRules,
+  ...mdRules,
+  ...yamlRules,
+  ...htmlRules,
 }
 
 module.exports = rules
