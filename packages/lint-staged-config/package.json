@@ -28,10 +28,49 @@
     "src/*",
     "scripts/*"
   ],
+  "exports": {
+    ".": {
+      "require": "./src/common.js"
+    },
+    "./css": {
+      "require": "./src/bases/css.js"
+    },
+    "./graphql": {
+      "require": "./src/bases/graphql.js"
+    },
+    "./html": {
+      "require": "./src/bases/html.js"
+    },
+    "./json": {
+      "require": "./src/bases/json.js"
+    },
+    "./md": {
+      "require": "./src/bases/md.js"
+    },
+    "./mdx": {
+      "require": "./src/bases/mdx.js"
+    },
+    "./secrets": {
+      "require": "./src/bases/secrets.js"
+    },
+    "./yaml": {
+      "require": "./src/bases/yaml.js"
+    }
+  },
   "scripts": {
     "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
     "lint": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --cache --cache-location ../../.cache/eslint/lint-staged-config.eslintcache",
-    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/lint-staged-config.eslintcache"
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/lint-staged-config.eslintcache",
+    "lint:types": "tsc --project tsconfig.json --noEmit",
+    "lint:dist": "es-check -v"
+  },
+  "devDependencies": {
+    "es-check": "^7.1.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.11.18",
+    "@types/prettier": "^2.7.2",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10"
   },
   "peerDependencies": {
     "lint-staged": ">= 13"

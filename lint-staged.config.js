@@ -1,10 +1,12 @@
 // @ts-check
 
-const jsonRules = require('@wayofdev/lint-staged-config/src/bases/json')
-const secretsRules = require('@wayofdev/lint-staged-config/src/bases/secrets')
-const mdRules = require('@wayofdev/lint-staged-config/src/bases/md')
-const yamlRules = require('@wayofdev/lint-staged-config/src/bases/yaml')
-const { concatFilesForPrettier } = require('@wayofdev/lint-staged-config')
+const {
+  concatFilesForPrettier,
+  jsonRules,
+  secretsRules,
+  mdRules,
+  yamlRules,
+} = require('@wayofdev/lint-staged-config')
 
 const rules = {
   ...jsonRules,

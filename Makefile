@@ -90,8 +90,9 @@ build: ## Build all packages inside monorepo
 .PHONY: build
 
 purge: ## Deletes node modules and temporary files
-	rm -rf .pnpm-store node_modules && \
-	rm -rf **/node_modules pnpm-lock.yaml **/.turbo **/.next
+	find . | grep /node_modules$ | grep -v /node_modules/ | xargs rm -fR
+	find . | grep /.turbo$ | grep -v /.turbo/ | xargs rm -fR
+	rm -rf .pnpm-store pnpm-lock.yaml
 .PHONY: purge
 
 deps-check: ## Check for outdated dependencies

@@ -7,18 +7,20 @@
  * {@link https://github.com/belgattitude/nextjs-monorepo-example/blob/main/docs/about-lint-staged.md}
  */
 
-const { getEslintFixCmd } = require('@wayofdev/lint-staged-config')
-const jsonRules = require('@wayofdev/lint-staged-config/src/bases/json')
-const secretsRules = require('@wayofdev/lint-staged-config/src/bases/secrets')
-const mdRules = require('@wayofdev/lint-staged-config/src/bases/md')
-const yamlRules = require('@wayofdev/lint-staged-config/src/bases/yaml')
-const htmlRules = require('@wayofdev/lint-staged-config/src/bases/html')
+const {
+  getEslintFixCmd,
+  jsonRules,
+  secretsRules,
+  mdRules,
+  yamlRules,
+  htmlRules,
+} = require('@wayofdev/lint-staged-config')
 
 /**
- * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
+ * @typedef {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>} LintRule
  */
 const rules = {
-  '**/*.{js,jsx,ts,tsx}': filenames => {
+  '**/*.{js,jsx,ts,tsx}': (/** @type {any} */ filenames) => {
     return getEslintFixCmd({
       cwd: __dirname,
       fix: true,

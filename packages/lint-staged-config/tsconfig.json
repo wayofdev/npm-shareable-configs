@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "@wayofdev/eslint-config-bases",
+  "display": "@wayofdev/lint-staged-config",
   "extends": "./../../tsconfig.base.json",
   "compilerOptions": {
     "strict": true,
