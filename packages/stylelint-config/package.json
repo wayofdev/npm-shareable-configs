@@ -48,7 +48,7 @@
     "es-check": "^7.1.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.0 || 15.0.0"
+    "stylelint": "^14.0.0 || 15.0.0 || 15.1"
   },
   "publishConfig": {
     "access": "public"
