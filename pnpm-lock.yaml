@@ -86,7 +86,7 @@ importers:
       '@html-eslint/eslint-plugin': ^0.16.0
       '@html-eslint/parser': ^0.16.0
       '@rushstack/eslint-patch': ^1.2.0
-      '@tanstack/eslint-plugin-query': 4.24.5
+      '@tanstack/eslint-plugin-query': 4.24.8
       '@testing-library/jest-dom': ^5.16.5
       '@testing-library/react': ^14.0.0
       '@types/jest': ^29.4.0
@@ -129,7 +129,7 @@ importers:
       '@html-eslint/eslint-plugin': 0.16.0
       '@html-eslint/parser': 0.16.0
       '@rushstack/eslint-patch': 1.2.0
-      '@tanstack/eslint-plugin-query': 4.24.5
+      '@tanstack/eslint-plugin-query': 4.24.8
       '@testing-library/jest-dom': 5.16.5
       '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
       '@typescript-eslint/eslint-plugin': 5.52.0_6cfvjsbua5ptj65675bqcn6oza
@@ -1811,8 +1811,8 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@tanstack/eslint-plugin-query/4.24.5:
-    resolution: {integrity: sha512-KvuRkA9fYRZF9umwpLpWLcEqAVK7IWK8qjmnR3iwPIpkTFNGzaGogs7YkRCZs6q77QxI+c6MWG4xwjLIK/UmdA==}
+  /@tanstack/eslint-plugin-query/4.24.8:
+    resolution: {integrity: sha512-0ND7PSwsceAhuI+acdGiEK1D+LvP/EYESwtxAGhQ0yYLUPB6xAWHiytXokQcL5PgHMpiqe1+NWcRSH/U3NFtrA==}
     dev: false
 
   /@testing-library/dom/8.20.0:
