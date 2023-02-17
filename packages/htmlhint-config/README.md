@@ -26,26 +26,25 @@ Package that contains shareable configurations for [HTMLHint](https://github.com
 
 ### → Purpose
 
-The purpose of this package is to provide a shared set of rules for [HTMLHint](https://github.com/htmlhint/HTMLHint) to ensure consistent coding practices across a team or organization. The shared configuration helps avoid inconsistencies and ensures that everyone follows the latest best practices and guidelines.
+This package aims to provide a shared set of rules for [HTMLHint](https://github.com/htmlhint/HTMLHint) to ensure consistent coding practices across a team or organization.
 
-[HTMLHint](https://github.com/htmlhint/HTMLHint) is a useful tool for improving HTML code quality, and this package makes it easier for teams to use HTMLHint effectively.
+- Provide a shared configuration that helps avoid inconsistencies and ensures that everyone follows the latest best practices and guidelines.
+- Make it easier for teams to use [HTMLHint](https://github.com/htmlhint/HTMLHint) effectively and improve the quality of their HTML code.
 
 <br>
 
 ## 💿 Installation
 
-To use this configuration, you'll need to install the `@commitlint/cli` package as a devDependency in your project:
+To use this configuration, you'll need to install the `htmlhint` and `@wayofdev/htmlhint-config` packages as devDependencies in your project. These packages should be installed in the `package.json` file of the specific app or package that needs them:
 
 ```bash
-# Install as dev-dependency into root of monorepo
-$ pnpm add -wD htmlhint @wayofdev/htmlhint-config
+pnpm --filter=my-first-app add -D htmlhint @wayofdev/htmlhint-config
 ```
 
 This package should be added to the root of your monorepo, where you have a file `.htmlhintrc` and a `package.json` file. Within your monorepo, you should have a structure with directories for your apps and packages, such as:
 
 ```bash
 .
-├── commitlint.config.js (root)
 ├── package.json (root)
 ├── apps
 │   └── my-first-app
@@ -57,28 +56,25 @@ This package should be added to the root of your monorepo, where you have a file
         └── ... (other package files)
 ```
 
-<br>
-
 ### → Configure
 
 To configure the `htmlhint`, add script to `package.json`
 
 ```bash
-$ pnpm pkg set \
-	scripts.lint:html="htmlhint --config ./node_modules/@wayofdev/htmlhint-config/index.json **/*.html"
+pnpm pkg set scripts.lint:html="htmlhint --config ./node_modules/@wayofdev/htmlhint-config/index.json **/*.html"
 ```
 
 <br>
 
 ## 💻 Usage
 
-Manually, using pnpm command
+You can run the `htmlhint` command manually using the following `pnpm` command:
 
 ```bash
-$ pnpm lint:html
+pnpm --filter=my-first-app lint:html
 ```
 
-Or, can be added to [lint-staged](https://github.com/okonet/lint-staged) configuration, to run together with [Husky](https://typicode.github.io/husky/#/) git hooks.
+Alternatively, you can add it to [lint-staged](https://github.com/okonet/lint-staged) configuration to run together with [Husky](https://typicode.github.io/husky/#/) git hooks.
 
 <br>
 

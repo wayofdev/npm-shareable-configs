@@ -64,8 +64,6 @@ This package should be installed in the root of your mono-repository, where you 
         └── ... (other package files)
 ```
 
-<br>
-
 ### → Configure
 
 1. Create `lint-staged.config.js` file in root of mono-repository and add lines:
@@ -73,32 +71,27 @@ This package should be installed in the root of your mono-repository, where you 
    ```javascript
    // @ts-check
    
-   /**
-    * This is the base lint-staged rules config and just includes prettier by default.
-    * A good practice is to override this base configuration in each package and/or application
-    * where we are able to add customization depending on the nature of the project (eslint...).
-    *
-    * {@link https://github.com/okonet/lint-staged#how-to-use-lint-staged-in-a-multi-package-monorepo}
-    */
-   
    const {
      concatFilesForPrettier,
-   } = require("@wayofdev/lint-staged-config/src/lint-staged.common.js")
+     jsonRules,
+     secretsRules,
+     mdRules,
+     yamlRules,
+   } = require('@wayofdev/lint-staged-config')
    
-   /**
-    * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
-    */
    const rules = {
-     "**/*.{json,md,mdx,css,html,yml,yaml,scss,ts,js,tsx,jsx,mjs}": filenames => {
+     ...jsonRules,
+     ...yamlRules,
+     ...secretsRules,
+     ...mdRules,
+     '**/*.{js,jsx,cjs,mjs,ts,tsx,mts,cts}': filenames => {
        return [`prettier --write ${concatFilesForPrettier(filenames)}`]
      },
-     "**/*": () => [`secretlint`],
-     "package.json,packages/*/package.json,apps/*/package.json": () => [`sort-package-json`],
    }
    
    module.exports = rules
    ```
-
+   
 2. If needed, override the base `lint-staged.config.js` in each package or application.
 
    Example `lint-staged.config.js` in folder `./packages/eslint-config-bases/`
@@ -106,34 +99,36 @@ This package should be installed in the root of your mono-repository, where you 
    ```typescript
    // @ts-check
    
-   /**
-    * This files overrides the base lint-staged.config.js present in the root directory.
-    * It allows to run eslint based the package specific requirements.
-    * {@link https://github.com/okonet/lint-staged#how-to-use-lint-staged-in-a-multi-package-monorepo}
-    * {@link https://github.com/belgattitude/nextjs-monorepo-example/blob/main/docs/about-lint-staged.md}
-    */
+   const {
+     getEslintFixCmd,
+     jsonRules,
+     secretsRules,
+     mdRules,
+     yamlRules,
+     htmlRules,
+   } = require('@wayofdev/lint-staged-config')
    
-   const { concatFilesForPrettier, getEslintFixCmd } = require("@wayofdev/lint-staged-config")
-   
    /**
-    * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
+    * @typedef {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>} LintRule
     */
    const rules = {
-     "**/*.{js,jsx,ts,tsx}": filenames => {
+     '**/*.{js,jsx,ts,tsx}': (/** @type {any} */ filenames) => {
        return getEslintFixCmd({
          cwd: __dirname,
          fix: true,
          cache: true,
          // when autofixing staged-files a good tip is to disable react-hooks/exhaustive-deps, cause
          // a change here can potentially break things without proper visibility.
-         rules: ["react-hooks/exhaustive-deps: off"],
+         rules: ['react-hooks/exhaustive-deps: off'],
          maxWarnings: 25,
          files: filenames,
        })
      },
-     "**/*.{json,md,mdx,css,html,yml,yaml,scss}": filenames => {
-       return [`prettier --write ${concatFilesForPrettier(filenames)}`]
-     },
+     ...jsonRules,
+     ...secretsRules,
+     ...mdRules,
+     ...yamlRules,
+     ...htmlRules,
    }
    
    module.exports = rules
@@ -144,19 +139,19 @@ This package should be installed in the root of your mono-repository, where you 
    Install `husky` as dev-dependency into root of monorepo
 
    ```bash
-   $ pnpm add -wD husky is-ci
+   pnpm add -wD husky is-ci
    ```
 
    Activate hooks:
 
    ```bash
-   $ pnpm husky install
+   pnpm husky install
    ```
 
    Add lint-staged hook:
 
    ```bash
-   $ npx husky add .husky/pre-commit 'pnpm lint-staged --verbose --concurrent false'
+   npx husky add .husky/pre-commit 'pnpm lint-staged --verbose --concurrent false'
    ```
 
    Read more about git hooks [here](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
@@ -169,7 +164,7 @@ This package should be installed in the root of your mono-repository, where you 
 
 After installing `@wayofdev/lint-staged-config` and setting up the `pre-commit` git hook with Husky, you can now run the following command:
 
-```
+```bash
 git add . && git commit -am 'feat: adding lint-staged'
 ```
 

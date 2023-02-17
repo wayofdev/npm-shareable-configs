@@ -17,16 +17,22 @@
     "directory": "packages/tsconfig-config"
   },
   "license": "MIT",
-  "author": "lotyp7@gmail.com",
-  "main": "tsconfig.json",
+  "author": {
+    "name": "Andrij Orlenko",
+    "email": "lotyp7@gmail.com",
+    "url": "https://github.com/lotyp"
+  },
+  "main": "bases/base.json",
   "files": [
-    "base.json",
-    "lib.json",
-    "next.json",
+    "bases/base.json",
+    "bases/lib.json",
+    "bases/next.json",
     "scripts/*"
   ],
   "scripts": {
-    "test": "echo \"No test specified\""
+    "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --cache --cache-location ../../.cache/eslint/tsconfig-config.eslintcache",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/tsconfig-config.eslintcache"
   },
   "peerDependencies": {
     "typescript": ">= 4"

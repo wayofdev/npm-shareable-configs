@@ -7,5 +7,5 @@ module.exports = {
     project: 'tsconfig.json',
   },
   ignorePatterns: [...getDefaultIgnorePatterns()],
-  extends: ['./src/bases/typescript', './src/bases/prettier-plugin'],
+  extends: ['./src/bases/typescript', './src/bases/prettier-plugin', './src/bases/mdx'],
 }

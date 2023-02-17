@@ -35,12 +35,15 @@
   "scripts": {
     "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
     "lint": "eslint --ext .ts,.js,.cjs,.mjs --cache --cache-location ../../.cache/eslint/commitlint-config.eslintcache",
-    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/commitlint-config.eslintcache"
+    "lint:dist": "es-check -v",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/commitlint-config.eslintcache",
+    "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
     "@commitlint/config-conventional": "^17.4.2"
   },
   "devDependencies": {
+    "es-check": "^7.1.0",
     "rimraf": "^4.1.2"
   },
   "peerDependencies": {

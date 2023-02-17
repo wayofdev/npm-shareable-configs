@@ -29,7 +29,8 @@
   "scripts": {
     "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
     "lint": "eslint --ext .json --cache --cache-location ../../.cache/eslint/htmlhint-config.eslintcache",
-    "lint:fix": "eslint --ext .json --fix --cache --cache-location ../../.cache/eslint/htmlhint-config.eslintcache"
+    "lint:fix": "eslint --ext .json --fix --cache --cache-location ../../.cache/eslint/htmlhint-config.eslintcache",
+    "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "devDependencies": {
     "rimraf": "^4.1.2"

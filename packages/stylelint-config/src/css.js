@@ -13,8 +13,6 @@ module.exports = {
     'stylelint-config-standard',
     // accessibility rules
     'stylelint-a11y/recommended',
-    // adds prettier as a stylelint rule
-    'stylelint-prettier/recommended',
   ],
   // https://github.com/ismay/stylelint-no-unsupported-browser-features#recommendations
   rules: {
@@ -25,5 +23,6 @@ module.exports = {
       },
     ],
     'plugin/no-low-performance-animation-properties': true,
+    "declaration-property-value-no-unknown": true
   },
 }

@@ -22,12 +22,6 @@
     "email": "lotyp7@gmail.com",
     "url": "https://github.com/lotyp"
   },
-  "main": "src/common.js",
-  "types": "src/index.d.ts",
-  "files": [
-    "src/*",
-    "scripts/*"
-  ],
   "exports": {
     ".": {
       "require": "./src/common.js"
@@ -57,20 +51,26 @@
       "require": "./src/bases/yaml.js"
     }
   },
+  "main": "src/common.js",
+  "types": "src/index.d.ts",
+  "files": [
+    "src/*",
+    "scripts/*"
+  ],
   "scripts": {
     "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
     "lint": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --cache --cache-location ../../.cache/eslint/lint-staged-config.eslintcache",
+    "lint:dist": "es-check -v",
     "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/lint-staged-config.eslintcache",
-    "lint:types": "tsc --project tsconfig.json --noEmit",
-    "lint:dist": "es-check -v"
+    "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "devDependencies": {
-    "es-check": "^7.1.0",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.11.18",
     "@types/prettier": "^2.7.2",
     "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10"
+    "@types/react-dom": "^18.0.10",
+    "es-check": "^7.1.0"
   },
   "peerDependencies": {
     "lint-staged": ">= 13"

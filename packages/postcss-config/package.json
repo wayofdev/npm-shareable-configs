@@ -35,8 +35,9 @@
   "scripts": {
     "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
     "lint": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --cache --cache-location ../../.cache/eslint/postcss-config.eslintcache",
+    "lint:dist": "es-check -v",
     "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/postcss-config.eslintcache",
-    "test": "echo \"No test specified\""
+    "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
@@ -47,6 +48,10 @@
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^8.0.1",
     "postcss-reporter": "^7.0.5"
+  },
+  "devDependencies": {
+    "@types/postcss-reporter": "^7.0.1",
+    "es-check": "^7.1.0"
   },
   "peerDependencies": {
     "postcss": ">= 8",

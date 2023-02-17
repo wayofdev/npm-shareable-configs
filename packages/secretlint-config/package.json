@@ -30,7 +30,8 @@
   "scripts": {
     "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
     "lint": "eslint --ext .js --cache --cache-location ../../.cache/eslint/secretlint-config.eslintcache",
-    "lint:fix": "eslint --ext .js --fix --cache --cache-location ../../.cache/eslint/secretlint-config.eslintcache"
+    "lint:fix": "eslint --ext .js --fix --cache --cache-location ../../.cache/eslint/secretlint-config.eslintcache",
+    "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
     "@secretlint/secretlint-rule-preset-recommend": "^6.2.0"

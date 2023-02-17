@@ -1,12 +1,18 @@
 const fs = require('node:fs')
 const path = require('node:path')
 
-const filePath = path.join(process.env.INIT_CWD, 'commitlint.config.js')
+const initCwd = process.env.INIT_CWD
 
-const fileConfigObject = {
-  extends: '@wayofdev/commitlint-config',
-}
+if (initCwd) {
+  const filePath = path.join(initCwd, 'commitlint.config.js')
 
-if (!fs.existsSync(filePath)) {
-  fs.writeFileSync(filePath, `module.exports = ${JSON.stringify(fileConfigObject, undefined, 2)}`)
+  const fileConfigObject = {
+    extends: '@wayofdev/commitlint-config',
+  }
+
+  if (!fs.existsSync(filePath)) {
+    fs.writeFileSync(filePath, `module.exports = ${JSON.stringify(fileConfigObject, undefined, 2)}`)
+  }
+} else {
+  console.error('INIT_CWD environment variable is not defined')
 }

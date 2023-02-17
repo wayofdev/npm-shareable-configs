@@ -35,13 +35,15 @@ The purpose of the package is to provide composable and monorepo friendly [eslin
 
 ## 💿 Installation
 
-Add as dev-dependency to your monorepo workspaces and in root package.json
+To install `@wayofdev/eslint-config-bases`, add it as a dev-dependency to your monorepo workspaces and in your root `package.json`:
 
 ```bash
 # Install as dev-dependency into monorepo root
-$ pnpm add -wD @wayofdev/eslint-config-bases
+$ pnpm add -wD \
+		@wayofdev/eslint-config-bases \
+		npm-run-all
 
-# Install as dev-dependency per workspace (app/package)
+# Install as dev-dependency per workspace (app or package)
 $ pnpm --filter=my-first-app add -D @wayofdev/eslint-config-bases
 $ pnpm --filter=my-first-package add -D @wayofdev/eslint-config-bases
 ```
@@ -63,26 +65,20 @@ Assuming that you have the following structure:
 
 <br>
 
-> PS: if you use graphql rules, add the `@graphql-eslint/eslint-plugin` as
-> well (not done by default as it comes with many transitive deps you might not need)
+> PS: if you use graphql rules, add the `@graphql-eslint/eslint-plugin` as well (not done by default as it comes with many transitive deps you might not need)
 
 <br>
 
 ### → Scripts
 
-Adding commands to your root package.json
-
-This example shows how to add scripts with `pnpm`. For `npm` package manager, just use `npm` command instead:
+Here are some example scripts you can add to your root `package.json`:
 
 ```bash
 # Runs md, js and secrets linters
-$ pnpm pkg set scripts.lint="pnpm run lint:md && pnpm run lint:js && pnpm run lint:secrets"
+$ pnpm pkg set scripts.lint="run-p lint:turbo lint:md lint:html lint:css lint:secrets lint:package-json"
 
 # Runs lint command using turbo (affects all */packages) with auto-fix and sorts package.json after
 $ pnpm pkg set scripts.lint:fix="turbo run lint:fix && pnpm lint:package-json"
-
-# Runs lint only on *.js files
-$ pnpm pkg set scripts.lint:js="eslint --fix **/*.js"
 
 # Runs lint only on *.md files
 $ pnpm pkg set scripts.lint:md="markdownlint --fix **/*.md --ignore '**/node_modules/**' --ignore '**/CHANGELOG.md'"
@@ -93,13 +89,11 @@ $ pnpm pkg set scripts.lint:package-json="sort-package-json package.json apps/*/
 # Searches only for secrets
 $ pnpm pkg set scripts.lint:secrets="secretlint **/*"
 
-# Runs lint command over all packages
+# Runs lint command over all packages using turbopack
 $ pnpm pkg set scripts.lint:turbo="turbo lint"
 ```
 
-Manually adding commands to your workspaces, located in `apps/*` and `packages/*`
-
-**Example:**
+You can also manually add commands to your workspaces, located in `apps/*` and `packages/*`. For example:
 
 ```json
 ...
@@ -114,10 +108,9 @@ Manually adding commands to your workspaces, located in `apps/*` and `packages/*
 
 ## 💻 Usage
 
-Create an `./apps/my-first-app/.eslintrc.js` or `./apps/my-first-app/.eslintrc.cjs`
-file that extends any of the existing base configs.
+To create your workspace-specific ESLint configuration, create a file `./apps/my-first-app/.eslintrc.js` or `./apps/my-first-app/.eslintrc.cjs` that extends any of the existing base configs.
 
-For example, NextJS application `.eslintrc.js` would look like:
+For example, if you have a Next.js application, your `.eslintrc.js` would look something like this:
 
 ```javascript
 // Next line only required if you're using a monorepo
@@ -184,8 +177,6 @@ module.exports = {
   ],
 }
 ```
-
-<br>
 
 > **Tip:**
 >
