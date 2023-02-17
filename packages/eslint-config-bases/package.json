@@ -108,7 +108,7 @@
     "@rushstack/eslint-patch": "^1.2.0",
     "@tanstack/eslint-plugin-query": "4.24.5",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/react": "^14.0.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "eslint-config-prettier": "^8.6.0",
@@ -135,7 +135,7 @@
   "devDependencies": {
     "@graphql-eslint/eslint-plugin": "^3.15.0",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.13.0",
     "@types/prettier": "^2.7.2",
