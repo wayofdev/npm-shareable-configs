@@ -8,7 +8,6 @@ const mdxPatterns = {
 }
 
 module.exports = {
-  extends: ['plugin:mdx/recommended'],
   // optional, if you want to lint code blocks at the same time
   settings: {
     'mdx/code-blocks': true,
@@ -19,6 +18,8 @@ module.exports = {
   overrides: [
     {
       files: mdxPatterns.files,
+      extends: ['plugin:mdx/recommended'],
+      parser: 'eslint-mdx',
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
@@ -29,7 +30,6 @@ module.exports = {
         '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/consistent-type-exports': 'off',
-        '@typescript-eslint/consistent-type-imports': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
       },
     },

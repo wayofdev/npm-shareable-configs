@@ -141,6 +141,7 @@
     "@types/prettier": "^2.7.2",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@wayofdev/lint-staged-config": "workspace:*",
     "es-check": "^7.1.0",
     "eslint": "^8.33.0",
     "graphql": "^16.6.0",
@@ -152,6 +153,7 @@
   },
   "peerDependencies": {
     "@graphql-eslint/eslint-plugin": "^3.15.0",
+    "@wayofdev/lint-staged-config": "workspace:*",
     "eslint": "^8.33.0",
     "graphql": "^16.6.0",
     "prettier": "^2.8.3 || >= 3.0.0-alpha.4",

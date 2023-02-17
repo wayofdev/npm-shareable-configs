@@ -26,18 +26,13 @@ A shareable [commitlint](https://commitlint.js.org/#/) configuration for enforci
 
 ### → Purpose
 
-Consistent commit messages are important for project collaboration, maintainability, and project history. This commitlint configuration provides a set of rules to ensure that all commits in your project follow a consistent structure, making it easier for your team to understand what changes were made and why.
+- Provides a set of rules to ensure that all commits in your project follow a consistent structure.
+- Consistent commit messages are important for project collaboration, maintainability, and project history.
+- The commitlint configuration helps ensure that all commits in your project follow a consistent structure, making it easier for your team to understand what changes were made and why.
 
 <br>
 
 ## 💿 Installation
-
-To use this configuration, you'll need to install the `@commitlint/cli` package as a devDependency in your project:
-
-```bash
-# Install as dev-dependency into root of monorepo
-$ pnpm add -wD @commitlint/cli @wayofdev/commitlint-config
-```
 
 This package should be added to the root of your monorepo, where you have a file `commitlint.config.js` and a `package.json` file. Within your monorepo, you should have a structure with directories for your apps and packages, such as:
 
@@ -55,48 +50,49 @@ This package should be added to the root of your monorepo, where you have a file
         └── ... (other package files)
 ```
 
-<br>
+1. To use this configuration, you'll need to install this package as a devDependency in your monorepository's root:
 
-### → Configure
+   ```bash
+   pnpm add -wD @commitlint/cli @wayofdev/commitlint-config
+   ```
 
-1. To configure the `commitlint.config.js` file, include the following line:
+2. To configure the `commitlint.config.js` file, include the following line:
 
-   ```javascript
+   ```js
    module.exports = {
      extends: ["@wayofdev/commitlint-config"],
    }
    ```
 
-   This extends the `@wayofdev/commitlint-config` configuration and uses its [pre-defined configuration](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/commitlint-config/src/index.js).
+   This extends the `@wayofdev/commitlint-config` and uses its [pre-defined configuration](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/commitlint-config/index.js).
 
-   Alternatively the configuration can be defined in a `commitlint.config.js`, `.commitlintrc.js`, `.commitlintrc`, `.commitlintrc.json`, `.commitlintrc.yml` file or a `commitlint` field in `package.json`.
+   Alternatively the configuration can be defined in a `commitlint.config.js`, `.commitlintrc.js`, `.commitlintrc`, `.commitlintrc.json`, `.commitlintrc.yml` file 
 
-2. Install Husky
-
-   Install `husky` as devDependency, a handy git hook helper available on npm.
+3. Install [Husky](https://typicode.github.io/husky/#/) in your monorepository as devDependency. Husky is a handy git hook helper available on npm.
 
    ```bash
    # Install as dev-dependency into root of monorepo
    $ pnpm add -wD husky is-ci
-
+   
    # Activate hooks
    $ pnpm husky install
    ```
 
-3. Add hook
+4. Add commit-msg hook:
 
    ```bash
-   $ npx husky add .husky/commit-msg 'pnpm commitlint --edit "${1}"'
+   npx husky add .husky/commit-msg 'pnpm commitlint --edit "${1}"'
    ```
 
-4. Add scripts to `package.json`
+5. Add scripts to `package.json`
 
    ```bash
-   $ pnpm pkg set scripts.lint:commits="pnpm commitlint --from HEAD~1 --to HEAD --verbose"
-   $ pnpm pkg set scripts.prepare="is-ci || husky install"
+   pnpm pkg set scripts.lint:commits="pnpm commitlint --from HEAD~1 --to HEAD --verbose"
+   
+   pnpm pkg set scripts.prepare="is-ci || husky install"
    ```
 
-   <br>
+<br>
 
 ## 💻 Usage
 
@@ -119,7 +115,9 @@ This will check your last commit and return an error if invalid or a positive ou
 
 ### → Test the hook
 
-You can test the hook by simply committing. You should see something like this if everything works.
+You can test the hook by simply committing. If the commit message is valid, the commit will go through, otherwise you will see an error message.
+
+Here's an example of what the error message would look like if your commit message doesn't meet the required format:
 
 ```bash
 $ git commit -m "foo: this will fail"
@@ -134,9 +132,18 @@ No staged files match any of provided globs.
 husky > commit-msg hook failed (add --no-verify to bypass)
 ```
 
+If your commit message meets the required format, you should see a message like this:
+
+```bash
+$ git commit -m "feat: add new feature"
+husky > commit-msg (node v10.1.0)
+[master 9d41607] feat: add new feature
+ 1 file changed, 1 insertion(+)
+```
+
 <br>
 
-## 🛠️ Extending
+## 🧩 Extending
 
 This shows, how config can be extended with your custom rules.
 
@@ -165,6 +172,11 @@ Based on:
 
 - [shareable-configs](https://github.com/waldronmatt/shareable-configs) from [waldronmatt](https://github.com/waldronmatt)
 
+Related projects:
+
+- [husky](https://typicode.github.io/husky/#/)
+- [lint-staged](https://github.com/okonet/lint-staged)
+
 Guides:
 
 - [Official commitlint setup guide](https://commitlint.js.org/#/./guides-local-setup?id=guides-local-setup)
@@ -188,3 +200,4 @@ We are open to all kinds of contributions. If you want to:
 - 👨‍💻 Contribute to the code
 
 You are more than welcome. Before contributing, kindly check our [guidelines](https://next-starter-tpl-docs.wayof.dev/contribution).
+

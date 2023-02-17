@@ -17,17 +17,27 @@
     "directory": "packages/secretlint-config"
   },
   "license": "MIT",
-  "author": "lotyp7@gmail.com",
+  "author": {
+    "name": "Andrij Orlenko",
+    "email": "lotyp7@gmail.com",
+    "url": "https://github.com/lotyp"
+  },
   "main": "index.json",
   "files": [
     "index.json",
     "scripts/*"
   ],
   "scripts": {
-    "test": "echo \"No test specified\""
+    "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
+    "lint": "eslint --ext .js --cache --cache-location ../../.cache/eslint/secretlint-config.eslintcache",
+    "lint:fix": "eslint --ext .js --fix --cache --cache-location ../../.cache/eslint/secretlint-config.eslintcache",
+    "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
     "@secretlint/secretlint-rule-preset-recommend": "^6.2.0"
+  },
+  "devDependencies": {
+    "rimraf": "^4.1.2"
   },
   "peerDependencies": {
     "secretlint": ">= 6"

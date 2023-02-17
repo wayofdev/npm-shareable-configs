@@ -1,34 +1,19 @@
-// const jsConfig = require('./packages/lint-staged-config');
-// const ymlConfig = require('./packages/lint-staged-config/yml');
-//
-// module.exports = {
-//     // check for credentials
-//     '*': ['secretlint'],
-//     ...ymlConfig,
-//     ...jsConfig,
-//     // lint and fix changed markdown files
-//     '*.md': ['prettier --cache --write', 'markdownlint'],
-//     // lint and fix changed json files
-//     '*.json': ['prettier --cache --write'],
-// };
-
 // @ts-check
 
-/**
- * This is the base lint-staged rules config and just includes prettier by default.
- * A good practice is to override this base configuration in each package and/or application
- * where we are able to add customization depending on the nature of the project (eslint...).
- *
- * {@link https://github.com/okonet/lint-staged#how-to-use-lint-staged-in-a-multi-package-monorepo}
- */
+const {
+  concatFilesForPrettier,
+  jsonRules,
+  secretsRules,
+  mdRules,
+  yamlRules,
+} = require('@wayofdev/lint-staged-config')
 
-const { concatFilesForPrettier } = require('./lint-staged.common.js')
-
-/**
- * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
- */
 const rules = {
-  '**/*.{json,md,mdx,css,html,yml,yaml,scss,ts,js,tsx,jsx,mjs}': filenames => {
+  ...jsonRules,
+  ...yamlRules,
+  ...secretsRules,
+  ...mdRules,
+  '**/*.{js,jsx,cjs,mjs,ts,tsx,mts,cts}': filenames => {
     return [`prettier --write ${concatFilesForPrettier(filenames)}`]
   },
 }

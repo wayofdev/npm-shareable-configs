@@ -1,88 +1,207 @@
-# Lint-Staged Config
+<br>
 
-Shareable lint-staged configuration.
+<div align="center">
+<img width="456" src="https://raw.githubusercontent.com/wayofdev/next-starter-tpl/master/assets/logo.gh-light-mode-only.png#gh-light-mode-only">
+<img width="456" src="https://raw.githubusercontent.com/wayofdev/next-starter-tpl/master/assets/logo.gh-dark-mode-only.png#gh-dark-mode-only">
+</div>
 
-## Install
+<br>
 
-```bash
-# using yarn
-$ yarn add -D lint-staged @wayofdev/lint-staged-config
+<br>
 
-# using pnpm
-$ pnpm add -Dw lint-staged @wayofdev/lint-staged-config
-```
+<div align="center">
+<a href="https://actions-badge.atrox.dev/wayofdev/npm-shareable-configs/goto"><img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fwayofdev%2Fnext-starter-tpl%2Fbadge&style=flat-square"/></a>
+<a href="https://www.npmjs.com/package/@wayofdev/lint-staged-config"><img alt="GitHub package.json version" src="https://img.shields.io/npm/v/@wayofdev/lint-staged-config?style=flat-square"></a>
+<a href="https://www.npmjs.com/package/@wayofdev/lint-staged-config?activeTab=versions"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@wayofdev/lint-staged-config?style=flat-square"></a>
+<a href="LICENSE.md"><img src="https://img.shields.io/github/license/wayofdev/npm-shareable-configs.svg?style=flat-square&color=blue" alt="Software License"/></a>
+</div>
 
-## Usage
+<br>
 
-**`lint-staged.config.js`**
+# Shareable Lint-Staged Config
 
-```js
-module.exports = require('@wayofdev/lint-staged-config');
-```
+## 📄 About
 
-### YML
+Package that contains shareable configuration for [lint-staged](https://github.com/okonet/lint-staged) — a popular tool for running linters on staged Git files.
 
-```js
-module.exports = require('@wayofdev/lint-staged-config/yml');
-```
+It is designed to provide a set of ready-to-use configuration files that can be easily imported and used in your projects. This package also includes a helper module with utility functions to ease the use of [lint-staged](https://github.com/okonet/lint-staged) with tools like [ESLint](https://eslint.org), [Prettier](https://prettier.io), [StyleLint](https://stylelint.io) and [SecretLint](https://github.com/secretlint/secretlint).
 
-## Extending
+### → Purpose
 
-A comprehensive example:
+- Provide developers with a set of easy-to-use and shareable lint-staged configuration files. These configuration files can help developers enforce a consistent coding style and catch common errors before they are committed to source control.
+- Included helper module provides utility functions for working with [lint-staged](https://github.com/okonet/lint-staged) and popular linting and formatting tools.
+- Functions of package simplify the process of setting up `lint-staged` and help ensure that it is used effectively in your projects.
 
-**`lint-staged.config.js`**
+<br>
 
-```js
-const config = require('@wayofdev/lint-staged-config');
-const ymlConfig = require('@wayofdev/lint-staged-config/yml');
+## 💿 Installation
 
-module.exports = {
-    // check for credentials
-    '*': ['secretlint'],
-    // ignore prettier on unknown extensions
-    '!(*.{md,js,jsx,ts,tsx,json,css,scss,yml,yaml})': [
-        'prettier --cache --write --ignore-unknown',
-    ],
-    ...ymlConfig,
-    ...config,
-    // lint and fix changed markdown files
-    '*.md': ['prettier --cache --write', 'markdownlint'],
-    // lint and fix changed json files
-    '*.json': ['prettier --cache --write'],
-    // lint and fix changed css and scss files
-    '*.{css,scss}': ['prettier --cache --write', 'stylelint --cache --fix'],
-    // execute tests related to files changed in the current commit only
-    '*.{js,jsx,ts,tsx}': [
-        'yarn test --bail --passWithNoTests --findRelatedTests --coverage',
-    ],
-};
-```
-
-## Add a Husky Hook
-
-Install husky:
+To use this configuration, you'll need to install `@wayofdev/lint-staged-config` as a development dependency in your mono-repository.
 
 ```bash
-# using yarn
-$ yarn dlx husky-init --yarn2 && yarn && npm pkg set scripts.prepare="husky install" && yarn prepare
+# Install as dev-dependency in the root of the mono-repository
+$ pnpm add -wD lint-staged @wayofdev/lint-staged-config
 
-# using pnpm
-$ pnpm dlx husky-init && pnpm install && pnpm pkg set scripts.prepare="husky install" && pnpm prepare
+# Optional, to lint for secrets and sort package.json files
+$ pnpm add -wD secretlint sort-package-json
 ```
 
-Add the hook:
+This package should be installed in the root of your mono-repository, where you will create a file `lint-staged.config.js`. Within your monorepo, you should have a structure with directories for your apps and packages, such as:
 
 ```bash
-# using npm
-$ npx husky add .husky/pre-commit 'npx --no-install lint-staged'
-
-# using yarn
-$ yarn dlx husky add .husky/pre-commit 'npx --no-install lint-staged'
-
-# using pnpm
-$ pnpm dlx husky add .husky/pre-commit 'npx --no-install lint-staged'
+.
+├── lint-staged.config.js (root)
+├── package.json (root)
+├── apps
+│   └── my-first-app
+│       ├── lint-staged.config.js (overrides lint-staged.config.js from root folder)
+│       ├── package.json
+│       └── ... (other app files)
+└── packages
+    └── my-first-package
+        ├── lint-staged.config.js (overrides lint-staged.config.js from root folder)
+        ├── package.json
+        └── ... (other package files)
 ```
 
-## License
+### → Configure
 
-MIT
+1. Create `lint-staged.config.js` file in root of mono-repository and add lines:
+
+   ```javascript
+   // @ts-check
+   
+   const {
+     concatFilesForPrettier,
+     jsonRules,
+     secretsRules,
+     mdRules,
+     yamlRules,
+   } = require('@wayofdev/lint-staged-config')
+   
+   const rules = {
+     ...jsonRules,
+     ...yamlRules,
+     ...secretsRules,
+     ...mdRules,
+     '**/*.{js,jsx,cjs,mjs,ts,tsx,mts,cts}': filenames => {
+       return [`prettier --write ${concatFilesForPrettier(filenames)}`]
+     },
+   }
+   
+   module.exports = rules
+   ```
+   
+2. If needed, override the base `lint-staged.config.js` in each package or application.
+
+   Example `lint-staged.config.js` in folder `./packages/eslint-config-bases/`
+
+   ```typescript
+   // @ts-check
+   
+   const {
+     getEslintFixCmd,
+     jsonRules,
+     secretsRules,
+     mdRules,
+     yamlRules,
+     htmlRules,
+   } = require('@wayofdev/lint-staged-config')
+   
+   /**
+    * @typedef {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>} LintRule
+    */
+   const rules = {
+     '**/*.{js,jsx,ts,tsx}': (/** @type {any} */ filenames) => {
+       return getEslintFixCmd({
+         cwd: __dirname,
+         fix: true,
+         cache: true,
+         // when autofixing staged-files a good tip is to disable react-hooks/exhaustive-deps, cause
+         // a change here can potentially break things without proper visibility.
+         rules: ['react-hooks/exhaustive-deps: off'],
+         maxWarnings: 25,
+         files: filenames,
+       })
+     },
+     ...jsonRules,
+     ...secretsRules,
+     ...mdRules,
+     ...yamlRules,
+     ...htmlRules,
+   }
+   
+   module.exports = rules
+   ```
+
+3. Set up the `pre-commit` git hook to run _lint-staged_ using [Husky](https://github.com/typicode/husky) — popular choice for configuring git hooks
+
+   Install `husky` as dev-dependency into root of monorepo
+
+   ```bash
+   pnpm add -wD husky is-ci
+   ```
+
+   Activate hooks:
+
+   ```bash
+   pnpm husky install
+   ```
+
+   Add lint-staged hook:
+
+   ```bash
+   npx husky add .husky/pre-commit 'pnpm lint-staged --verbose --concurrent false'
+   ```
+
+   Read more about git hooks [here](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+
+4. Don't forget to commit changes to `package.json` and `.husky` to share this setup with your team!
+
+<br>
+
+## 💻 Usage
+
+After installing `@wayofdev/lint-staged-config` and setting up the `pre-commit` git hook with Husky, you can now run the following command:
+
+```bash
+git add . && git commit -am 'feat: adding lint-staged'
+```
+
+This will automatically trigger the checks defined in your `lint-staged.config.js` file for all the files that have been staged for commit. This will help you catch common errors and enforce a consistent coding style before the code is committed to source control.
+
+<br>
+
+## 🤝 License
+
+[![Licence](https://img.shields.io/github/license/wayofdev/npm-shareable-configs?style=for-the-badge&color=blue)](./LICENSE)
+
+<br>
+
+## 🧱 Credits and Useful Resources
+
+Based on:
+
+- [shareable-configs](https://github.com/waldronmatt/shareable-configs) from [waldronmatt](https://github.com/waldronmatt)
+- configs by [belgattitude](https://github.com/belgattitude) from his repositories
+- various best practices
+
+<br>
+
+## 🙆🏼‍♂️ Author Information
+
+This repository was created in **2023** by [lotyp / wayofdev](https://github.com/wayofdev).
+
+<br>
+
+## 🙌 Want to Contribute?
+
+Thank you for considering contributing to the wayofdev community!
+We are open to all kinds of contributions. If you want to:
+
+- 🤔 Suggest a feature
+- 🐛 Report an issue
+- 📖 Improve documentation
+- 👨‍💻 Contribute to the code
+
+You are more than welcome. Before contributing, kindly check our [guidelines](https://next-starter-tpl-docs.wayof.dev/contribution).

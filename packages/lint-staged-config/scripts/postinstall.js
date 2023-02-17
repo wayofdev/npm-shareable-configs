@@ -1,8 +1,13 @@
 const fs = require('node:fs')
 const path = require('node:path')
 
-const filePath = path.join(process.env.INIT_CWD, 'lint-staged.config.js')
+const initCwd = process.env.INIT_CWD
 
-if (!fs.existsSync(filePath)) {
-  fs.writeFileSync(filePath, `module.exports = require('@wayofdev/lint-staged-config');`)
+if (initCwd) {
+  const filePath = path.join(initCwd, 'lint-staged.config.js')
+  if (!fs.existsSync(filePath)) {
+    fs.writeFileSync(filePath, `module.exports = require('@wayofdev/lint-staged-config');`)
+  }
+} else {
+  console.error('INIT_CWD environment variable is not defined')
 }

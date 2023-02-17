@@ -1,6 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "./../../tsconfig.base.json",
+  "display": "@wayofdev/eslint-config-bases",
+  "extends": "./../../tsconfig.base.json",
   "compilerOptions": {
     "strict": true,
     "skipLibCheck": true,
@@ -9,6 +10,17 @@
     "allowJs": true,
     "checkJs": true
   },
-  "exclude": ["**/node_modules", "**/.*/", "dist", "build"],
-  "include": ["**/*.ts", "**/*.js", "**/*.cjs", "**/*.mjs", "**/*.json"]
+  "exclude": [
+    "**/node_modules",
+    "**/.*/",
+    "dist",
+    "build"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.js",
+    "**/*.cjs",
+    "**/*.mjs",
+    "**/*.json"
+  ]
 }
