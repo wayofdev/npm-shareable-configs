@@ -1,5 +1,11 @@
 # @wayofdev/postcss-config
 
+## 2.0.0
+
+### Major Changes
+
+- [#36](https://github.com/wayofdev/npm-shareable-configs/pull/36) [`6088d40`](https://github.com/wayofdev/npm-shareable-configs/commit/6088d40a769a3a69656d55c53793ff41b318ce90) Thanks [@lotyp](https://github.com/lotyp)! - refactor: changed configs, paths, added docs
+
 ## 1.1.4
 
 ### Patch Changes
