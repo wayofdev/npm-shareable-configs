@@ -106,7 +106,7 @@
     "@html-eslint/eslint-plugin": "^0.16.0",
     "@html-eslint/parser": "^0.16.0",
     "@rushstack/eslint-patch": "^1.2.0",
-    "@tanstack/eslint-plugin-query": "4.24.5",
+    "@tanstack/eslint-plugin-query": "4.24.8",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
