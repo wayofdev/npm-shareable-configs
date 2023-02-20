@@ -44,15 +44,15 @@ The configuration includes a set of preconfigured rules, such as `@secretlint/se
 
 ## 💿 Installation
 
-To use Secretlint with `@wayofdev/secretlint-config` in a monorepository, you can install them at the root level and configure it to lint only the packages that require it. Follow these steps:
+To use Secretlint with `@wayofdev/secretlint-config` in a mono-repository, you can install them at the root level and configure it to lint only the packages that require it. Follow these steps:
 
-1. Install `secretlint` and `@wayofdev/secretlint-config` as development dependencies at the root of your monorepository using the package manager of your choice (`npm`, `yarn`, `pnpm`, etc.). For example, using `pnpm`:
+1. Install `secretlint` and `@wayofdev/secretlint-config` as development dependencies at the root of your mono-repository using the package manager of your choice (`npm`, `yarn`, `pnpm`, etc.). For example, using `pnpm`:
 
    ```bash
    pnpm add -Dw secretlint @wayofdev/secretlint-config
    ```
 
-2. Create a `.secretlintrc.json` configuration file in the root of your monorepository with the following content:
+2. Create a `.secretlintrc.json` configuration file in the root of your mono-repository with the following content:
 
    ```json
    {
@@ -72,11 +72,11 @@ To use Secretlint with `@wayofdev/secretlint-config` in a monorepository, you ca
    }
    ```
 
-   In this example, Secretlint is configured to use the `@wayofdev/secretlint-config` package as its configuration, and to lint only the directories in the `packages` and `apps` folders of the monorepository.
+   In this example, Secretlint is configured to use the `@wayofdev/secretlint-config` package as its configuration, and to lint only the directories in the `packages` and `apps` folders of the mono-repository.
 
-   You can adjust the `include` and `exclude` patterns to match your specific monorepository structure and exclude files or directories that don't need to be linted.
+   You can adjust the `include` and `exclude` patterns to match your specific mono-repository structure and exclude files or directories that don't need to be linted.
 
-3. Add a linting script to the `scripts` section of the `package.json` file at the root of your monorepository:
+3. Add a linting script to the `scripts` section of the `package.json` file at the root of your mono-repository:
 
    ```bash
    pnpm pkg set scripts.lint:secrets="secretlint"
@@ -84,7 +84,7 @@ To use Secretlint with `@wayofdev/secretlint-config` in a monorepository, you ca
 
    This will add the `lint:secrets` script to the `scripts` section of your `package.json`.
 
-That's it! You can now run the `lint:secrets` script to lint the relevant packages in your monorepository.
+That's it! You can now run the `lint:secrets` script to lint the relevant packages in your mono-repository.
 
 <br>
 
@@ -94,7 +94,7 @@ To automatically lint files with Secretlint before committing them, you can use 
 
 1. Follow the installation instructions for `lint-staged` in the [@wayofdev/lint-staged-config](https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/lint-staged-config) package. This package provides a pre-configured `lint-staged` configuration that includes [Husky](https://github.com/typicode/husky) and other tools.
 
-2. Add the following configuration to a `lint-staged.config.js` file at the root of your monorepository:
+2. Add the following configuration to a `lint-staged.config.js` file at the root of your mono-repository:
 
    ```js
    module.exports = {
@@ -102,7 +102,7 @@ To automatically lint files with Secretlint before committing them, you can use 
    }
    ```
    
-   This will configure `lint-staged` to run Secretlint on all staged files in your monorepository.
+   This will configure `lint-staged` to run Secretlint on all staged files in your mono-repository.
 
 <br>
 

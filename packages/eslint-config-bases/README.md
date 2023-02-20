@@ -96,12 +96,12 @@ $ pnpm pkg set scripts.lint:turbo="turbo lint"
 You can also manually add commands to your workspaces, located in `apps/*` and `packages/*`. For example:
 
 ```json
-...
-"scripts": {
-  "lint": "eslint --ext .ts,.js,.cjs,.mjs --cache --cache-location ../../.cache/eslint/eslint-config-bases.eslintcache",
-  "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/eslint-config-bases.eslintcache"
-},
-...
+{
+  "scripts": {
+    "lint": "eslint --ext .ts,.js,.cjs,.mjs --cache --cache-location ../../.cache/eslint/eslint-config-bases.eslintcache",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/eslint-config-bases.eslintcache"
+  }
+}
 ```
 
 <br>
