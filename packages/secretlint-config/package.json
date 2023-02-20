@@ -34,7 +34,7 @@
     "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@secretlint/secretlint-rule-preset-recommend": "^6.2.0"
+    "@secretlint/secretlint-rule-preset-recommend": "^6.2.3"
   },
   "devDependencies": {
     "rimraf": "^4.1.2"
