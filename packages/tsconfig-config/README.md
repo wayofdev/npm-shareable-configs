@@ -231,7 +231,9 @@ Based on:
 - [shareable-configs](https://github.com/waldronmatt/shareable-configs) from [waldronmatt](https://github.com/waldronmatt)
 - [shared-dx](https://github.com/belgattitude/shared-dx) from [belgattitude](https://github.com/belgattitude)
 
-This package builds on the work of others to provide a pre-configured Secretlint configuration that can be easily shared and reused across different projects. The related projects listed above may also be useful for integrating Secretlint into your project, particularly if you're using Git and want to automatically run Secretlint before committing changes.
+Guides:
+
+- [TypeScript in a monorepo](https://turbo.build/repo/docs/handbook/linting/typescript)
 
 <br>
 
