@@ -25,6 +25,18 @@ on: # yamllint disable-line rule:truthy
       - 'pnpm*'
       - '.github/**'
 
+  merge_group:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    # Only consider those paths to trigger the action
+    paths:
+      - 'packages/**'
+      - 'package.json'
+      - 'pnpm*'
+      - '.github/**'
+
 jobs:
   integration:
     name: Node ${{ matrix.node }} - ${{ matrix.os }}

@@ -5,6 +5,9 @@ on: # yamllint disable-line rule:truthy
   pull_request:
     branches:
       - master
+  merge_group:
+    branches:
+      - master
 
 permissions:
   contents: read
