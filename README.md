@@ -266,7 +266,7 @@ Commitlint is a tool that ensures that your commit messages meet certain standar
 1. Create an empty `commitlint.config.js` file:
 
    ```bash
-   touch commitlint.config.js
+   $ touch commitlint.config.js
    ```
 
 2. Paste the following code into the file:
@@ -288,7 +288,7 @@ Lint-Staged is a tool that allows you to run linters on only the files that have
 1. In the root directory of your project, create the file `lint-staged.config.js`:
 
    ```bash
-   touch lint-staged.config.js
+   $ touch lint-staged.config.js
    ```
 
 2. Add the following contents to `lint-staged.config.js`:
@@ -360,7 +360,7 @@ By following these steps, you can ensure that your commits meet certain standard
 You can check `Makefile` or `package.json` to get full list of commands for local testing. For testing, you can use these commands to test:
 
 ```bash
-make test
+$ make test
 ```
 
 <br>
@@ -374,7 +374,7 @@ make test
 ## 🧱 Useful Resources
 
 - This repository is based on:
-  -  [waldronmatt/shareable-configs](https://github.com/waldronmatt/shareable-configs) by [Matthew Waldron](https://github.com/waldronmatt)
+  - [waldronmatt/shareable-configs](https://github.com/waldronmatt/shareable-configs) by [Matthew Waldron](https://github.com/waldronmatt)
   - [nextjs-monorepo-example](https://github.com/belgattitude/nextjs-monorepo-example) by [belgattitude](https://github.com/belgattitude)
 
 - Other monorepo examples:
@@ -402,3 +402,41 @@ This repository was created in **2022** by [lotyp / wayofdev](https://github.com
 
 <br>
 
+## 🤑 Sponsors
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <a href="https://prisma.io" target="_blank">
+          <img width="128px" src="https://avatars.githubusercontent.com/u/110109081?s=200&v=4" alt="Reproto Logo" /></a><br />
+        <div>Reproto</div><br />
+        <sub>🎖️ Financial Support</sub>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://varsitybase.com" target="_blank">
+          <img width="128px" src="https://raw.githubusercontent.com/wayofdev/next-starter-tpl/master/assets/vb-logo.png" alt="VarsityBase Logo" /></a><br />
+        <div>VarsityBase</div><br />
+        <sub>🎖️ Financial Support</sub>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://vercel.com" target="_blank">
+          <img width="128px" src="https://avatars.githubusercontent.com/u/14985020?s=200&v=4" alt="Vercel Logo" /></a><br />
+        <div>Vercel</div><br />
+        <sub>☁️ Infrastructure Support</sub>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://sentry.io" target="_blank">
+          <img width="128px" src="https://avatars.githubusercontent.com/u/1396951?s=200&v=4" alt="Sentry Logo" /></a><br />
+        <div>Sentry</div><br />
+        <sub>☁️ Infrastructure Support</sub>
+      </td>
+			<td align="center" valign="top">
+        <a href="https://zenhub.com" target="_blank">
+          <img width="128px" src="https://avatars.githubusercontent.com/ml/9?s=200&v=4" alt="ZenHub Logo" /></a><br />
+        <div>ZenHub</div><br />
+        <sub>☁️ Infrastructure Support</sub>
+      </td>
+    </tr><tr></tr>
+  </tbody>
+</table>
