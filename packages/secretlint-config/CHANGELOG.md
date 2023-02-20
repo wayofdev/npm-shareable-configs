@@ -1,5 +1,11 @@
 # @wayofdev/secretlint-config
 
+## 2.0.1
+
+### Patch Changes
+
+- [#45](https://github.com/wayofdev/npm-shareable-configs/pull/45) [`ac71e8b`](https://github.com/wayofdev/npm-shareable-configs/commit/ac71e8b5191f14a383b0d8d5b5b528cba52b8f44) Thanks [@lotyp](https://github.com/lotyp)! - docs: changes in readme files
+
 ## 2.0.0
 
 ### Major Changes
