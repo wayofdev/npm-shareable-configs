@@ -66,17 +66,17 @@ This section covers installation when configs contained in this repository are u
 ├── package.json (root)
 ├── apps
 │   ├── docs                          # nextra app
-│   │   ├── package.json							# @wayofdev/docs
+│   │   ├── package.json              # @wayofdev/docs
 │   │   └── ... (other app files)
 │   └── web                           # nextjs app
-│       ├── package.json							# @wayofdev/web
+│       ├── package.json              # @wayofdev/web
 │       └── ... (other app files)
 └── packages
-    ├── ui														# shared react ui components package
-    │   ├── package.json							# @wayofdev/ui
+    ├── ui                            # shared react ui components package
+    │   ├── package.json              # @wayofdev/ui
     │   └── ... (other package files)
-    └── common-i18n										# common i18n package
-        ├── package.json							# @wayofdev/common-i18n
+    └── common-i18n                   # common i18n package
+        ├── package.json              # @wayofdev/common-i18n
         └── ... (other package files)
 ```
 
@@ -88,22 +88,21 @@ To install the necessary tools and configurations for your monorepo, follow thes
 
    ```bash
    $ pnpm add -Dw \
-   	husky \
-   	is-ci \
-   	lint-staged \
-   	npm-run-all \
-   	rimraf \
-   	sort-package-json \
-   	turbo \
-   	prettier
+     husky \
+     is-ci \
+     npm-run-all \
+     rimraf \
+     sort-package-json \
+     turbo \
+     prettier
    ```
-
+   
 2. Install [changesets](https://github.com/changesets/changesets) in the root of your monorepo to manage your versioning and changelogs with a focus on monorepos:
 
    ```bash
    $ pnpm add -Dw \
-   	@changesets/cli \
-   	@changesets/changelog-github
+     @changesets/cli \
+     @changesets/changelog-github
    ```
 
 3. Install the necessary config packages with their dependencies that are needed at the root level of your monorepo. Here are some examples:
@@ -114,8 +113,8 @@ To install the necessary tools and configurations for your monorepo, follow thes
 
      ```bash
      $ pnpm add -Dw \
-     	browserslist \
-     	@wayofdev/browserslist-config
+       browserslist \
+       @wayofdev/browserslist-config
      ```
 
    - Follow the configuration instructions in the `browserslist-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/browserslist-config/README.md).
@@ -126,8 +125,8 @@ To install the necessary tools and configurations for your monorepo, follow thes
 
      ```bash
      $ pnpm add -Dw \
-     	@commitlint/cli \
-     	@wayofdev/commitlint-config
+       @commitlint/cli \
+       @wayofdev/commitlint-config
      ```
 
    - Follow the configuration instructions in the `commitlint-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/commitlint-config/README.md).
@@ -150,8 +149,8 @@ To install the necessary tools and configurations for your monorepo, follow thes
 
      ```bash
      $ pnpm add -Dw \
-     	@secretlint \
-     	@wayofdev/secretlint-config
+       @secretlint \
+       @wayofdev/secretlint-config
      ```
 
    - Follow the configuration instructions in the `secretlint-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/secretlint-config/README.md).
@@ -162,8 +161,8 @@ To install the necessary tools and configurations for your monorepo, follow thes
 
      ```bash
      $ pnpm add -Dw \
-     	typescript \
-     	@wayofdev/tsconfig-config
+       typescript \
+       @wayofdev/tsconfig-config
      ```
 
    - Follow the configuration instructions in the `tsconfig-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/tsconfig-config/README.md).
@@ -174,8 +173,8 @@ To install the necessary tools and configurations for your monorepo, follow thes
 
      ```bash
      $ pnpm add -Dw \
-     	lint-staged \
-     	@wayofdev/lint-staged-config
+       lint-staged \
+       @wayofdev/lint-staged-config
      ```
 
    - Follow the configuration instructions in the `lint-staged-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/lint-staged-config/README.md).
@@ -188,7 +187,7 @@ To install the necessary tools and configurations for your monorepo, follow thes
      $ pnpm add -Dw \
        markdownlint \
        markdownlint-cli \
-     	@wayofdev/markdownlint-config
+       @wayofdev/markdownlint-config
      ```
    
    - Follow the configuration instructions in the `markdownlint-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/markdownlint-config/README.md).
@@ -209,24 +208,23 @@ By following this guide, you can ensure that your code is consistently and thoro
 
    ```bash
    $ pnpm \
-   	--filter="@wayofdev/web" \
-   	--filter="@wayofdev/docs" \
-   	--filter="@wayofdev/ui" \
-   	--filter="@wayofdev/common-i18n" \
-   	add -D eslint @wayofdev/eslint-config-bases
-   	
+     --filter="@wayofdev/web" \
+     --filter="@wayofdev/docs" \
+     --filter="@wayofdev/ui" \
+     --filter="@wayofdev/common-i18n" \
+     add -D eslint @wayofdev/eslint-config-bases
    ```
-
+   
    Follow the configuration instructions in the `eslint-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/eslint-config/README.md).
-
+   
 2. Install `@wayofdev/postcss-config` in apps or packages, where it needs to be used. We will install it to `apps/web`, as it contains NextJS application, and we want to add TailwindCSS support, which requires `postcss`:
 
    **`postcss:`**
 
    ```bash
    $ pnpm \
-   	--filter="@wayofdev/web" \
-   	add -D postcss @wayofdev/postcss-config
+     --filter="@wayofdev/web" \
+     add -D postcss @wayofdev/postcss-config
    ```
 
    Follow the configuration instructions in the `postcss-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/postcss-config/README.md).
@@ -237,8 +235,8 @@ By following this guide, you can ensure that your code is consistently and thoro
 
    ```bash
    $ pnpm \
-   	--filter="@wayofdev/web" \
-   	add -D stylelint @wayofdev/stylelint-config
+     --filter="@wayofdev/web" \
+     add -D stylelint @wayofdev/stylelint-config
    ```
 
    Follow the configuration instructions in the `stylelint-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/stylelint-config/README.md).
@@ -249,8 +247,8 @@ By following this guide, you can ensure that your code is consistently and thoro
 
    ```bash
    $ pnpm \
-   	--filter="@wayofdev/web" \
-   	add -D htmlhint @wayofdev/htmlhint-config
+     --filter="@wayofdev/web" \
+     add -D htmlhint @wayofdev/htmlhint-config
    ```
 
    Follow the configuration instructions in the `htmlhint-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/htmlhint-config/README.md).
@@ -326,7 +324,7 @@ Husky is a tool that allows you to set up Git hooks, which are scripts that run 
 1. Add pnpm scripts to your `package.json` file:
 
    ```bash
-   pnpm pkg set scripts.prepare="is-ci || husky install"
+   $ pnpm pkg set scripts.prepare="is-ci || husky install"
    ```
 
    This will add a `prepare` script that will run the `husky install` command when you run `pnpm install`.
@@ -334,13 +332,13 @@ Husky is a tool that allows you to set up Git hooks, which are scripts that run 
 2. Run the `prepare` command once to configure Husky:
 
    ```bash
-   pnpm run prepare
+   $ pnpm run prepare
    ```
 
 3. Add a pre-commit hook that runs `lint-staged`:
 
    ```bash
-   pnpm husky add .husky/pre-commit "pnpm lint-staged --verbose --concurrent false"
+   $ pnpm husky add .husky/pre-commit "pnpm lint-staged --verbose --concurrent false"
    ```
 
    This will run `lint-staged` on the files that have been staged in Git before you make a commit.
@@ -348,7 +346,7 @@ Husky is a tool that allows you to set up Git hooks, which are scripts that run 
 4. Add a commit-msg hook that runs `commitlint`:
 
    ```bash
-   pnpm husky add .husky/commit-msg 'pnpm commitlint --edit "${1}"'
+   $ pnpm husky add .husky/commit-msg 'pnpm commitlint --edit "${1}"'
    ```
 
    This will run `commitlint` on the commit message that you write before you make a commit.
@@ -403,5 +401,4 @@ This repository was created in **2022** by [lotyp / wayofdev](https://github.com
 </a>
 
 <br>
-
 
