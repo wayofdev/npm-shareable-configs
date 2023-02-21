@@ -173,7 +173,7 @@ cs-version:
 	$(NPM_BIN) changeset version
 .PHONY: version
 
-cs-release: ## Publish new version to npm
+cs-publish: ## Publish new version to npm
 	$(NPM_BIN) changeset publish
 .PHONY: release
 

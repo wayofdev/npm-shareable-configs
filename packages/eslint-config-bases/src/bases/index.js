@@ -1,8 +1,8 @@
 module.exports = {
   graphql: require('./graphql'),
   jest: require('./jest'),
-  prettierPlugin: require('./prettier-plugin'),
-  prettierConfig: require('./prettier-config'),
+  'prettier-plugin': require('./prettier-plugin'),
+  'prettier-config': require('./prettier-config'),
   react: require('./react'),
   regexp: require('./regexp'),
   reactQuery: require('./react-query'),

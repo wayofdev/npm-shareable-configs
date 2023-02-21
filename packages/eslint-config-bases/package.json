@@ -57,10 +57,10 @@
     "./jest": {
       "require": "./src/bases/jest.js"
     },
-    "./prettierConfig": {
+    "./prettier-config": {
       "require": "./src/bases/prettier-config.js"
     },
-    "./prettierPlugin": {
+    "./prettier-plugin": {
       "require": "./src/bases/prettier-plugin.js"
     },
     "./react": {
