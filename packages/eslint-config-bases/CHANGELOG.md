@@ -1,5 +1,11 @@
 # @wayofdev/eslint-config-bases
 
+## 2.0.2
+
+### Patch Changes
+
+- [`ce823ae`](https://github.com/wayofdev/npm-shareable-configs/commit/ce823ae78423e60d2344cd1d9e1e06886dd6e3b4) Thanks [@lotyp](https://github.com/lotyp)! - fix: prettier plugin export
+
 ## 2.0.1
 
 ### Patch Changes
