@@ -1,15 +1,15 @@
 <br>
 
 <div align="center">
-<img width="456" src="https://raw.githubusercontent.com/wayofdev/next-starter-tpl/master/assets/logo.gh-light-mode-only.png#gh-light-mode-only">
-<img width="456" src="https://raw.githubusercontent.com/wayofdev/next-starter-tpl/master/assets/logo.gh-dark-mode-only.png#gh-dark-mode-only">
+<img width="456" src="https://raw.githubusercontent.com/wayofdev/npm-shareable-configs/master/assets/logo.gh-light-mode-only.png#gh-light-mode-only">
+<img width="456" src="https://raw.githubusercontent.com/wayofdev/npm-shareable-configs/master/assets/logo.gh-dark-mode-only.png#gh-dark-mode-only">
 </div>
 <br>
 
 <br>
 
 <div align="center">
-<a href="https://actions-badge.atrox.dev/wayofdev/npm-shareable-configs/goto"><img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fwayofdev%2Fnext-starter-tpl%2Fbadge&style=flat-square"/></a>
+<a href="https://actions-badge.atrox.dev/wayofdev/npm-shareable-configs/goto"><img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fwayofdev%2Fnpm-shareable-configs%2Fbadge&style=flat-square"/></a>
 <a href="https://www.npmjs.com/package/@wayofdev/browserslist-config"><img alt="GitHub package.json version" src="https://img.shields.io/npm/v/@wayofdev/browserslist-config?style=flat-square"></a>
 <a href="https://www.npmjs.com/package/@wayofdev/browserslist-config?activeTab=versions"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@wayofdev/browserslist-config?style=flat-square"></a>
 <a href="LICENSE.md"><img src="https://img.shields.io/github/license/wayofdev/npm-shareable-configs.svg?style=flat-square&color=blue" alt="Software License"/></a>
@@ -39,31 +39,38 @@ Overall, Browserslist Config helps maintain a high-quality user experience for y
 
 ## 💿 Installation
 
-To use `@wayofdev/browserslist-config` in your TypeScript projects within a monorepository:
+To use `@wayofdev/browserslist-config` in your JavaScript projects within a mono-repository, follow the steps below:
 
-1. Install the package using your preferred package manager in the root of the monorepository. For example, using `pnpm`:
+1. Install the package in each `app` and/or `package` within the mono-repository using your preferred package manager. For example, with `pnpm`:
 
    ```bash
-   pnpm add -Dw browserslist @wayofdev/browserslist-config
+   $ pnpm add \
+     --filter="my-first-app" \
+     -D browserslist @wayofdev/browserslist-config
    ```
 
-   This package should be added to the root of your monorepo, where you have a file `.browserslistrc` and a `package.json` file. Within your monorepo, you should have a structure with directories for your apps and packages.
+   Here, `--filter` specifies the target package or app where the dependencies should be installed. Replace `"my-first-app"` with the name of your target package or app.
+
+   This will install both `browserslist` and `@wayofdev/browserslist-config` packages as development dependencies in your target package or app.
+
+2. Within your monorepo, you should have a structure with directories for your apps and packages.
 
    ```bash
    .
-   ├── .browserslistrc (root)
    ├── package.json (root)
    ├── apps
    │   └── my-first-app
+   │				├── .browserslistrc
    │       ├── package.json
    │       └── ... (other app files)
    └── packages
        └── my-first-package
+           ├── .browserslistrc
            ├── package.json
            └── ... (other package files)
    ```
 
-2. To configure the `.browserslistrc` file, include the following line:
+3. To configure the `.browserslistrc` file, include the following line:
 
    ```js
    extends @wayofdev/browserslist-config
@@ -71,25 +78,24 @@ To use `@wayofdev/browserslist-config` in your TypeScript projects within a mono
 
    This extends the `@wayofdev/browserslist-config` configuration and uses its pre-defined browser support ranges.
 
-3. For each package or app in your monorepository that needs to use the `browserslist` package, add a `browserslist` field in the `package.json` file with the desired browser support ranges. The `package.json` file is located in either the `./packages/[package-name]` or `./apps/[app-name]` directory.
+4. (Optional) For each package or app in your mono-repository that needs to use the `browserslist` package, add a `browserslist` field in the `package.json` file with the desired browser support ranges. The `package.json` file is located in either the `./packages/[package-name]` or `./apps/[app-name]` directory.
 
    **For example:**
 
    ```json
    {
-     ...
      "browserslist": [
-     	"extends ../../.browserslistrc"
-   	]
+        "extends @wayofdev/browserslist-config"
+     ]
    }
    ```
 
 ### → Scripts
 
-Adding the following script to your root `package.json` file makes it easier to run the `browserslist` command in your monorepository:
+Adding the following script to your root `package.json` file makes it easier to run the `browserslist` command in your mono-repository:
 
 ```bash
-pnpm pkg set scripts.lint:browsers="browserslist"
+$ pnpm pkg set scripts.lint:browsers="browserslist"
 ```
 
 For `npm` users, replace `pnpm` with `npm` in the above command.
@@ -132,4 +138,4 @@ We are open to all kinds of contributions. If you want to:
 - 📖 Improve documentation
 - 👨‍💻 Contribute to the code
 
-You are more than welcome. Before contributing, kindly check our [guidelines](https://next-starter-tpl-docs.wayof.dev/contribution).
+You are more than welcome. Before contributing, kindly check our [guidelines](https://npm-shareable-configs-docs.wayof.dev/contribution).
