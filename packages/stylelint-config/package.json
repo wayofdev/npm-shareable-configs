@@ -45,7 +45,8 @@
     "stylelint-order": "^6.0.2"
   },
   "devDependencies": {
-    "es-check": "^7.1.0"
+    "es-check": "^7.1.0",
+    "@wayofdev/lint-staged-config": "workspace:*"
   },
   "peerDependencies": {
     "stylelint": "^14 || ^15"

@@ -51,7 +51,8 @@
   },
   "devDependencies": {
     "@types/postcss-reporter": "^7.0.1",
-    "es-check": "^7.1.0"
+    "es-check": "^7.1.0",
+    "@wayofdev/lint-staged-config": "workspace:*"
   },
   "peerDependencies": {
     "postcss": ">= 8",

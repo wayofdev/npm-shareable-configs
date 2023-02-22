@@ -2,13 +2,11 @@
   "$schema": "https://json.schemastore.org/tsconfig/base.json",
   "extends": "./packages/tsconfig-config/bases/base.json",
   "compilerOptions": {
+    "target": "es6",
     "useUnknownInCatchVariables": true,
     "noEmit": true,
     "moduleResolution": "node",
     "isolatedModules": true
   },
-  "exclude": [
-    "**/node_modules",
-    "**/.*/"
-  ]
+  "exclude": ["**/node_modules", "**/.*/"]
 }
