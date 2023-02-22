@@ -96,7 +96,7 @@ To install the necessary tools and configurations for your monorepo, follow thes
      turbo \
      prettier
    ```
-   
+
 2. Install [changesets](https://github.com/changesets/changesets) in the root of your monorepo to manage your versioning and changelogs with a focus on monorepos:
 
    ```bash
@@ -106,18 +106,6 @@ To install the necessary tools and configurations for your monorepo, follow thes
    ```
 
 3. Install the necessary config packages with their dependencies that are needed at the root level of your monorepo. Here are some examples:
-
-   **`browserslist:`**
-
-   - Install the `browserslist` configuration package:
-
-     ```bash
-     $ pnpm add -Dw \
-       browserslist \
-       @wayofdev/browserslist-config
-     ```
-
-   - Follow the configuration instructions in the `browserslist-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/browserslist-config/README.md).
 
    **`commitlint:`**
 
@@ -178,18 +166,18 @@ To install the necessary tools and configurations for your monorepo, follow thes
      ```
 
    - Follow the configuration instructions in the `lint-staged-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/lint-staged-config/README.md).
-   
+
    **`markdownlint:`**
-   
+
    - Install the `markdownlint` configuration package:
-   
+
      ```bash
      $ pnpm add -Dw \
        markdownlint \
        markdownlint-cli \
        @wayofdev/markdownlint-config
      ```
-   
+
    - Follow the configuration instructions in the `markdownlint-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/markdownlint-config/README.md).
 
 <br>
@@ -214,9 +202,9 @@ By following this guide, you can ensure that your code is consistently and thoro
      --filter="@wayofdev/common-i18n" \
      add -D eslint @wayofdev/eslint-config-bases
    ```
-   
+
    Follow the configuration instructions in the `eslint-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/eslint-config/README.md).
-   
+
 2. Install `@wayofdev/postcss-config` in apps or packages, where it needs to be used. We will install it to `apps/web`, as it contains NextJS application, and we want to add TailwindCSS support, which requires `postcss`:
 
    **`postcss:`**
@@ -252,6 +240,18 @@ By following this guide, you can ensure that your code is consistently and thoro
    ```
 
    Follow the configuration instructions in the `htmlhint-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/htmlhint-config/README.md).
+
+5. Install `@wayofdev/browserslist-config` in apps or packages, where you need to check projects against browser compatability.
+
+   **`browserslist:`**
+
+   ```bash
+   $ pnpm \
+     --filter="@wayofdev/web" \
+     add -D browserslist @wayofdev/browserslist-config
+   ```
+
+   Follow the configuration instructions in the `browserslist-config` [README.md](https://github.com/wayofdev/npm-shareable-configs/blob/master/packages/browserslist-config/README.md).
 
 Check out [Turbo Guide](https://turbo.build/repo/docs/handbook/linting) about linting in mono-repositories for more information.
 
@@ -368,6 +368,8 @@ $ make test
 ## 🤝 License
 
 [![Licence](https://img.shields.io/github/license/wayofdev/npm-shareable-configs?style=for-the-badge&color=blue)](./LICENSE)
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwayofdev%2Fnpm-shareable-configs.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwayofdev%2Fnpm-shareable-configs?ref=badge_large)
 
 <br>
 
