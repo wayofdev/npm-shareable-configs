@@ -1,8 +1,6 @@
 /**
  * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
  */
-const rules = {
-  '**/*': () => [`secretlint`],
+module.exports = {
+  '*': [`secretlint`],
 }
-
-module.exports = rules
