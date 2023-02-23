@@ -26,6 +26,12 @@
     ".": {
       "require": "./src/common.js"
     },
+    "./helpers": {
+      "require": "./src/common.js"
+    },
+    "./bases": {
+      "require": "./src/bases/index.js"
+    },
     "./css": {
       "require": "./src/bases/css.js"
     },

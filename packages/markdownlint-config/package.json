@@ -35,6 +35,9 @@
   "dependencies": {
     "markdownlint-cli": "^0.33.0"
   },
+  "devDependencies": {
+    "@wayofdev/lint-staged-config": "workspace:*"
+  },
   "peerDependencies": {
     "markdownlint": ">= 0"
   },

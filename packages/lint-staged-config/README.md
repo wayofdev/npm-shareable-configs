@@ -69,68 +69,62 @@ This package should be installed in the root of your mono-repository, where you 
 1. Create `lint-staged.config.js` file in root of mono-repository and add lines:
 
    ```javascript
-   // @ts-check
-   
-   const {
-     concatFilesForPrettier,
-     jsonRules,
-     secretsRules,
-     mdRules,
-     yamlRules,
-   } = require('@wayofdev/lint-staged-config')
-   
+   const { concatFilesForPrettier } = require("@wayofdev/lint-staged-config")
+
+   const json = require("@wayofdev/lint-staged-config/json")
+   const yaml = require("@wayofdev/lint-staged-config/yaml")
+   const secrets = require("@wayofdev/lint-staged-config/secrets")
+   const md = require("@wayofdev/lint-staged-config/md")
+
    const rules = {
-     ...jsonRules,
-     ...yamlRules,
-     ...secretsRules,
-     ...mdRules,
-     '**/*.{js,jsx,cjs,mjs,ts,tsx,mts,cts}': filenames => {
+     ...json,
+     ...yaml,
+     ...secrets,
+     ...md,
+     "**/*.{js,jsx,cjs,mjs,ts,tsx,mts,cts}": filenames => {
        return [`prettier --write ${concatFilesForPrettier(filenames)}`]
      },
    }
-   
+
    module.exports = rules
    ```
-   
+
 2. If needed, override the base `lint-staged.config.js` in each package or application.
 
    Example `lint-staged.config.js` in folder `./packages/eslint-config-bases/`
 
    ```typescript
-   // @ts-check
-   
-   const {
-     getEslintFixCmd,
-     jsonRules,
-     secretsRules,
-     mdRules,
-     yamlRules,
-     htmlRules,
-   } = require('@wayofdev/lint-staged-config')
-   
+   const { getEslintFixCmd } = require("@wayofdev/lint-staged-config")
+
+   const json = require("@wayofdev/lint-staged-config/json")
+   const yaml = require("@wayofdev/lint-staged-config/yaml")
+   const secrets = require("@wayofdev/lint-staged-config/secrets")
+   const md = require("@wayofdev/lint-staged-config/md")
+   const html = require("@wayofdev/lint-staged-config/html")
+
    /**
     * @typedef {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>} LintRule
     */
    const rules = {
-     '**/*.{js,jsx,ts,tsx}': (/** @type {any} */ filenames) => {
+     "**/*.{js,jsx,ts,tsx}": (/** @type {any} */ filenames) => {
        return getEslintFixCmd({
          cwd: __dirname,
          fix: true,
          cache: true,
          // when autofixing staged-files a good tip is to disable react-hooks/exhaustive-deps, cause
          // a change here can potentially break things without proper visibility.
-         rules: ['react-hooks/exhaustive-deps: off'],
+         rules: ["react-hooks/exhaustive-deps: off"],
          maxWarnings: 25,
          files: filenames,
        })
      },
-     ...jsonRules,
-     ...secretsRules,
-     ...mdRules,
-     ...yamlRules,
-     ...htmlRules,
+     ...json,
+     ...secrets,
+     ...md,
+     ...yaml,
+     ...html,
    }
-   
+
    module.exports = rules
    ```
 

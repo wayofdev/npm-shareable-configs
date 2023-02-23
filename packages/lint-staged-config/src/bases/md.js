@@ -3,13 +3,13 @@ const { concatFilesForPrettier } = require('../common')
 /**
  * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
  */
-const rules = {
+module.exports = {
   '**/*.md': filenames => {
     return [
       `prettier --write ${concatFilesForPrettier(filenames)}`,
-      `markdownlint --fix --ignore '**/node_modules/**' --ignore '**/CHANGELOG.md'`,
+      `markdownlint --fix --ignore '**/node_modules/**' --ignore '**/CHANGELOG.md' ${concatFilesForPrettier(
+        filenames
+      )}`,
     ]
   },
 }
-
-module.exports = rules

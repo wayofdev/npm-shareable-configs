@@ -37,7 +37,8 @@
     "@secretlint/secretlint-rule-preset-recommend": "^6.2.3"
   },
   "devDependencies": {
-    "rimraf": "^4.1.2"
+    "rimraf": "^4.1.2",
+    "@wayofdev/lint-staged-config": "workspace:*"
   },
   "peerDependencies": {
     "secretlint": ">= 6"
