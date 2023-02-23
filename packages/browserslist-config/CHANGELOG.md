@@ -1,5 +1,11 @@
 # @wayofdev/browserslist-config
 
+## 2.0.1
+
+### Patch Changes
+
+- [#51](https://github.com/wayofdev/npm-shareable-configs/pull/51) [`34308f9`](https://github.com/wayofdev/npm-shareable-configs/commit/34308f9a89ec29e8ce086a9a1a39dbce75334fd5) Thanks [@lotyp](https://github.com/lotyp)! - docs: install in each app/package instead of root level
+
 ## 2.0.0
 
 ### Major Changes
