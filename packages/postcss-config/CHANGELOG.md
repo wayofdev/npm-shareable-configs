@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- [`5ab8487`](https://github.com/wayofdev/npm-shareable-configs/commit/5ab84877a60804623d8bc35164c5846cbadddd40) Thanks [@lotyp](https://github.com/lotyp)! - fix: missing dependencies
+
+## 2.0.1
+
+### Patch Changes
+
 - [#55](https://github.com/wayofdev/npm-shareable-configs/pull/55) [`72695a5`](https://github.com/wayofdev/npm-shareable-configs/commit/72695a5116d17861e508389dce9bfdf93dcd7dc4) Thanks [@lotyp](https://github.com/lotyp)! - fix: lint-staged config changes
 
 ## 2.0.0

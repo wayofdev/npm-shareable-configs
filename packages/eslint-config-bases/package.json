@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/eslint-config-bases",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "private": false,
   "description": "A shareable eslint base configuration for projects.",
   "keywords": [

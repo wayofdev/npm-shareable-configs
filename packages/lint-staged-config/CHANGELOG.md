@@ -1,5 +1,11 @@
 # @wayofdev/lint-staged-config
 
+## 2.0.2
+
+### Patch Changes
+
+- [`5ab8487`](https://github.com/wayofdev/npm-shareable-configs/commit/5ab84877a60804623d8bc35164c5846cbadddd40) Thanks [@lotyp](https://github.com/lotyp)! - fix: missing dependencies
+
 ## 2.0.1
 
 ### Patch Changes
