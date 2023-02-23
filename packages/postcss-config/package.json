@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/postcss-config",
-  "version": "2.0.1",
+  "version": "2.0.0",
   "private": false,
   "description": "A shareable postcss configuration for projects.",
   "keywords": [
@@ -47,7 +47,8 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^8.0.1",
-    "postcss-reporter": "^7.0.5"
+    "postcss-reporter": "^7.0.5",
+    "postcss-loader": "^7.0.2"
   },
   "devDependencies": {
     "@types/postcss-reporter": "^7.0.1",
