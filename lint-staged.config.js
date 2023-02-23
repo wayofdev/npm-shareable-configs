@@ -17,6 +17,4 @@ const rules = {
   },
 }
 
-console.log(rules)
-
 module.exports = rules
