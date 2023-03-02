@@ -157,7 +157,7 @@
   "peerDependencies": {
     "@graphql-eslint/eslint-plugin": "3.15.0",
     "@wayofdev/lint-staged-config": "workspace:*",
-    "eslint": "8.33.0",
+    "eslint": "8.35.0",
     "graphql": "16.6.0",
     "prettier": "2.8.3 || >= 3.0.0-alpha.4",
     "react": "18.2.0",
