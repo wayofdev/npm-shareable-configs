@@ -90,7 +90,7 @@
   "peerDependencies": {
     "actionlint": "2.0.6",
     "markdownlint": "0.27.0",
-    "secretlint": "6.2.0",
+    "secretlint": "6.2.3",
     "sort-package-json": "2.4.1"
   },
   "packageManager": "pnpm@7.28.0",
