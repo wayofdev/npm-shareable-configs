@@ -1,6 +1,7 @@
 module.exports = {
   graphql: require('./graphql'),
   jest: require('./jest'),
+  playwright: require('./playwright'),
   'prettier-plugin': require('./prettier-plugin'),
   'prettier-config': require('./prettier-config'),
   react: require('./react'),

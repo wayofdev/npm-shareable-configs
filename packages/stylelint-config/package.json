@@ -36,17 +36,17 @@
     "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@ronilaukkarinen/stylelint-a11y": "^1.2.7",
-    "stylelint-config-recommended": "^10.0.1",
-    "stylelint-config-standard": "^30.0.1",
-    "stylelint-config-standard-scss": "^7.0.1",
-    "stylelint-high-performance-animation": "^1.8.0",
-    "stylelint-no-unsupported-browser-features": "^6.1.0",
-    "stylelint-order": "^6.0.2"
+    "@ronilaukkarinen/stylelint-a11y": "1.2.7",
+    "stylelint-config-recommended": "10.0.1",
+    "stylelint-config-standard": "30.0.1",
+    "stylelint-config-standard-scss": "7.0.1",
+    "stylelint-high-performance-animation": "1.8.0",
+    "stylelint-no-unsupported-browser-features": "6.1.0",
+    "stylelint-order": "6.0.2"
   },
   "devDependencies": {
-    "es-check": "^7.1.0",
-    "@wayofdev/lint-staged-config": "workspace:*"
+    "@wayofdev/lint-staged-config": "workspace:*",
+    "es-check": "7.1.0"
   },
   "peerDependencies": {
     "stylelint": "^14 || ^15"

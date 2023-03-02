@@ -40,12 +40,12 @@
     "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^17.4.4"
+    "@commitlint/config-conventional": "17.4.4"
   },
   "devDependencies": {
-    "es-check": "^7.1.0",
-    "rimraf": "^4.1.2",
-    "@wayofdev/lint-staged-config": "workspace:*"
+    "@wayofdev/lint-staged-config": "workspace:*",
+    "es-check": "7.1.0",
+    "rimraf": "4.1.3"
   },
   "peerDependencies": {
     "@commitlint/cli": ">= 17"

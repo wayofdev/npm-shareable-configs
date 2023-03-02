@@ -30,6 +30,10 @@ module.exports = {
     'plugin:import/typescript',
   ],
   rules: {
+    // https://medium.com/@steven-lemon182/are-typescript-barrel-files-an-anti-pattern-72a713004250
+    'import/no-cycle': 2,
+    // will use 'import/no-duplicates'.
+    'no-duplicate-imports': 'off',
     'spaced-comment': [
       'error',
       'always',
@@ -47,10 +51,11 @@ module.exports = {
     ],
     'linebreak-style': ['error', 'unix'],
     'no-empty-function': 'off',
-    'import/default': 'off',
-    'import/no-duplicates': ['error', { considerQueryString: true }],
-    'import/no-named-as-default-member': 'off',
-    'import/no-named-as-default': 'off',
+    'import/default': ['error'],
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-duplicates.md
+    'import/no-duplicates': ['error', { 'prefer-inline': true, considerQueryString: true }],
+    'import/no-named-as-default-member': ['warn'],
+    'import/no-named-as-default': ['warn'],
     'import/order': [
       'error',
       {
@@ -76,7 +81,10 @@ module.exports = {
       { argsIgnorePattern: '^_', ignoreRestSiblings: true },
     ],
     '@typescript-eslint/consistent-type-exports': 'error',
-    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
+    ],
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -141,6 +149,10 @@ module.exports = {
   overrides: [
     {
       files: ['*.mjs'],
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+      },
       rules: {
         '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
