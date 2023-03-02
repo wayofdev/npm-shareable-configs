@@ -266,7 +266,7 @@ Commitlint is a tool that ensures that your commit messages meet certain standar
 1. Create an empty `commitlint.config.js` file:
 
    ```bash
-   $ touch commitlint.config.js
+   touch commitlint.config.js
    ```
 
 2. Paste the following code into the file:
@@ -288,7 +288,7 @@ Lint-Staged is a tool that allows you to run linters on only the files that have
 1. In the root directory of your project, create the file `lint-staged.config.js`:
 
    ```bash
-   $ touch lint-staged.config.js
+   touch lint-staged.config.js
    ```
 
 2. Add the following contents to `lint-staged.config.js`:
@@ -324,7 +324,7 @@ Husky is a tool that allows you to set up Git hooks, which are scripts that run 
 1. Add pnpm scripts to your `package.json` file:
 
    ```bash
-   $ pnpm pkg set scripts.prepare="is-ci || husky install"
+   pnpm pkg set scripts.prepare="is-ci || husky install"
    ```
 
    This will add a `prepare` script that will run the `husky install` command when you run `pnpm install`.
@@ -332,13 +332,13 @@ Husky is a tool that allows you to set up Git hooks, which are scripts that run 
 2. Run the `prepare` command once to configure Husky:
 
    ```bash
-   $ pnpm run prepare
+   pnpm run prepare
    ```
 
 3. Add a pre-commit hook that runs `lint-staged`:
 
    ```bash
-   $ pnpm husky add .husky/pre-commit "pnpm lint-staged --verbose --concurrent false"
+   pnpm husky add .husky/pre-commit "pnpm lint-staged --verbose --concurrent false"
    ```
 
    This will run `lint-staged` on the files that have been staged in Git before you make a commit.
@@ -346,7 +346,7 @@ Husky is a tool that allows you to set up Git hooks, which are scripts that run 
 4. Add a commit-msg hook that runs `commitlint`:
 
    ```bash
-   $ pnpm husky add .husky/commit-msg 'pnpm commitlint --edit "${1}"'
+   pnpm husky add .husky/commit-msg 'pnpm commitlint --edit "${1}"'
    ```
 
    This will run `commitlint` on the commit message that you write before you make a commit.
@@ -360,7 +360,7 @@ By following these steps, you can ensure that your commits meet certain standard
 You can check `Makefile` or `package.json` to get full list of commands for local testing. For testing, you can use these commands to test:
 
 ```bash
-$ make test
+make test
 ```
 
 <br>

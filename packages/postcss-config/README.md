@@ -99,13 +99,13 @@ To extend the `@wayofdev/postcss-config` configuration, create a new `postcss.co
 ```js
 module.exports = {
   plugins: [
-    require('@wayofdev/postcss-config').plugins,
+    ...require('@wayofdev/postcss-config').plugins,
     require('autoprefixer')
   ]
 }
 ```
 
-In this code, you're extending the `plugins` array of the existing configuration by first including the plugins in the original configuration using `require('@wayofdev/postcss-config').plugins` and then adding `autoprefixer` as a new plugin.
+In this code, you're extending the `plugins` array of the existing configuration by first including the plugins in the original configuration using `...require('@wayofdev/postcss-config').plugins` and then adding `autoprefixer` as a new plugin.
 
 <br>
 

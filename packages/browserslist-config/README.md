@@ -95,7 +95,7 @@ To use `@wayofdev/browserslist-config` in your JavaScript projects within a mono
 Adding the following script to your root `package.json` file makes it easier to run the `browserslist` command in your mono-repository:
 
 ```bash
-$ pnpm pkg set scripts.lint:browsers="browserslist"
+pnpm pkg set scripts.lint:browsers="browserslist"
 ```
 
 For `npm` users, replace `pnpm` with `npm` in the above command.
