@@ -1,5 +1,11 @@
 # @wayofdev/postcss-config
 
+## 2.0.2
+
+### Patch Changes
+
+- [`55073bc`](https://github.com/wayofdev/npm-shareable-configs/commit/55073bc1eb6bfbdb65259e1dca4eb18d9ccaabdb) Thanks [@lotyp](https://github.com/lotyp)! - chore: bump version
+
 ## 2.0.1
 
 ### Patch Changes
