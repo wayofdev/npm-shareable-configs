@@ -24,7 +24,7 @@ importers:
       markdownlint-cli: 0.33.0
       npm-run-all: 4.1.5
       prettier: 2.8.4
-      rimraf: 4.1.4
+      rimraf: 4.2.0
       secretlint: 6.2.3
       shell-quote: 1.8.0
       sort-package-json: 2.4.1
@@ -51,7 +51,7 @@ importers:
       markdownlint-cli: 0.33.0
       npm-run-all: 4.1.5
       prettier: 2.8.4
-      rimraf: 4.1.4
+      rimraf: 4.2.0
       secretlint: 6.2.3
       shell-quote: 1.8.0
       sort-package-json: 2.4.1
@@ -62,12 +62,12 @@ importers:
     specifiers:
       '@wayofdev/lint-staged-config': workspace:*
       browserslist: 4.21.5
-      rimraf: 4.1.4
+      rimraf: 4.2.0
     dependencies:
       browserslist: 4.21.5
     devDependencies:
       '@wayofdev/lint-staged-config': link:../lint-staged-config
-      rimraf: 4.1.4
+      rimraf: 4.2.0
 
   packages/commitlint-config:
     specifiers:
@@ -75,14 +75,14 @@ importers:
       '@commitlint/config-conventional': 17.4.4
       '@wayofdev/lint-staged-config': workspace:*
       es-check: 7.1.0
-      rimraf: 4.1.4
+      rimraf: 4.2.0
     dependencies:
       '@commitlint/cli': 17.4.4
       '@commitlint/config-conventional': 17.4.4
     devDependencies:
       '@wayofdev/lint-staged-config': link:../lint-staged-config
       es-check: 7.1.0
-      rimraf: 4.1.4
+      rimraf: 4.2.0
 
   packages/eslint-config-bases:
     specifiers:
@@ -126,7 +126,7 @@ importers:
       prettier: 2.8.4
       react: 18.2.0
       react-dom: 18.2.0
-      rimraf: 4.1.4
+      rimraf: 4.2.0
       tailwindcss: 3.2.7
       typescript: 4.9.5
     dependencies:
@@ -171,7 +171,7 @@ importers:
       graphql: 16.6.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      rimraf: 4.1.4
+      rimraf: 4.2.0
       tailwindcss: 3.2.7_postcss@8.4.21
       typescript: 4.9.5
 
@@ -179,12 +179,12 @@ importers:
     specifiers:
       '@wayofdev/lint-staged-config': workspace:*
       htmlhint: '>= 1'
-      rimraf: 4.1.4
+      rimraf: 4.2.0
     dependencies:
       htmlhint: 1.1.4
     devDependencies:
       '@wayofdev/lint-staged-config': link:../lint-staged-config
-      rimraf: 4.1.4
+      rimraf: 4.2.0
 
   packages/lint-staged-config:
     specifiers:
@@ -251,14 +251,14 @@ importers:
     specifiers:
       '@secretlint/secretlint-rule-preset-recommend': 6.2.3
       '@wayofdev/lint-staged-config': workspace:*
-      rimraf: 4.1.4
+      rimraf: 4.2.0
       secretlint: '>= 6'
     dependencies:
       '@secretlint/secretlint-rule-preset-recommend': 6.2.3
       secretlint: 6.2.3
     devDependencies:
       '@wayofdev/lint-staged-config': link:../lint-staged-config
-      rimraf: 4.1.4
+      rimraf: 4.2.0
 
   packages/stylelint-config:
     specifiers:
@@ -4359,6 +4359,16 @@ packages:
       minimatch: 5.1.6
       once: 1.4.0
 
+  /glob/9.2.1:
+    resolution: {integrity: sha512-Pxxgq3W0HyA3XUvSXcFhRSs+43Jsx0ddxcFrbjxNGkL2Ak5BAUBxLqI5G6ADDeCHLfzzXFhe0b1yYcctGmytMA==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      fs.realpath: 1.0.0
+      minimatch: 7.4.2
+      minipass: 4.2.4
+      path-scurry: 1.6.1
+    dev: true
+
   /global-dirs/0.1.1:
     resolution: {integrity: sha512-NknMLn7F2J7aflwFOlGdNIuCDpN3VGoSoB+aap3KABFWbHVn1TCgFC+np23J8W2BiZbjfEw3BFBycSMv1AFblg==}
     engines: {node: '>=4'}
@@ -5380,6 +5390,11 @@ packages:
     dependencies:
       yallist: 4.0.0
 
+  /lru-cache/7.18.1:
+    resolution: {integrity: sha512-8/HcIENyQnfUTCDizRu9rrDyG6XG/21M4X7/YEGZeD76ZJilFPAUVb/2zysFf7VVO1LEjCDFyHp8pMMvozIrvg==}
+    engines: {node: '>=12'}
+    dev: true
+
   /lz-string/1.4.4:
     resolution: {integrity: sha512-0ckx7ZHRPqb0oUm8zNr+90mtf9DQB60H1wMCjBtfi62Kl3a7JbHob6gA2bC+xRvZoOL+1hzUK8jeuEIQE8svEQ==}
     hasBin: true
@@ -5937,6 +5952,13 @@ packages:
     dependencies:
       brace-expansion: 2.0.1
 
+  /minimatch/7.4.2:
+    resolution: {integrity: sha512-xy4q7wou3vUoC9k1xGTXc+awNdGaGVHtFUaey8tiX4H1QRc04DZ/rmDFwNm2EBsuYEhAZ6SgMmYf3InGY6OauA==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: true
+
   /minimist-options/4.1.0:
     resolution: {integrity: sha512-Q4r8ghd80yhO/0j1O3B2BjweX3fiHg9cdOwjJd2J76Q135c+NDxGCqdYKQ1SKBuFfgWbAUzBfvYjPUEeNgqN1A==}
     engines: {node: '>= 6'}
@@ -5951,6 +5973,11 @@ packages:
 
   /minimist/1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+
+  /minipass/4.2.4:
+    resolution: {integrity: sha512-lwycX3cBMTvcejsHITUgYj6Gy6A7Nh4Q6h9NP4sTHY1ccJlC7yKzDmiShEHsJ16Jf1nKGDEaiHxiltsJEvk0nQ==}
+    engines: {node: '>=8'}
+    dev: true
 
   /mixme/0.5.5:
     resolution: {integrity: sha512-/6IupbRx32s7jjEwHcycXikJwFD5UujbVNuJFkeKLYje+92OvtuPniF6JhnFm5JCTDUhS+kYK3W/4BWYQYXz7w==}
@@ -6334,6 +6361,14 @@ packages:
 
   /path-parse/1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
+
+  /path-scurry/1.6.1:
+    resolution: {integrity: sha512-OW+5s+7cw6253Q4E+8qQ/u1fVvcJQCJo/VFD8pje+dbJCF1n5ZRMV2AEHbGp+5Q7jxQIYJxkHopnj6nzdGeZLA==}
+    engines: {node: '>=14'}
+    dependencies:
+      lru-cache: 7.18.1
+      minipass: 4.2.4
+    dev: true
 
   /path-type/3.0.0:
     resolution: {integrity: sha512-T2ZUsdZFHgA3u4e5PfPbjd7HDDpxPnQb5jN0SrDsjNSuVXHJqtwTnWqG0B1jZrgmJ/7lj1EmVIByWt1gxGkWvg==}
@@ -7285,10 +7320,12 @@ packages:
     dependencies:
       glob: 7.2.3
 
-  /rimraf/4.1.4:
-    resolution: {integrity: sha512-CoUTSckPOFgu0m8PzkXWlp/e0IHxxv3fUxOivMspXfxcm1rPaNtj6lkkbi5NnFVoGDFj6kX7jPKVccafEf9HoA==}
+  /rimraf/4.2.0:
+    resolution: {integrity: sha512-tPt+gLORNVqRCk0NwuJ5SlMEcOGvt4CCU8sUPqgCFtCbnoNCTd9Q6vq7JlBbxQlACiH14OR28y7piA2Bak9Sxw==}
     engines: {node: '>=14'}
     hasBin: true
+    dependencies:
+      glob: 9.2.1
     dev: true
 
   /run-async/2.4.1:
