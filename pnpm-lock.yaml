@@ -121,7 +121,7 @@ importers:
       eslint-plugin-storybook: 0.6.11
       eslint-plugin-tailwindcss: 3.10.1
       eslint-plugin-testing-library: 5.10.2
-      eslint-plugin-unicorn: 45.0.2
+      eslint-plugin-unicorn: 46.0.0
       graphql: 16.6.0
       prettier: 2.8.4
       react: 18.2.0
@@ -156,7 +156,7 @@ importers:
       eslint-plugin-storybook: 0.6.11_ycpbpc6yetojsgtrx3mwntkhsu
       eslint-plugin-tailwindcss: 3.10.1_tailwindcss@3.2.7
       eslint-plugin-testing-library: 5.10.2_ycpbpc6yetojsgtrx3mwntkhsu
-      eslint-plugin-unicorn: 45.0.2_eslint@8.35.0
+      eslint-plugin-unicorn: 46.0.0_eslint@8.35.0
       prettier: 2.8.4
     devDependencies:
       '@graphql-eslint/eslint-plugin': 3.16.1_hz4vfa46kigeg3rrvec257khhm
@@ -3858,8 +3858,8 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-unicorn/45.0.2_eslint@8.35.0:
-    resolution: {integrity: sha512-Y0WUDXRyGDMcKLiwgL3zSMpHrXI00xmdyixEGIg90gHnj0PcHY4moNv3Ppje/kDivdAy5vUeUr7z211ImPv2gw==}
+  /eslint-plugin-unicorn/46.0.0_eslint@8.35.0:
+    resolution: {integrity: sha512-j07WkC+PFZwk8J33LYp6JMoHa1lXc1u6R45pbSAipjpfpb7KIGr17VE2D685zCxR5VL4cjrl65kTJflziQWMDA==}
     engines: {node: '>=14.18'}
     peerDependencies:
       eslint: '>=8.28.0'
