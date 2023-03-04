@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@wayofdev/lint-staged-config": "workspace:*",
-    "rimraf": "4.2.0"
+    "rimraf": "4.3.0"
   },
   "peerDependencies": {
     "htmlhint": ">= 1"
