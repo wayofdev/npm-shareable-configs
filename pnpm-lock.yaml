@@ -88,7 +88,7 @@ importers:
     specifiers:
       '@graphql-eslint/eslint-plugin': 3.16.1
       '@html-eslint/eslint-plugin': 0.17.1
-      '@html-eslint/parser': 0.16.0
+      '@html-eslint/parser': 0.17.1
       '@rushstack/eslint-patch': 1.2.0
       '@tanstack/eslint-plugin-query': 4.24.11
       '@testing-library/jest-dom': 5.16.5
@@ -131,7 +131,7 @@ importers:
       typescript: 4.9.5
     dependencies:
       '@html-eslint/eslint-plugin': 0.17.1
-      '@html-eslint/parser': 0.16.0
+      '@html-eslint/parser': 0.17.1
       '@rushstack/eslint-patch': 1.2.0
       '@tanstack/eslint-plugin-query': 4.24.11
       '@testing-library/jest-dom': 5.16.5
@@ -1491,8 +1491,8 @@ packages:
     engines: {node: '>=8.10.0'}
     dev: false
 
-  /@html-eslint/parser/0.16.0:
-    resolution: {integrity: sha512-lXVC98WX79L7C/GP5oP233x5IwON9yaV2+rnyYy44wXde5PC+EOPLDItVZpt+aNlYl4RJgkBPcOSwe3yzpSqZA==}
+  /@html-eslint/parser/0.17.1:
+    resolution: {integrity: sha512-1DgkkEs7CsdXcRP2FstknsrXzdv+Sh5dIURbpJl+ET2fiB94XdWp37+lTqB6JvhKlIbOMGQTAcUL6/Jx5Ub81g==}
     engines: {node: '>=8.10.0'}
     dependencies:
       es-html-parser: 0.0.8

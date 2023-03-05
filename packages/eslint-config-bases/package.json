@@ -107,7 +107,7 @@
   },
   "dependencies": {
     "@html-eslint/eslint-plugin": "0.17.1",
-    "@html-eslint/parser": "0.16.0",
+    "@html-eslint/parser": "0.17.1",
     "@rushstack/eslint-patch": "1.2.0",
     "@tanstack/eslint-plugin-query": "4.24.11",
     "@testing-library/jest-dom": "5.16.5",
