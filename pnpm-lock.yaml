@@ -87,7 +87,7 @@ importers:
   packages/eslint-config-bases:
     specifiers:
       '@graphql-eslint/eslint-plugin': 3.16.1
-      '@html-eslint/eslint-plugin': 0.16.0
+      '@html-eslint/eslint-plugin': 0.17.1
       '@html-eslint/parser': 0.16.0
       '@rushstack/eslint-patch': 1.2.0
       '@tanstack/eslint-plugin-query': 4.24.11
@@ -130,7 +130,7 @@ importers:
       tailwindcss: 3.2.7
       typescript: 4.9.5
     dependencies:
-      '@html-eslint/eslint-plugin': 0.16.0
+      '@html-eslint/eslint-plugin': 0.17.1
       '@html-eslint/parser': 0.16.0
       '@rushstack/eslint-patch': 1.2.0
       '@tanstack/eslint-plugin-query': 4.24.11
@@ -1486,8 +1486,8 @@ packages:
       graphql: 16.6.0
     dev: true
 
-  /@html-eslint/eslint-plugin/0.16.0:
-    resolution: {integrity: sha512-DIg2QDnsf2ThujKSIdz0rGEM2dc6W+wNyjPQncy5d14wyDiHHN+W8pgeGqnkaQK3+JbQ263dJaF9Rpf4fAkKJw==}
+  /@html-eslint/eslint-plugin/0.17.1:
+    resolution: {integrity: sha512-HaNUb1UuF5lw+l814GtxSB3bG/OG6dbFoDPkHe56hwl2IKacj9KewD+tIkZB46W7ILYt9QbvR9EnY6g0//zrnA==}
     engines: {node: '>=8.10.0'}
     dev: false
 
