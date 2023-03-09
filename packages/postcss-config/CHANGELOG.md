@@ -1,5 +1,13 @@
 # @wayofdev/postcss-config
 
+## 2.0.3
+
+### Patch Changes
+
+- [`6c20969`](https://github.com/wayofdev/npm-shareable-configs/commit/6c2096931aee2f1c3f499d47f7083e87b6c245ba) Thanks [@lotyp](https://github.com/lotyp)! - docs: invalid require of postcss config
+
+- [`45df79a`](https://github.com/wayofdev/npm-shareable-configs/commit/45df79a7243b975f4f75220d1dff680b0656e56f) Thanks [@lotyp](https://github.com/lotyp)! - feat: playwright support
+
 ## 2.0.2
 
 ### Patch Changes

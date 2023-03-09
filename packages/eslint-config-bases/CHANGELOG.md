@@ -1,5 +1,14 @@
 # @wayofdev/eslint-config-bases
 
+## 2.0.5
+
+### Patch Changes
+
+- [`45df79a`](https://github.com/wayofdev/npm-shareable-configs/commit/45df79a7243b975f4f75220d1dff680b0656e56f) Thanks [@lotyp](https://github.com/lotyp)! - feat: playwright support
+
+- Updated dependencies [[`45df79a`](https://github.com/wayofdev/npm-shareable-configs/commit/45df79a7243b975f4f75220d1dff680b0656e56f)]:
+  - @wayofdev/lint-staged-config@2.0.3
+
 ## 2.0.4
 
 ### Patch Changes
