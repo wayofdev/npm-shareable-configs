@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@wayofdev/lint-staged-config": "workspace:*",
-    "rimraf": "4.3.1"
+    "rimraf": "4.4.0"
   },
   "publishConfig": {
     "access": "public"

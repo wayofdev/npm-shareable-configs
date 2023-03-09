@@ -24,7 +24,7 @@ importers:
       markdownlint-cli: 0.33.0
       npm-run-all: 4.1.5
       prettier: 2.8.4
-      rimraf: 4.3.1
+      rimraf: 4.4.0
       secretlint: 6.2.3
       shell-quote: 1.8.0
       sort-package-json: 2.4.1
@@ -51,7 +51,7 @@ importers:
       markdownlint-cli: 0.33.0
       npm-run-all: 4.1.5
       prettier: 2.8.4
-      rimraf: 4.3.1
+      rimraf: 4.4.0
       secretlint: 6.2.3
       shell-quote: 1.8.0
       sort-package-json: 2.4.1
@@ -62,12 +62,12 @@ importers:
     specifiers:
       '@wayofdev/lint-staged-config': workspace:*
       browserslist: 4.21.5
-      rimraf: 4.3.1
+      rimraf: 4.4.0
     dependencies:
       browserslist: 4.21.5
     devDependencies:
       '@wayofdev/lint-staged-config': link:../lint-staged-config
-      rimraf: 4.3.1
+      rimraf: 4.4.0
 
   packages/commitlint-config:
     specifiers:
@@ -75,14 +75,14 @@ importers:
       '@commitlint/config-conventional': 17.4.4
       '@wayofdev/lint-staged-config': workspace:*
       es-check: 7.1.0
-      rimraf: 4.3.1
+      rimraf: 4.4.0
     dependencies:
       '@commitlint/cli': 17.4.4
       '@commitlint/config-conventional': 17.4.4
     devDependencies:
       '@wayofdev/lint-staged-config': link:../lint-staged-config
       es-check: 7.1.0
-      rimraf: 4.3.1
+      rimraf: 4.4.0
 
   packages/eslint-config-bases:
     specifiers:
@@ -126,7 +126,7 @@ importers:
       prettier: 2.8.4
       react: 18.2.0
       react-dom: 18.2.0
-      rimraf: 4.3.1
+      rimraf: 4.4.0
       tailwindcss: 3.2.7
       typescript: 4.9.5
     dependencies:
@@ -171,7 +171,7 @@ importers:
       graphql: 16.6.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      rimraf: 4.3.1
+      rimraf: 4.4.0
       tailwindcss: 3.2.7_postcss@8.4.21
       typescript: 4.9.5
 
@@ -179,12 +179,12 @@ importers:
     specifiers:
       '@wayofdev/lint-staged-config': workspace:*
       htmlhint: '>= 1'
-      rimraf: 4.3.1
+      rimraf: 4.4.0
     dependencies:
       htmlhint: 1.1.4
     devDependencies:
       '@wayofdev/lint-staged-config': link:../lint-staged-config
-      rimraf: 4.3.1
+      rimraf: 4.4.0
 
   packages/lint-staged-config:
     specifiers:
@@ -251,14 +251,14 @@ importers:
     specifiers:
       '@secretlint/secretlint-rule-preset-recommend': 6.2.3
       '@wayofdev/lint-staged-config': workspace:*
-      rimraf: 4.3.1
+      rimraf: 4.4.0
       secretlint: '>= 6'
     dependencies:
       '@secretlint/secretlint-rule-preset-recommend': 6.2.3
       secretlint: 6.2.3
     devDependencies:
       '@wayofdev/lint-staged-config': link:../lint-staged-config
-      rimraf: 4.3.1
+      rimraf: 4.4.0
 
   packages/stylelint-config:
     specifiers:
@@ -7396,8 +7396,8 @@ packages:
     dependencies:
       glob: 7.2.3
 
-  /rimraf/4.3.1:
-    resolution: {integrity: sha512-GfHJHBzFQra23IxDzIdBqhOWfbtdgS1/dCHrDy+yvhpoJY5TdwdT28oWaHWfRpKFDLd3GZnGTx6Mlt4+anbsxQ==}
+  /rimraf/4.4.0:
+    resolution: {integrity: sha512-X36S+qpCUR0HjXlkDe4NAOhS//aHH0Z+h8Ckf2auGJk3PTnx5rLmrHkwNdbVQuCSUhOyFrlRvFEllZOYE+yZGQ==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
