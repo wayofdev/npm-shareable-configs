@@ -45,7 +45,7 @@
   "devDependencies": {
     "@wayofdev/lint-staged-config": "workspace:*",
     "es-check": "7.1.0",
-    "rimraf": "4.3.1"
+    "rimraf": "4.4.0"
   },
   "peerDependencies": {
     "@commitlint/cli": ">= 17"
