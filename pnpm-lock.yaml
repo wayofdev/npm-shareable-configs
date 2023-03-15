@@ -93,7 +93,7 @@ importers:
       '@tanstack/eslint-plugin-query': 4.26.2
       '@testing-library/jest-dom': 5.16.5
       '@testing-library/react': 14.0.0
-      '@types/jest': 29.4.1
+      '@types/jest': 29.4.2
       '@types/node': 18.15.3
       '@types/prettier': 2.7.2
       '@types/react': 18.0.28
@@ -160,7 +160,7 @@ importers:
       prettier: 2.8.4
     devDependencies:
       '@graphql-eslint/eslint-plugin': 3.16.1_mqeauxax3osu5xbv2umssilsi4
-      '@types/jest': 29.4.1
+      '@types/jest': 29.4.2
       '@types/node': 18.15.3
       '@types/prettier': 2.7.2
       '@types/react': 18.0.28
@@ -188,7 +188,7 @@ importers:
 
   packages/lint-staged-config:
     specifiers:
-      '@types/jest': 29.4.1
+      '@types/jest': 29.4.2
       '@types/node': 18.15.3
       '@types/prettier': 2.7.2
       '@types/react': 18.0.28
@@ -198,7 +198,7 @@ importers:
     dependencies:
       lint-staged: 13.2.0
     devDependencies:
-      '@types/jest': 29.4.1
+      '@types/jest': 29.4.2
       '@types/node': 18.15.3
       '@types/prettier': 2.7.2
       '@types/react': 18.0.28
@@ -2012,8 +2012,8 @@ packages:
     dependencies:
       '@types/istanbul-lib-report': 3.0.0
 
-  /@types/jest/29.4.1:
-    resolution: {integrity: sha512-zDQSWXG+ZkEvs2zFFMszePhx4euKz+Yt3Gg1P+RHjfJBinTTr6L2DEyovO4V/WrKXuF0Dgn56GWGZPDa6TW9eQ==}
+  /@types/jest/29.4.2:
+    resolution: {integrity: sha512-bbne90W7is+m88ezmZrLiTpp41tIoTdvPC5t3gLoNgu/6qbGdWTC2JWqPWQRJn2Q7rVYTr8aTWqOjhGJDXyvAQ==}
     dependencies:
       expect: 29.5.0
       pretty-format: 29.5.0
@@ -2103,7 +2103,7 @@ packages:
   /@types/testing-library__jest-dom/5.14.5:
     resolution: {integrity: sha512-SBwbxYoyPIvxHbeHxTZX2Pe/74F/tX2/D3mMvzabdeJ25bBojfW0TyB8BHrbq/9zaaKICJZjLP+8r6AeZMFCuQ==}
     dependencies:
-      '@types/jest': 29.4.1
+      '@types/jest': 29.4.2
     dev: false
 
   /@types/triple-beam/1.3.2:
