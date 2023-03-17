@@ -56,13 +56,27 @@ Developers can streamline the process of using PostCSS in their project and ensu
 To use this configuration, you'll need to install `@wayofdev/postcss-config` as a development dependency in your project. You can do this by running the following command:
 
 ```bash
-pnpm add -D postcss @wayofdev/postcss-config
+pnpm add -D \
+	postcss \
+	@wayofdev/postcss-config \
+	postcss-100vh-fix \
+	postcss-flexbugs-fixes \
+	postcss-import \
+	postcss-preset-env \
+	postcss-reporter
 ```
 
 If you're working in a monorepository and want to add the package to a specific app, you can use the `--filter` flag to add it only to that app. For example:
 
 ```bash
-pnpm --filter=[app-dir-name] add -D postcss @wayofdev/postcss-config
+pnpm --filter=[app-dir-name] add -D \
+	postcss \
+	@wayofdev/postcss-config \
+	postcss-100vh-fix \
+	postcss-flexbugs-fixes \
+	postcss-import \
+	postcss-preset-env \
+	postcss-reporter
 ```
 
 Replace `[app-dir-name]` with the name of the directory of the app where you want to install the package.
@@ -77,7 +91,7 @@ To use the `@wayofdev/postcss-config` package in your project, follow these step
 2. Add the following code to the `postcss.config.js` file:
 
 ```js
-module.exports = require('@wayofdev/postcss-config');
+module.exports = require('@wayofdev/postcss-config')
 ```
 
 If you're using a monorepository, your project structure might look like this:
