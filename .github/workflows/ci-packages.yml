@@ -1,5 +1,4 @@
 ---
-name: CI for Packages
 
 on: # yamllint disable-line rule:truthy
   push:
@@ -37,9 +36,10 @@ on: # yamllint disable-line rule:truthy
       - 'pnpm*'
       - '.github/**'
 
+name: 🔍 Continuous integration for packages
+
 jobs:
   integration:
-    name: Node ${{ matrix.node }} - ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: true
@@ -48,12 +48,12 @@ jobs:
         node: ['18']
 
     steps:
-      - name: Check out the codebase
+      - name: 📦 Check out the codebase
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Setup node ${{ matrix.node }}
+      - name: ⚙️ Setup node ${{ matrix.node }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
@@ -62,7 +62,7 @@ jobs:
       - name: 📥 Monorepo install
         uses: ./.github/actions/pnpm-install
 
-      - name: Restore packages cache
+      - name: 📤 Restore packages cache
         uses: actions/cache@v3
         with:
           path: |
@@ -74,12 +74,12 @@ jobs:
             ${{ runner.os }}-packages-cache-${{ hashFiles('**/pnpm*.yaml') }}-
 
       - if: github.event_name == 'pull_request'
-        name: Validate all commits from PR
+        name: 🔍 Validate all commits from PR
         uses: wagoid/commitlint-github-action@v5
         env:
           NODE_PATH: ${{ github.workspace }}/node_modules
 
       # Lint packages that have changed (--include & --since)
-      - name: Linter
+      - name: 🚨 Lint
         run: |
           pnpm --filter "...[origin/master]" run lint
