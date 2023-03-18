@@ -15,7 +15,11 @@ DOCKER_COMPOSE ?= docker-compose
 # Support image with all needed binaries, like envsubst, mkcert, wait4x
 SUPPORT_IMAGE ?= wayofdev/build-deps:alpine-latest
 
-BUILDER_PARAMS ?= docker run --rm -i -v $(shell pwd):/home/wod
+BUILDER_PARAMS ?= docker run \
+	--rm \
+	-i \
+	-v $(PWD):/app \
+	--workdir /app
 
 BUILDER ?= $(BUILDER_PARAMS) $(SUPPORT_IMAGE)
 NPM_BIN ?= pnpm
@@ -149,6 +153,10 @@ lint-yaml: ## Lints yaml files inside project
 lint-actions: ## Lint github actions using actionlint
 	$(BUILDER) actionlint -color
 .PHONY: lint-actions
+
+lint-types: ## Run typecheck
+	$(NPM_BIN) lint:types
+.PHONY: lint-types
 
 test: ## Run unit tests
 	$(NPM_BIN) test

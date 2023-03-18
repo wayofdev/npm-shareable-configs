@@ -1,6 +1,6 @@
 ---
-
 on: # yamllint disable-line rule:truthy
+  merge_group:
   push:
     branches:
       - master
@@ -13,18 +13,6 @@ on: # yamllint disable-line rule:truthy
       - '.github/**'
 
   pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
-    # Only consider those paths to trigger the action
-    paths:
-      - 'packages/**'
-      - 'package.json'
-      - 'pnpm*'
-      - '.github/**'
-
-  merge_group:
     types:
       - opened
       - synchronize
