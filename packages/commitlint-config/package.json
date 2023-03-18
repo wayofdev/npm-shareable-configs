@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/commitlint-config",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "private": false,
   "description": "A shareable commitlint configuration for projects.",
   "keywords": [

@@ -1,5 +1,13 @@
 # @wayofdev/eslint-config-bases
 
+## 2.0.6
+
+### Patch Changes
+
+- [#107](https://github.com/wayofdev/npm-shareable-configs/pull/107) [`401ac7c`](https://github.com/wayofdev/npm-shareable-configs/commit/401ac7c000963421f11fc29ce230a650de976e25) Thanks [@lotyp](https://github.com/lotyp)! - fix: dependency updates, workflow changes
+
+- [#109](https://github.com/wayofdev/npm-shareable-configs/pull/109) [`8825f71`](https://github.com/wayofdev/npm-shareable-configs/commit/8825f718a851dde909eebb36b908f59cfcbf29eb) Thanks [@lotyp](https://github.com/lotyp)! - chore: version bump
+
 ## 2.0.5
 
 ### Patch Changes
