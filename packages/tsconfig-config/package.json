@@ -35,7 +35,7 @@
     "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/tsconfig-config.eslintcache"
   },
   "peerDependencies": {
-    "typescript": ">= 4"
+    "typescript": "^4.9 || ^5"
   },
   "publishConfig": {
     "access": "public"
