@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/secretlint-config",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "private": false,
   "description": "A shareable secretlint configuration for projects.",
   "keywords": [
