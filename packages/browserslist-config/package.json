@@ -41,8 +41,10 @@
     "browserslist": "4.21.5"
   },
   "devDependencies": {
-    "@wayofdev/lint-staged-config": "workspace:*",
     "rimraf": "4.4.0"
+  },
+  "peerDependencies": {
+    "@wayofdev/lint-staged-config": "^2"
   },
   "publishConfig": {
     "access": "public"
