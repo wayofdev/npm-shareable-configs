@@ -60,7 +60,7 @@ importers:
 
   packages/browserslist-config:
     specifiers:
-      '@wayofdev/lint-staged-config': ^2
+      '@wayofdev/lint-staged-config': ^2.0.4
       browserslist: 4.21.5
       rimraf: 4.4.0
     dependencies:
@@ -74,7 +74,7 @@ importers:
       '@commitlint/cli': '>= 17'
       '@commitlint/config-conventional': 17.4.4
       '@types/node': 18.15.5
-      '@wayofdev/lint-staged-config': ^2
+      '@wayofdev/lint-staged-config': ^2.0.4
       es-check: 7.1.0
       rimraf: 4.4.0
     dependencies:
@@ -102,7 +102,7 @@ importers:
       '@types/react-dom': 18.0.11
       '@typescript-eslint/eslint-plugin': 5.56.0
       '@typescript-eslint/parser': 5.56.0
-      '@wayofdev/lint-staged-config': ^2
+      '@wayofdev/lint-staged-config': ^2.0.4
       es-check: 7.1.0
       eslint: 8.36.0
       eslint-config-prettier: 8.8.0
@@ -179,7 +179,7 @@ importers:
 
   packages/htmlhint-config:
     specifiers:
-      '@wayofdev/lint-staged-config': ^2
+      '@wayofdev/lint-staged-config': ^2.0.4
       htmlhint: '>= 1'
       rimraf: 4.4.0
     dependencies:
@@ -209,7 +209,7 @@ importers:
 
   packages/markdownlint-config:
     specifiers:
-      '@wayofdev/lint-staged-config': ^2
+      '@wayofdev/lint-staged-config': ^2.0.4
       markdownlint: '>= 0'
       markdownlint-cli: 0.33.0
     dependencies:
@@ -220,7 +220,7 @@ importers:
   packages/postcss-config:
     specifiers:
       '@types/postcss-reporter': 7.0.1
-      '@wayofdev/lint-staged-config': ^2
+      '@wayofdev/lint-staged-config': ^2.0.4
       autoprefixer: 10.4.14
       es-check: 7.1.0
       postcss: 8.4.21
@@ -251,7 +251,7 @@ importers:
   packages/secretlint-config:
     specifiers:
       '@secretlint/secretlint-rule-preset-recommend': 6.2.3
-      '@wayofdev/lint-staged-config': ^2
+      '@wayofdev/lint-staged-config': ^2.0.4
       rimraf: 4.4.0
       secretlint: '>= 6'
     dependencies:
@@ -265,7 +265,7 @@ importers:
     specifiers:
       '@ronilaukkarinen/stylelint-a11y': 1.2.7
       '@types/node': 18.15.5
-      '@wayofdev/lint-staged-config': ^2
+      '@wayofdev/lint-staged-config': ^2.0.4
       es-check: 7.1.0
       stylelint: 15.3.0
       stylelint-config-recommended: 11.0.0
@@ -290,7 +290,7 @@ importers:
 
   packages/tsconfig-config:
     specifiers:
-      '@wayofdev/lint-staged-config': ^2
+      '@wayofdev/lint-staged-config': ^2.0.4
       typescript: ^4.9 || ^5
     dependencies:
       '@wayofdev/lint-staged-config': link:../lint-staged-config
