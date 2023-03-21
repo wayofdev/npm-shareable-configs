@@ -133,7 +133,7 @@
     "eslint-plugin-tailwindcss": "3.10.1",
     "eslint-plugin-testing-library": "5.10.2",
     "eslint-plugin-unicorn": "46.0.0",
-    "prettier": "2.8.5"
+    "prettier": "2.8.6"
   },
   "devDependencies": {
     "@graphql-eslint/eslint-plugin": "3.16.1",
@@ -144,7 +144,6 @@
     "@types/prettier": "2.7.2",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
-    "@wayofdev/lint-staged-config": "workspace:*",
     "es-check": "7.1.0",
     "eslint": "8.36.0",
     "graphql": "16.6.0",
@@ -156,7 +155,7 @@
   },
   "peerDependencies": {
     "@graphql-eslint/eslint-plugin": "3.16.1",
-    "@wayofdev/lint-staged-config": "workspace:*",
+    "@wayofdev/lint-staged-config": "^2",
     "eslint": "8.36.0",
     "graphql": "16.6.0",
     "prettier": "2.8.5",

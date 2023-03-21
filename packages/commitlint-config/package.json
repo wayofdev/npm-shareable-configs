@@ -43,12 +43,13 @@
     "@commitlint/config-conventional": "17.4.4"
   },
   "devDependencies": {
-    "@wayofdev/lint-staged-config": "workspace:*",
+    "@types/node": "18.15.5",
     "es-check": "7.1.0",
     "rimraf": "4.4.0"
   },
   "peerDependencies": {
-    "@commitlint/cli": ">= 17"
+    "@commitlint/cli": ">= 17",
+    "@wayofdev/lint-staged-config": "^2"
   },
   "publishConfig": {
     "access": "public"

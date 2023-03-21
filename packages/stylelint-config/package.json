@@ -36,8 +36,8 @@
     "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
-    "stylelint": "15.3.0",
     "@ronilaukkarinen/stylelint-a11y": "1.2.7",
+    "stylelint": "15.3.0",
     "stylelint-config-recommended": "11.0.0",
     "stylelint-config-standard": "31.0.0",
     "stylelint-config-standard-scss": "7.0.1",
@@ -46,10 +46,11 @@
     "stylelint-order": "6.0.3"
   },
   "devDependencies": {
-    "@wayofdev/lint-staged-config": "workspace:*",
+    "@types/node": "18.15.5",
     "es-check": "7.1.0"
   },
   "peerDependencies": {
+    "@wayofdev/lint-staged-config": "^2",
     "stylelint": "^14 || ^15"
   },
   "publishConfig": {

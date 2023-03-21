@@ -32,10 +32,10 @@
     "lint:fix": "eslint --ext .json --fix --cache --cache-location ../../.cache/eslint/htmlhint-config.eslintcache"
   },
   "devDependencies": {
-    "@wayofdev/lint-staged-config": "workspace:*",
     "rimraf": "4.4.0"
   },
   "peerDependencies": {
+    "@wayofdev/lint-staged-config": "^2",
     "htmlhint": ">= 1"
   },
   "publishConfig": {

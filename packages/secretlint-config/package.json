@@ -36,10 +36,10 @@
     "@secretlint/secretlint-rule-preset-recommend": "6.2.3"
   },
   "devDependencies": {
-    "@wayofdev/lint-staged-config": "workspace:*",
     "rimraf": "4.4.0"
   },
   "peerDependencies": {
+    "@wayofdev/lint-staged-config": "^2",
     "secretlint": ">= 6"
   },
   "publishConfig": {

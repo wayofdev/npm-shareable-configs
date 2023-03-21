@@ -51,10 +51,10 @@
   },
   "devDependencies": {
     "@types/postcss-reporter": "7.0.1",
-    "@wayofdev/lint-staged-config": "workspace:*",
     "es-check": "7.1.0"
   },
   "peerDependencies": {
+    "@wayofdev/lint-staged-config": "^2",
     "postcss": ">= 8",
     "sanitize.css": ">= 13",
     "tailwindcss": ">= 3"
