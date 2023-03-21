@@ -1,5 +1,11 @@
 # @wayofdev/lint-staged-config
 
+## 2.0.4
+
+### Patch Changes
+
+- [#119](https://github.com/wayofdev/npm-shareable-configs/pull/119) [`b1bbe03`](https://github.com/wayofdev/npm-shareable-configs/commit/b1bbe03a4bb1ce30792ee8c828cf17a7fbf513bf) Thanks [@lotyp](https://github.com/lotyp)! - feat: require lint-staged-config as peer dep
+
 ## 2.0.3
 
 ### Patch Changes
