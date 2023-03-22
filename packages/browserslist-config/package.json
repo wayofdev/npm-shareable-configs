@@ -41,7 +41,7 @@
     "browserslist": "4.21.5"
   },
   "devDependencies": {
-    "rimraf": "4.4.0"
+    "rimraf": "4.4.1"
   },
   "peerDependencies": {
     "@wayofdev/lint-staged-config": "^2.0.4"
