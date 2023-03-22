@@ -88,7 +88,7 @@ importers:
 
   packages/eslint-config-bases:
     specifiers:
-      '@graphql-eslint/eslint-plugin': 3.16.1
+      '@graphql-eslint/eslint-plugin': 3.16.2
       '@html-eslint/eslint-plugin': 0.17.2
       '@html-eslint/parser': 0.17.1
       '@rushstack/eslint-patch': 1.2.0
@@ -162,7 +162,7 @@ importers:
       eslint-plugin-unicorn: 46.0.0_eslint@8.36.0
       prettier: 2.8.6
     devDependencies:
-      '@graphql-eslint/eslint-plugin': 3.16.1_5xzqi23aikkn5q7ww4isr6moyu
+      '@graphql-eslint/eslint-plugin': 3.16.2_5xzqi23aikkn5q7ww4isr6moyu
       '@types/jest': 29.5.0
       '@types/node': 18.15.5
       '@types/prettier': 2.7.2
@@ -1259,8 +1259,8 @@ packages:
     resolution: {integrity: sha512-lxJ9R5ygVm8ZWgYdUweoq5ownDlJ4upvoWmO4eLxBYHdMo+vZ/Rx0EN6MbKWDJOSUGrqJy2Gt+Dyv/VKml0fjg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  /@graphql-eslint/eslint-plugin/3.16.1_5xzqi23aikkn5q7ww4isr6moyu:
-    resolution: {integrity: sha512-sKmtlwVWjxCXlmgpNJSdvBqapluyrp6PA7FbSnpkyHD0ejkp3mhwZtCiR6843LmVFgWSzfAtEdjPCT2TcJ5p/w==}
+  /@graphql-eslint/eslint-plugin/3.16.2_5xzqi23aikkn5q7ww4isr6moyu:
+    resolution: {integrity: sha512-ei4U4rEakfzGUBHzv0dg/TFtCu+EJybzCzXmtvfM+xikbfsEqMPQmqfb8qS23seYnApICOkgK6bRnGvsMtsNhw==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
