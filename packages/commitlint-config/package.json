@@ -43,7 +43,7 @@
     "@commitlint/config-conventional": "17.4.4"
   },
   "devDependencies": {
-    "@types/node": "18.15.7",
+    "@types/node": "18.15.10",
     "es-check": "7.1.0",
     "rimraf": "4.4.1"
   },
