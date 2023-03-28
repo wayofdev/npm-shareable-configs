@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/htmlhint-config",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "private": false,
   "description": "A shareable htmlhint configuration for projects.",
   "keywords": [
@@ -35,7 +35,7 @@
     "rimraf": "^4.4.1"
   },
   "peerDependencies": {
-    "@wayofdev/lint-staged-config": "^2.0.5",
+    "@wayofdev/lint-staged-config": "^2.0.6",
     "htmlhint": ">= 1"
   },
   "publishConfig": {

@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/tsconfig-config",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "private": false,
   "description": "A shareable tsconfig configuration for projects.",
   "keywords": [
@@ -35,7 +35,7 @@
     "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/tsconfig-config.eslintcache"
   },
   "peerDependencies": {
-    "@wayofdev/lint-staged-config": "^2.0.5",
+    "@wayofdev/lint-staged-config": "^2.0.6",
     "typescript": "^4.9 || ^5"
   },
   "publishConfig": {
