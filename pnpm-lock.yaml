@@ -89,11 +89,11 @@ importers:
         specifier: ^2.0.4
         version: link:../lint-staged-config
       browserslist:
-        specifier: 4.21.5
+        specifier: ^4.21.5
         version: 4.21.5
     devDependencies:
       rimraf:
-        specifier: 4.4.1
+        specifier: ^4.4.1
         version: 4.4.1
 
   packages/commitlint-config:
@@ -109,146 +109,146 @@ importers:
         version: link:../lint-staged-config
     devDependencies:
       '@types/node':
-        specifier: 18.15.10
+        specifier: ^18.15.10
         version: 18.15.10
       es-check:
-        specifier: 7.1.0
+        specifier: ^7.1.0
         version: 7.1.0
       rimraf:
-        specifier: 4.4.1
+        specifier: ^4.4.1
         version: 4.4.1
 
   packages/eslint-config-bases:
     dependencies:
       '@html-eslint/eslint-plugin':
-        specifier: 0.17.2
+        specifier: ^0.17.2
         version: 0.17.2
       '@html-eslint/parser':
-        specifier: 0.17.1
+        specifier: ^0.17.1
         version: 0.17.1
       '@rushstack/eslint-patch':
-        specifier: 1.2.0
+        specifier: ^1.2.0
         version: 1.2.0
       '@tanstack/eslint-plugin-query':
-        specifier: 4.27.0
+        specifier: ^4.27.0
         version: 4.27.0
       '@testing-library/jest-dom':
-        specifier: 5.16.5
+        specifier: ^5.16.5
         version: 5.16.5
       '@testing-library/react':
-        specifier: 14.0.0
+        specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@typescript-eslint/eslint-plugin':
-        specifier: 5.57.0
+        specifier: ^5.57.0
         version: 5.57.0(@typescript-eslint/parser@5.57.0)(eslint@8.36.0)(typescript@5.0.2)
       '@typescript-eslint/parser':
-        specifier: 5.57.0
+        specifier: ^5.57.0
         version: 5.57.0(eslint@8.36.0)(typescript@5.0.2)
       '@wayofdev/lint-staged-config':
         specifier: ^2.0.4
         version: link:../lint-staged-config
       eslint-config-prettier:
-        specifier: 8.8.0
+        specifier: ^8.8.0
         version: 8.8.0(eslint@8.36.0)
       eslint-import-resolver-typescript:
-        specifier: 3.5.3
+        specifier: ^3.5.3
         version: 3.5.3(eslint-plugin-import@2.27.5)(eslint@8.36.0)
       eslint-plugin-import:
-        specifier: 2.27.5
+        specifier: ^2.27.5
         version: 2.27.5(@typescript-eslint/parser@5.57.0)(eslint-import-resolver-typescript@3.5.3)(eslint@8.36.0)
       eslint-plugin-jest:
-        specifier: 27.2.1
+        specifier: ^27.2.1
         version: 27.2.1(@typescript-eslint/eslint-plugin@5.57.0)(eslint@8.36.0)(typescript@5.0.2)
       eslint-plugin-jest-dom:
-        specifier: 4.0.3
+        specifier: ^4.0.3
         version: 4.0.3(eslint@8.36.0)
       eslint-plugin-jest-formatting:
-        specifier: 3.1.0
+        specifier: ^3.1.0
         version: 3.1.0(eslint@8.36.0)
       eslint-plugin-jsx-a11y:
-        specifier: 6.7.1
+        specifier: ^6.7.1
         version: 6.7.1(eslint@8.36.0)
       eslint-plugin-mdx:
-        specifier: 2.0.5
+        specifier: ^2.0.5
         version: 2.0.5(eslint@8.36.0)
       eslint-plugin-prettier:
-        specifier: 4.2.1
+        specifier: ^4.2.1
         version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.36.0)(prettier@2.8.7)
       eslint-plugin-promise:
-        specifier: 6.1.1
+        specifier: ^6.1.1
         version: 6.1.1(eslint@8.36.0)
       eslint-plugin-react:
-        specifier: 7.32.2
+        specifier: ^7.32.2
         version: 7.32.2(eslint@8.36.0)
       eslint-plugin-react-hooks:
-        specifier: 4.6.0
+        specifier: ^4.6.0
         version: 4.6.0(eslint@8.36.0)
       eslint-plugin-regexp:
-        specifier: 1.13.0
+        specifier: ^1.13.0
         version: 1.13.0(eslint@8.36.0)
       eslint-plugin-security:
-        specifier: 1.7.1
+        specifier: ^1.7.1
         version: 1.7.1
       eslint-plugin-sonarjs:
-        specifier: 0.19.0
+        specifier: ^0.19.0
         version: 0.19.0(eslint@8.36.0)
       eslint-plugin-storybook:
-        specifier: 0.6.11
+        specifier: ^0.6.11
         version: 0.6.11(eslint@8.36.0)(typescript@5.0.2)
       eslint-plugin-tailwindcss:
-        specifier: 3.10.1
+        specifier: ^3.10.1
         version: 3.10.1(tailwindcss@3.2.7)
       eslint-plugin-testing-library:
-        specifier: 5.10.2
+        specifier: ^5.10.2
         version: 5.10.2(eslint@8.36.0)(typescript@5.0.2)
       eslint-plugin-unicorn:
-        specifier: 46.0.0
+        specifier: ^46.0.0
         version: 46.0.0(eslint@8.36.0)
       prettier:
-        specifier: 2.8.7
+        specifier: ^2.8.7
         version: 2.8.7
     devDependencies:
       '@graphql-eslint/eslint-plugin':
-        specifier: 3.17.0
+        specifier: ^3.17.0
         version: 3.17.0(@babel/core@7.21.3)(@types/node@18.15.10)(graphql@16.6.0)
       '@types/jest':
-        specifier: 29.5.0
+        specifier: ^29.5.0
         version: 29.5.0
       '@types/node':
-        specifier: 18.15.10
+        specifier: ^18.15.10
         version: 18.15.10
       '@types/prettier':
-        specifier: 2.7.2
+        specifier: ^2.7.2
         version: 2.7.2
       '@types/react':
-        specifier: 18.0.30
+        specifier: ^18.0.30
         version: 18.0.30
       '@types/react-dom':
-        specifier: 18.0.11
+        specifier: ^18.0.11
         version: 18.0.11
       es-check:
-        specifier: 7.1.0
+        specifier: ^7.1.0
         version: 7.1.0
       eslint:
-        specifier: 8.36.0
+        specifier: ^8.36.0
         version: 8.36.0
       graphql:
-        specifier: 16.6.0
+        specifier: ^16.6.0
         version: 16.6.0
       react:
-        specifier: 18.2.0
+        specifier: ^18.2.0
         version: 18.2.0
       react-dom:
-        specifier: 18.2.0
+        specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       rimraf:
-        specifier: 4.4.1
+        specifier: ^4.4.1
         version: 4.4.1
       tailwindcss:
-        specifier: 3.2.7
+        specifier: ^3.2.7
         version: 3.2.7(postcss@8.4.21)(ts-node@10.9.1)
       typescript:
-        specifier: 5.0.2
+        specifier: ^5.0.2
         version: 5.0.2
 
   packages/htmlhint-config:
@@ -261,7 +261,7 @@ importers:
         version: 1.1.4
     devDependencies:
       rimraf:
-        specifier: 4.4.1
+        specifier: ^4.4.1
         version: 4.4.1
 
   packages/lint-staged-config:
@@ -271,22 +271,22 @@ importers:
         version: 13.2.0
     devDependencies:
       '@types/jest':
-        specifier: 29.5.0
+        specifier: ^29.5.0
         version: 29.5.0
       '@types/node':
-        specifier: 18.15.10
+        specifier: ^18.15.10
         version: 18.15.10
       '@types/prettier':
-        specifier: 2.7.2
+        specifier: ^2.7.2
         version: 2.7.2
       '@types/react':
-        specifier: 18.0.30
+        specifier: ^18.0.30
         version: 18.0.30
       '@types/react-dom':
-        specifier: 18.0.11
+        specifier: ^18.0.11
         version: 18.0.11
       es-check:
-        specifier: 7.1.0
+        specifier: ^7.1.0
         version: 7.1.0
 
   packages/markdownlint-config:
@@ -298,7 +298,7 @@ importers:
         specifier: '>= 0'
         version: 0.28.0
       markdownlint-cli:
-        specifier: 0.33.0
+        specifier: ^0.33.0
         version: 0.33.0
 
   packages/postcss-config:
@@ -307,28 +307,28 @@ importers:
         specifier: ^2.0.4
         version: link:../lint-staged-config
       autoprefixer:
-        specifier: 10.4.14
+        specifier: ^10.4.14
         version: 10.4.14(postcss@8.4.21)
       postcss:
-        specifier: 8.4.21
+        specifier: ^8.4.21
         version: 8.4.21
       postcss-100vh-fix:
-        specifier: 1.0.2
+        specifier: ^1.0.2
         version: 1.0.2(postcss@8.4.21)
       postcss-cli:
-        specifier: 10.1.0
+        specifier: ^10.1.0
         version: 10.1.0(postcss@8.4.21)(ts-node@10.9.1)
       postcss-flexbugs-fixes:
-        specifier: 5.0.2
+        specifier: ^5.0.2
         version: 5.0.2(postcss@8.4.21)
       postcss-normalize:
-        specifier: 10.0.1
+        specifier: ^10.0.1
         version: 10.0.1(browserslist@4.21.5)(postcss@8.4.21)
       postcss-preset-env:
-        specifier: 8.1.0
+        specifier: ^8.1.0
         version: 8.1.0(postcss@8.4.21)
       postcss-reporter:
-        specifier: 7.0.5
+        specifier: ^7.0.5
         version: 7.0.5(postcss@8.4.21)
       sanitize.css:
         specifier: '>= 13'
@@ -338,16 +338,16 @@ importers:
         version: 3.2.7(postcss@8.4.21)(ts-node@10.9.1)
     devDependencies:
       '@types/postcss-reporter':
-        specifier: 7.0.1
+        specifier: ^7.0.1
         version: 7.0.1
       es-check:
-        specifier: 7.1.0
+        specifier: ^7.1.0
         version: 7.1.0
 
   packages/secretlint-config:
     dependencies:
       '@secretlint/secretlint-rule-preset-recommend':
-        specifier: 6.2.3
+        specifier: ^6.2.3
         version: 6.2.3
       '@wayofdev/lint-staged-config':
         specifier: ^2.0.4
@@ -357,44 +357,44 @@ importers:
         version: 6.2.3
     devDependencies:
       rimraf:
-        specifier: 4.4.1
+        specifier: ^4.4.1
         version: 4.4.1
 
   packages/stylelint-config:
     dependencies:
       '@ronilaukkarinen/stylelint-a11y':
-        specifier: 1.2.7
+        specifier: ^1.2.7
         version: 1.2.7(stylelint@15.3.0)
       '@wayofdev/lint-staged-config':
         specifier: ^2.0.4
         version: link:../lint-staged-config
       stylelint:
-        specifier: 15.3.0
+        specifier: ^15.3.0
         version: 15.3.0
       stylelint-config-recommended:
-        specifier: 11.0.0
+        specifier: ^11.0.0
         version: 11.0.0(stylelint@15.3.0)
       stylelint-config-standard:
-        specifier: 31.0.0
+        specifier: ^31.0.0
         version: 31.0.0(stylelint@15.3.0)
       stylelint-config-standard-scss:
-        specifier: 7.0.1
+        specifier: ^7.0.1
         version: 7.0.1(postcss@8.4.21)(stylelint@15.3.0)
       stylelint-high-performance-animation:
-        specifier: 1.8.0
+        specifier: ^1.8.0
         version: 1.8.0(stylelint@15.3.0)
       stylelint-no-unsupported-browser-features:
-        specifier: 6.1.0
+        specifier: ^6.1.0
         version: 6.1.0(stylelint@15.3.0)
       stylelint-order:
-        specifier: 6.0.3
+        specifier: ^6.0.3
         version: 6.0.3(stylelint@15.3.0)
     devDependencies:
       '@types/node':
-        specifier: 18.15.10
+        specifier: ^18.15.10
         version: 18.15.10
       es-check:
-        specifier: 7.1.0
+        specifier: ^7.1.0
         version: 7.1.0
 
   packages/tsconfig-config:
@@ -2366,14 +2366,6 @@ packages:
       - supports-color
     dev: false
 
-  /@typescript-eslint/scope-manager@5.56.0:
-    resolution: {integrity: sha512-jGYKyt+iBakD0SA5Ww8vFqGpoV2asSjwt60Gl6YcO8ksQ8s2HlUEyHBMSa38bdLopYqGf7EYQMUIGdT/Luw+sw==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dependencies:
-      '@typescript-eslint/types': 5.56.0
-      '@typescript-eslint/visitor-keys': 5.56.0
-    dev: false
-
   /@typescript-eslint/scope-manager@5.57.0:
     resolution: {integrity: sha512-NANBNOQvllPlizl9LatX8+MHi7bx7WGIWYjPHDmQe5Si/0YEYfxSljJpoTyTWFTgRy3X8gLYSE4xQ2U+aCozSw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -2402,35 +2394,9 @@ packages:
       - supports-color
     dev: false
 
-  /@typescript-eslint/types@5.56.0:
-    resolution: {integrity: sha512-JyAzbTJcIyhuUhogmiu+t79AkdnqgPUEsxMTMc/dCZczGMJQh1MK2wgrju++yMN6AWroVAy2jxyPcPr3SWCq5w==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: false
-
   /@typescript-eslint/types@5.57.0:
     resolution: {integrity: sha512-mxsod+aZRSyLT+jiqHw1KK6xrANm19/+VFALVFP5qa/aiJnlP38qpyaTd0fEKhWvQk6YeNZ5LGwI1pDpBRBhtQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: false
-
-  /@typescript-eslint/typescript-estree@5.56.0(typescript@5.0.2):
-    resolution: {integrity: sha512-41CH/GncsLXOJi0jb74SnC7jVPWeVJ0pxQj8bOjH1h2O26jXN3YHKDT1ejkVz5YeTEQPeLCCRY0U2r68tfNOcg==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@typescript-eslint/types': 5.56.0
-      '@typescript-eslint/visitor-keys': 5.56.0
-      debug: 4.3.4
-      globby: 11.1.0
-      is-glob: 4.0.3
-      semver: 7.3.8
-      tsutils: 3.21.0(typescript@5.0.2)
-      typescript: 5.0.2
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /@typescript-eslint/typescript-estree@5.57.0(typescript@5.0.2):
@@ -2454,26 +2420,6 @@ packages:
       - supports-color
     dev: false
 
-  /@typescript-eslint/utils@5.56.0(eslint@8.36.0)(typescript@5.0.2):
-    resolution: {integrity: sha512-XhZDVdLnUJNtbzaJeDSCIYaM+Tgr59gZGbFuELgF7m0IY03PlciidS7UQNKLE0+WpUTn1GlycEr6Ivb/afjbhA==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-    dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.36.0)
-      '@types/json-schema': 7.0.11
-      '@types/semver': 7.3.13
-      '@typescript-eslint/scope-manager': 5.56.0
-      '@typescript-eslint/types': 5.56.0
-      '@typescript-eslint/typescript-estree': 5.56.0(typescript@5.0.2)
-      eslint: 8.36.0
-      eslint-scope: 5.1.1
-      semver: 7.3.8
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-    dev: false
-
   /@typescript-eslint/utils@5.57.0(eslint@8.36.0)(typescript@5.0.2):
     resolution: {integrity: sha512-ps/4WohXV7C+LTSgAL5CApxvxbMkl9B9AUZRtnEFonpIxZDIT7wC1xfvuJONMidrkB9scs4zhtRyIwHh4+18kw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -2492,14 +2438,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
-    dev: false
-
-  /@typescript-eslint/visitor-keys@5.56.0:
-    resolution: {integrity: sha512-1mFdED7u5bZpX6Xxf5N9U2c18sb+8EvU3tyOIj6LQZ5OOvnmj8BVeNNP603OFPm5KkS1a7IvCIcwrdHXaEMG/Q==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dependencies:
-      '@typescript-eslint/types': 5.56.0
-      eslint-visitor-keys: 3.3.0
     dev: false
 
   /@typescript-eslint/visitor-keys@5.57.0:
@@ -3934,7 +3872,7 @@ packages:
         optional: true
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.57.0(@typescript-eslint/parser@5.57.0)(eslint@8.36.0)(typescript@5.0.2)
-      '@typescript-eslint/utils': 5.56.0(eslint@8.36.0)(typescript@5.0.2)
+      '@typescript-eslint/utils': 5.57.0(eslint@8.36.0)(typescript@5.0.2)
       eslint: 8.36.0
     transitivePeerDependencies:
       - supports-color
@@ -4095,7 +4033,7 @@ packages:
       eslint: '>=6'
     dependencies:
       '@storybook/csf': 0.0.1
-      '@typescript-eslint/utils': 5.56.0(eslint@8.36.0)(typescript@5.0.2)
+      '@typescript-eslint/utils': 5.57.0(eslint@8.36.0)(typescript@5.0.2)
       eslint: 8.36.0
       requireindex: 1.2.0
       ts-dedent: 2.2.0
@@ -4121,7 +4059,7 @@ packages:
     peerDependencies:
       eslint: ^7.5.0 || ^8.0.0
     dependencies:
-      '@typescript-eslint/utils': 5.56.0(eslint@8.36.0)(typescript@5.0.2)
+      '@typescript-eslint/utils': 5.57.0(eslint@8.36.0)(typescript@5.0.2)
       eslint: 8.36.0
     transitivePeerDependencies:
       - supports-color

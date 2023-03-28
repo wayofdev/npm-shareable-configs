@@ -40,18 +40,18 @@
     "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
-    "autoprefixer": "10.4.14",
-    "postcss": "8.4.21",
-    "postcss-100vh-fix": "1.0.2",
-    "postcss-cli": "10.1.0",
-    "postcss-flexbugs-fixes": "5.0.2",
-    "postcss-normalize": "10.0.1",
-    "postcss-preset-env": "8.1.0",
-    "postcss-reporter": "7.0.5"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "postcss-100vh-fix": "^1.0.2",
+    "postcss-cli": "^10.1.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^8.1.0",
+    "postcss-reporter": "^7.0.5"
   },
   "devDependencies": {
-    "@types/postcss-reporter": "7.0.1",
-    "es-check": "7.1.0"
+    "@types/postcss-reporter": "^7.0.1",
+    "es-check": "^7.1.0"
   },
   "peerDependencies": {
     "@wayofdev/lint-staged-config": "^2.0.4",
