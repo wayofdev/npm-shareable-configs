@@ -86,7 +86,7 @@ importers:
   packages/browserslist-config:
     dependencies:
       '@wayofdev/lint-staged-config':
-        specifier: ^2.0.5
+        specifier: ^2.0.6
         version: link:../lint-staged-config
       browserslist:
         specifier: ^4.21.5
@@ -105,7 +105,7 @@ importers:
         specifier: 17.4.4
         version: 17.4.4
       '@wayofdev/lint-staged-config':
-        specifier: ^2.0.5
+        specifier: ^2.0.6
         version: link:../lint-staged-config
     devDependencies:
       '@types/node':
@@ -145,7 +145,7 @@ importers:
         specifier: ^5.57.0
         version: 5.57.0(eslint@8.36.0)(typescript@5.0.2)
       '@wayofdev/lint-staged-config':
-        specifier: ^2.0.5
+        specifier: ^2.0.6
         version: link:../lint-staged-config
       eslint-config-prettier:
         specifier: ^8.8.0
@@ -254,7 +254,7 @@ importers:
   packages/htmlhint-config:
     dependencies:
       '@wayofdev/lint-staged-config':
-        specifier: ^2.0.5
+        specifier: ^2.0.6
         version: link:../lint-staged-config
       htmlhint:
         specifier: '>= 1'
@@ -292,7 +292,7 @@ importers:
   packages/markdownlint-config:
     dependencies:
       '@wayofdev/lint-staged-config':
-        specifier: ^2.0.5
+        specifier: ^2.0.6
         version: link:../lint-staged-config
       markdownlint:
         specifier: '>= 0'
@@ -304,7 +304,7 @@ importers:
   packages/postcss-config:
     dependencies:
       '@wayofdev/lint-staged-config':
-        specifier: ^2.0.5
+        specifier: ^2.0.6
         version: link:../lint-staged-config
       autoprefixer:
         specifier: ^10.4.14
@@ -350,7 +350,7 @@ importers:
         specifier: ^6.2.3
         version: 6.2.3
       '@wayofdev/lint-staged-config':
-        specifier: ^2.0.5
+        specifier: ^2.0.6
         version: link:../lint-staged-config
       secretlint:
         specifier: '>= 6'
@@ -366,7 +366,7 @@ importers:
         specifier: ^1.2.7
         version: 1.2.7(stylelint@15.3.0)
       '@wayofdev/lint-staged-config':
-        specifier: ^2.0.5
+        specifier: ^2.0.6
         version: link:../lint-staged-config
       stylelint:
         specifier: ^15.3.0
@@ -400,7 +400,7 @@ importers:
   packages/tsconfig-config:
     dependencies:
       '@wayofdev/lint-staged-config':
-        specifier: ^2.0.5
+        specifier: ^2.0.6
         version: link:../lint-staged-config
       typescript:
         specifier: ^4.9 || ^5
