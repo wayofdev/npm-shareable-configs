@@ -1,5 +1,14 @@
 # @wayofdev/markdownlint-config
 
+## 2.0.4
+
+### Patch Changes
+
+- [#146](https://github.com/wayofdev/npm-shareable-configs/pull/146) [`ae7d17d`](https://github.com/wayofdev/npm-shareable-configs/commit/ae7d17d2d699062de637b24d0b77acf0de235aa3) Thanks [@lotyp](https://github.com/lotyp)! - fix: updating dependencies
+
+- Updated dependencies [[`ae7d17d`](https://github.com/wayofdev/npm-shareable-configs/commit/ae7d17d2d699062de637b24d0b77acf0de235aa3)]:
+  - @wayofdev/lint-staged-config@2.0.5
+
 ## 2.0.3
 
 ### Patch Changes
