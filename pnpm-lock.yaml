@@ -53,8 +53,8 @@ importers:
         specifier: 13.2.0
         version: 13.2.0
       markdownlint:
-        specifier: 0.28.0
-        version: 0.28.0
+        specifier: 0.28.1
+        version: 0.28.1
       markdownlint-cli:
         specifier: 0.33.0
         version: 0.33.0
@@ -5669,6 +5669,15 @@ packages:
     dependencies:
       markdown-it: 13.0.1
       markdownlint-micromark: 0.1.2
+    dev: false
+
+  /markdownlint@0.28.1:
+    resolution: {integrity: sha512-8At2DbgGKT/RVBinkqIPqLETopPXyQFGWSiTCJSr9Y6wVVyY70cDJ9dw3FXePn4AkytIUclgrsgI6KVeqeHFoA==}
+    engines: {node: '>=14.18.0'}
+    dependencies:
+      markdown-it: 13.0.1
+      markdownlint-micromark: 0.1.2
+    dev: true
 
   /mathml-tag-names@2.1.3:
     resolution: {integrity: sha512-APMBEanjybaPzUrfqU0IMU5I0AswKMH7k8OTLs0vvV4KZpExkTkY87nR/zpbuTPj+gARop7aGUbl11pnDfW6xg==}
