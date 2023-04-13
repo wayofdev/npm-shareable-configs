@@ -121,8 +121,8 @@ importers:
   packages/eslint-config-bases:
     dependencies:
       '@html-eslint/eslint-plugin':
-        specifier: ^0.17.2
-        version: 0.17.2
+        specifier: ^0.18.0
+        version: 0.18.0
       '@html-eslint/parser':
         specifier: ^0.17.1
         version: 0.17.1
@@ -1694,8 +1694,8 @@ packages:
       graphql: 16.6.0
     dev: true
 
-  /@html-eslint/eslint-plugin@0.17.2:
-    resolution: {integrity: sha512-tK5cPTqQ42+spT/hEfTLP06jw8dE/taJTmIEQNXU01YwH5NBnvpu6xVaaH1kQ7Xs2se69PWzsGlVuV5rfh462w==}
+  /@html-eslint/eslint-plugin@0.18.0:
+    resolution: {integrity: sha512-41O4n2MOUry4hdeS5L+RII59ZcAFRzfuZIX0dVbp0xStHsv4OY7S+89FKqeVmrY8HEyAD3EEk5NXZdlMdAV0Zw==}
     engines: {node: '>=8.10.0'}
     dev: false
 
