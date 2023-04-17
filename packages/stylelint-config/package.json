@@ -40,7 +40,7 @@
     "stylelint": "^15.3.0",
     "stylelint-config-recommended": "^11.0.0",
     "stylelint-config-standard": "^31.0.0",
-    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-config-standard-scss": "^8.0.0",
     "stylelint-high-performance-animation": "^1.8.0",
     "stylelint-no-unsupported-browser-features": "^6.1.0",
     "stylelint-order": "^6.0.3"
