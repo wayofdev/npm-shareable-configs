@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/markdownlint-config",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "private": false,
   "description": "A shareable markdownlint configuration for projects.",
   "keywords": [
@@ -36,7 +36,7 @@
     "markdownlint-cli": "^0.33.0"
   },
   "peerDependencies": {
-    "@wayofdev/lint-staged-config": "^2.0.6",
+    "@wayofdev/lint-staged-config": "^2.0.7",
     "markdownlint": ">= 0"
   },
   "publishConfig": {

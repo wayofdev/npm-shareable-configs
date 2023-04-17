@@ -1,5 +1,11 @@
 # @wayofdev/lint-staged-config
 
+## 2.0.7
+
+### Patch Changes
+
+- [`ea6a123`](https://github.com/wayofdev/npm-shareable-configs/commit/ea6a123c85dbb027f649cbde817293c8271379a1) Thanks [@lotyp](https://github.com/lotyp)! - chore(deps): updating versions
+
 ## 2.0.6
 
 ### Patch Changes
