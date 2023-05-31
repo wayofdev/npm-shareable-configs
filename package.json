@@ -65,7 +65,7 @@
     "@commitlint/cli": "17.6.5",
     "@commitlint/config-conventional": "17.6.5",
     "@types/node": "18.16.16",
-    "@types/prettier": "2.7.2",
+    "@types/prettier": "2.7.3",
     "@types/shell-quote": "1.7.1",
     "@wayofdev/eslint-config-bases": "workspace:*",
     "@wayofdev/lint-staged-config": "workspace:*",
