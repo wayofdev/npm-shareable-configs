@@ -72,8 +72,8 @@ importers:
         specifier: 5.0.1
         version: 5.0.1
       secretlint:
-        specifier: 7.0.1
-        version: 7.0.1
+        specifier: 7.0.2
+        version: 7.0.2
       shell-quote:
         specifier: 1.8.1
         version: 1.8.1
@@ -8019,8 +8019,8 @@ packages:
       - supports-color
     dev: false
 
-  /secretlint@7.0.1:
-    resolution: {integrity: sha512-R0BsJTDYCQeZMSr0CyVV0IaxFd/Qq6xVLlwHeR0x+LY0Y1mjmqvAKL31jvJlOLram97YLWyERXxrkRcZ5Du7Kg==}
+  /secretlint@7.0.2:
+    resolution: {integrity: sha512-AByRXUsGRQjpVsFLzktIDoSGXPAjgBlVQJMgSjqvgNjuCuCzB+zOFIkuQT3+bbPEZ0NwiVnvW3DZ7z+hl+yQ9A==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
