@@ -66,8 +66,8 @@ importers:
         specifier: 4.1.5
         version: 4.1.5
       prettier:
-        specifier: 2.8.8
-        version: 2.8.8
+        specifier: 3.0.0
+        version: 3.0.0
       rimraf:
         specifier: 5.0.1
         version: 5.0.1
@@ -177,7 +177,7 @@ importers:
         version: 2.0.5(eslint@8.44.0)
       eslint-plugin-prettier:
         specifier: ^4.2.1
-        version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@2.8.8)
+        version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@3.0.0)
       eslint-plugin-promise:
         specifier: ^6.1.1
         version: 6.1.1(eslint@8.44.0)
@@ -209,8 +209,8 @@ importers:
         specifier: ^47.0.0
         version: 47.0.0(eslint@8.44.0)
       prettier:
-        specifier: ^2.8.7
-        version: 2.8.8
+        specifier: ^3.0.0
+        version: 3.0.0
     devDependencies:
       '@graphql-eslint/eslint-plugin':
         specifier: ^3.18.0
@@ -327,7 +327,7 @@ importers:
         version: 5.0.2(postcss@8.4.22)
       postcss-normalize:
         specifier: ^10.0.1
-        version: 10.0.1(browserslist@4.21.5)(postcss@8.4.22)
+        version: 10.0.1(browserslist@4.21.9)(postcss@8.4.22)
       postcss-preset-env:
         specifier: ^9.0.0
         version: 9.0.0(postcss@8.4.22)
@@ -498,7 +498,7 @@ packages:
       '@babel/compat-data': 7.22.5
       '@babel/core': 7.22.5
       '@babel/helper-validator-option': 7.22.5
-      browserslist: 4.21.5
+      browserslist: 4.21.9
       lru-cache: 5.1.1
       semver: 6.3.0
     dev: true
@@ -2949,6 +2949,7 @@ packages:
       electron-to-chromium: 1.4.447
       node-releases: 2.0.12
       update-browserslist-db: 1.0.11(browserslist@4.21.5)
+    dev: false
 
   /browserslist@4.21.9:
     resolution: {integrity: sha512-M0MFoZzbUrRU4KNfCrDLnvyE7gub+peetoTid3TBIqtunaDJyXlwhakT+/VkvSXcfIzFfK/nkCs4nmyTmxdNSg==}
@@ -2959,7 +2960,6 @@ packages:
       electron-to-chromium: 1.4.447
       node-releases: 2.0.12
       update-browserslist-db: 1.0.11(browserslist@4.21.9)
-    dev: false
 
   /buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
@@ -4147,7 +4147,7 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-prettier@4.2.1(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@2.8.8):
+  /eslint-plugin-prettier@4.2.1(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@3.0.0):
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -4160,7 +4160,7 @@ packages:
     dependencies:
       eslint: 8.44.0
       eslint-config-prettier: 8.8.0(eslint@8.44.0)
-      prettier: 2.8.8
+      prettier: 3.0.0
       prettier-linter-helpers: 1.0.0
     dev: false
 
@@ -7094,14 +7094,14 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: false
 
-  /postcss-browser-comments@4.0.0(browserslist@4.21.5)(postcss@8.4.22):
+  /postcss-browser-comments@4.0.0(browserslist@4.21.9)(postcss@8.4.22):
     resolution: {integrity: sha512-X9X9/WN3KIvY9+hNERUqX9gncsgBA25XaeR+jshHz2j8+sYyHktHw1JdKuMjeLpGktXidqDhA7b/qm1mrBDmgg==}
     engines: {node: '>=8'}
     peerDependencies:
       browserslist: '>=4'
       postcss: '>=8'
     dependencies:
-      browserslist: 4.21.5
+      browserslist: 4.21.9
       postcss: 8.4.22
     dev: false
 
@@ -7395,7 +7395,7 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: false
 
-  /postcss-normalize@10.0.1(browserslist@4.21.5)(postcss@8.4.22):
+  /postcss-normalize@10.0.1(browserslist@4.21.9)(postcss@8.4.22):
     resolution: {integrity: sha512-+5w18/rDev5mqERcG3W5GZNMJa1eoYYNGo8gB7tEwaos0ajk3ZXAI4mHGcNT47NE+ZnZD1pEpUOFLvltIwmeJA==}
     engines: {node: '>= 12'}
     peerDependencies:
@@ -7403,9 +7403,9 @@ packages:
       postcss: '>= 8'
     dependencies:
       '@csstools/normalize.css': 12.0.0
-      browserslist: 4.21.5
+      browserslist: 4.21.9
       postcss: 8.4.22
-      postcss-browser-comments: 4.0.0(browserslist@4.21.5)(postcss@8.4.22)
+      postcss-browser-comments: 4.0.0(browserslist@4.21.9)(postcss@8.4.22)
       sanitize.css: 13.0.0
     dev: false
 
@@ -7622,6 +7622,12 @@ packages:
   /prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier@3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
     hasBin: true
 
   /pretty-format@27.5.1:
@@ -9182,6 +9188,7 @@ packages:
       browserslist: 4.21.5
       escalade: 3.1.1
       picocolors: 1.0.0
+    dev: false
 
   /update-browserslist-db@1.0.11(browserslist@4.21.9):
     resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
@@ -9192,7 +9199,6 @@ packages:
       browserslist: 4.21.9
       escalade: 3.1.1
       picocolors: 1.0.0
-    dev: false
 
   /uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
