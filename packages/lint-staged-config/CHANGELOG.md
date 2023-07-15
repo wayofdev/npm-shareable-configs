@@ -1,5 +1,11 @@
 # @wayofdev/lint-staged-config
 
+## 2.1.1
+
+### Patch Changes
+
+- [#290](https://github.com/wayofdev/npm-shareable-configs/pull/290) [`51a9514`](https://github.com/wayofdev/npm-shareable-configs/commit/51a9514f5c94f67ea2acd70a5c9b2b148c0913be) Thanks [@lotyp](https://github.com/lotyp)! - chore: bump versions
+
 ## 2.1.0
 
 ### Minor Changes
