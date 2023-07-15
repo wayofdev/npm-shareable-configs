@@ -34,7 +34,7 @@ jobs:
       - name: 📥 Monorepo install
         uses: wayofdev/gh-actions/actions/pnpm-install@master
         with:
-          enable-corepack: true
+          enable-corepack: false
           cache-node-modules: true
 
       # @link https://github.com/changesets/action
