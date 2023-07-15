@@ -86,11 +86,11 @@ install: i ## Same as `make i`
 .PHONY: install
 
 update: ## Run pnpm to packages to their latest version based on the specified range
-	$(NPM_RUNNER) update
+	$(NPM_BIN) update
 .PHONY: update
 
 build: ## Build all packages inside monorepo
-	$(NPM_RUNNER) run build
+	$(NPM_BIN) run build
 .PHONY: build
 
 purge: ## Deletes node modules and temporary files

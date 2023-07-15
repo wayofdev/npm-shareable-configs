@@ -43,9 +43,9 @@
     "@commitlint/config-conventional": "17.6.6"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
+    "@types/node": "^20.4.2",
     "es-check": "^7.1.1",
-    "rimraf": "^5.0.0"
+    "rimraf": "^5.0.1"
   },
   "peerDependencies": {
     "@commitlint/cli": ">= 17",
