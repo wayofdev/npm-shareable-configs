@@ -1,5 +1,16 @@
 # @wayofdev/tsconfig-config
 
+## 3.0.0
+
+### Minor Changes
+
+- [#287](https://github.com/wayofdev/npm-shareable-configs/pull/287) [`cfe9dba`](https://github.com/wayofdev/npm-shareable-configs/commit/cfe9dba36a81b900d01e980f5b565405e91e188f) Thanks [@lotyp](https://github.com/lotyp)! - feat: update packages to latest versions
+
+### Patch Changes
+
+- Updated dependencies [[`cfe9dba`](https://github.com/wayofdev/npm-shareable-configs/commit/cfe9dba36a81b900d01e980f5b565405e91e188f)]:
+  - @wayofdev/lint-staged-config@2.1.0
+
 ## 2.0.7
 
 ### Patch Changes
