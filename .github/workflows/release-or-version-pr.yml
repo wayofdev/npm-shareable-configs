@@ -33,6 +33,9 @@ jobs:
 
       - name: 📥 Monorepo install
         uses: wayofdev/gh-actions/actions/pnpm-install@master
+        with:
+          enable-corepack: true
+          cache-node-modules: true
 
       # @link https://github.com/changesets/action
       - name: 🦋 Create Release pull request or publish to npm
