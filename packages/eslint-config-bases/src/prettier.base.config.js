@@ -4,9 +4,8 @@
  * @type {import('prettier').Config}
  */
 module.exports = {
-  endOfLine: 'auto',
+  endOfLine: 'lf',
   // https://prettier.io/docs/en/options.html#print-width
-  printWidth: 100,
   tabWidth: 2,
   arrowParens: 'avoid',
   singleQuote: true,

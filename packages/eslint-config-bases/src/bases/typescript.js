@@ -30,8 +30,10 @@ module.exports = {
     'plugin:import/typescript',
   ],
   rules: {
+    // Useful, but disabled as it is very slow. Add this setting per project
     // https://medium.com/@steven-lemon182/are-typescript-barrel-files-an-anti-pattern-72a713004250
-    'import/no-cycle': 2,
+    // 'import/no-cycle': 2,
+    //
     // will use 'import/no-duplicates'.
     'no-duplicate-imports': 'off',
     'spaced-comment': [
@@ -53,13 +55,24 @@ module.exports = {
     'no-empty-function': 'off',
     'import/default': ['error'],
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-duplicates.md
-    'import/no-duplicates': ['error', { 'prefer-inline': true, considerQueryString: true }],
+    'import/no-duplicates': [
+      'error',
+      { 'prefer-inline': true, considerQueryString: true },
+    ],
     'import/no-named-as-default-member': ['warn'],
     'import/no-named-as-default': ['warn'],
     'import/order': [
       'error',
       {
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+        ],
         alphabetize: { order: 'asc', caseInsensitive: true },
       },
     ],
@@ -75,7 +88,10 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: false }],
-    '@typescript-eslint/no-empty-function': ['error', { allow: ['private-constructors'] }],
+    '@typescript-eslint/no-empty-function': [
+      'error',
+      { allow: ['private-constructors'] },
+    ],
     '@typescript-eslint/no-unused-vars': [
       'warn',
       { argsIgnorePattern: '^_', ignoreRestSiblings: true },
