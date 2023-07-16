@@ -1,5 +1,11 @@
 # @wayofdev/eslint-config-bases
 
+## 3.0.2
+
+### Patch Changes
+
+- [#293](https://github.com/wayofdev/npm-shareable-configs/pull/293) [`a673d47`](https://github.com/wayofdev/npm-shareable-configs/commit/a673d473e021187a2c66a6928ea57f124f5a59a7) Thanks [@lotyp](https://github.com/lotyp)! - fix: rule changes
+
 ## 3.0.1
 
 ### Patch Changes
