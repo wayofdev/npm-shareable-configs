@@ -1,5 +1,11 @@
 # @wayofdev/lint-staged-config
 
+## 2.1.2
+
+### Patch Changes
+
+- [#313](https://github.com/wayofdev/npm-shareable-configs/pull/313) [`dfdc246`](https://github.com/wayofdev/npm-shareable-configs/commit/dfdc246bf6257aa06af82bd62b0805f89421dccc) Thanks [@lotyp](https://github.com/lotyp)! - feat: update deps
+
 ## 2.1.1
 
 ### Patch Changes
