@@ -27,8 +27,8 @@ importers:
         specifier: 2.7.3
         version: 2.7.3
       '@types/shell-quote':
-        specifier: 1.7.1
-        version: 1.7.1
+        specifier: 1.7.2
+        version: 1.7.2
       '@wayofdev/eslint-config-bases':
         specifier: workspace:*
         version: link:packages/eslint-config-bases
@@ -2268,8 +2268,8 @@ packages:
   /@types/semver@7.5.2:
     resolution: {integrity: sha512-7aqorHYgdNO4DM36stTiGO3DvKoex9TQRwsJU6vMaFGyqpBA1MNZkz+PG3gaNUPpTAOYhT1WR7M1JyA3fbS9Cw==}
 
-  /@types/shell-quote@1.7.1:
-    resolution: {integrity: sha512-SWZ2Nom1pkyXCDohRSrkSKvDh8QOG9RfAsrt5/NsPQC4UQJ55eG0qClA40I+Gkez4KTQ0uDUT8ELRXThf3J5jw==}
+  /@types/shell-quote@1.7.2:
+    resolution: {integrity: sha512-p3SZxGp6LXB6RPdMpJmquKjaxQlN/ijyBLTKGPg9IJK6J2g2sJsMmtXP9kNR+Axxi6MDKN2e/76HCOUmvkIpcw==}
     dev: true
 
   /@types/stack-utils@2.0.1:
