@@ -33,10 +33,10 @@
     "lint:fix": "eslint --ext .js --fix --cache --cache-location ../../.cache/eslint/secretlint-config.eslintcache"
   },
   "dependencies": {
-    "@secretlint/secretlint-rule-preset-recommend": "^7.0.3"
+    "@secretlint/secretlint-rule-preset-recommend": "^7.0.7"
   },
   "devDependencies": {
-    "rimraf": "^5.0.1"
+    "rimraf": "^5.0.5"
   },
   "peerDependencies": {
     "@wayofdev/lint-staged-config": "^2.1.2",

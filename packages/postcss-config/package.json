@@ -40,17 +40,17 @@
     "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.27",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
     "postcss-100vh-fix": "^1.0.2",
     "postcss-cli": "^10.1.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-normalize": "^10.0.1",
-    "postcss-preset-env": "^9.1.0",
+    "postcss-preset-env": "^9.1.4",
     "postcss-reporter": "^7.0.5"
   },
   "devDependencies": {
-    "@types/postcss-reporter": "^7.0.1",
+    "@types/postcss-reporter": "^7.0.2",
     "es-check": "^7.1.1"
   },
   "peerDependencies": {
