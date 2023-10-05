@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -77,8 +81,8 @@ importers:
         specifier: 2.6.0
         version: 2.6.0
       turbo:
-        specifier: 1.10.14
-        version: 1.10.14
+        specifier: 1.10.15
+        version: 1.10.15
       typescript:
         specifier: 5.2.2
         version: 5.2.2
@@ -86,7 +90,7 @@ importers:
   packages/browserslist-config:
     dependencies:
       '@wayofdev/lint-staged-config':
-        specifier: ^2.1.2
+        specifier: ^2.1.3
         version: link:../lint-staged-config
       browserslist:
         specifier: ^4.22.1
@@ -105,7 +109,7 @@ importers:
         specifier: 17.7.0
         version: 17.7.0
       '@wayofdev/lint-staged-config':
-        specifier: ^2.1.2
+        specifier: ^2.1.3
         version: link:../lint-staged-config
     devDependencies:
       '@types/node':
@@ -145,7 +149,7 @@ importers:
         specifier: ^6.7.4
         version: 6.7.4(eslint@8.50.0)(typescript@5.2.2)
       '@wayofdev/lint-staged-config':
-        specifier: ^2.1.2
+        specifier: ^2.1.3
         version: link:../lint-staged-config
       eslint-config-prettier:
         specifier: ^9.0.0
@@ -246,7 +250,7 @@ importers:
         version: 5.0.5
       tailwindcss:
         specifier: ^3.3.3
-        version: 3.3.3
+        version: 3.3.3(ts-node@10.9.1)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -254,7 +258,7 @@ importers:
   packages/htmlhint-config:
     dependencies:
       '@wayofdev/lint-staged-config':
-        specifier: ^2.1.2
+        specifier: ^2.1.3
         version: link:../lint-staged-config
       htmlhint:
         specifier: '>= 1'
@@ -304,7 +308,7 @@ importers:
   packages/postcss-config:
     dependencies:
       '@wayofdev/lint-staged-config':
-        specifier: ^2.1.2
+        specifier: ^2.1.3
         version: link:../lint-staged-config
       autoprefixer:
         specifier: ^10.4.16
@@ -317,7 +321,7 @@ importers:
         version: 1.0.2(postcss@8.4.31)
       postcss-cli:
         specifier: ^10.1.0
-        version: 10.1.0(postcss@8.4.31)
+        version: 10.1.0(postcss@8.4.31)(ts-node@10.9.1)
       postcss-flexbugs-fixes:
         specifier: ^5.0.2
         version: 5.0.2(postcss@8.4.31)
@@ -335,7 +339,7 @@ importers:
         version: 13.0.0
       tailwindcss:
         specifier: '>= 3'
-        version: 3.3.3
+        version: 3.3.3(ts-node@10.9.1)
     devDependencies:
       '@types/postcss-reporter':
         specifier: ^7.0.2
@@ -350,7 +354,7 @@ importers:
         specifier: ^7.0.7
         version: 7.0.7
       '@wayofdev/lint-staged-config':
-        specifier: ^2.1.2
+        specifier: ^2.1.3
         version: link:../lint-staged-config
       secretlint:
         specifier: '>= 6'
@@ -366,11 +370,11 @@ importers:
         specifier: ^1.2.7
         version: 1.2.7(stylelint@15.10.3)
       '@wayofdev/lint-staged-config':
-        specifier: ^2.1.2
+        specifier: ^2.1.3
         version: link:../lint-staged-config
       stylelint:
         specifier: ^15.10.3
-        version: 15.10.3
+        version: 15.10.3(typescript@5.2.2)
       stylelint-config-recommended:
         specifier: ^13.0.0
         version: 13.0.0(stylelint@15.10.3)
@@ -1957,7 +1961,7 @@ packages:
     peerDependencies:
       stylelint: 10 - 15
     dependencies:
-      stylelint: 15.10.3
+      stylelint: 15.10.3(typescript@5.2.2)
     dev: false
 
   /@rushstack/eslint-patch@1.5.1:
@@ -3356,21 +3360,6 @@ packages:
       path-type: 4.0.0
     dev: true
 
-  /cosmiconfig@8.3.6:
-    resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      typescript: '>=4.9.5'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      import-fresh: 3.3.0
-      js-yaml: 4.1.0
-      parse-json: 5.2.0
-      path-type: 4.0.0
-    dev: false
-
   /cosmiconfig@8.3.6(typescript@5.2.2):
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
     engines: {node: '>=14'}
@@ -3980,7 +3969,7 @@ packages:
       debug: 4.3.4
       enhanced-resolve: 5.15.0
       eslint: 8.50.0
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.7.4)(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.7.4)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0)
       eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.4)(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0)
       fast-glob: 3.3.1
       get-tsconfig: 4.7.2
@@ -4043,35 +4032,6 @@ packages:
       debug: 3.2.7
       eslint: 8.50.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.7.4)(eslint-plugin-import@2.28.1)(eslint@8.50.0)
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
-  /eslint-module-utils@2.8.0(@typescript-eslint/parser@6.7.4)(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0):
-    resolution: {integrity: sha512-aWajIYfsqCKRDgUfjEXNN/JlrzauMuSEy5sbd7WXbtW3EH6A6MpwEh42c7qD+MqQo9QMJ6fWLAeIJynx0g6OAw==}
-    engines: {node: '>=4'}
-    peerDependencies:
-      '@typescript-eslint/parser': '*'
-      eslint: '*'
-      eslint-import-resolver-node: '*'
-      eslint-import-resolver-typescript: '*'
-      eslint-import-resolver-webpack: '*'
-    peerDependenciesMeta:
-      '@typescript-eslint/parser':
-        optional: true
-      eslint:
-        optional: true
-      eslint-import-resolver-node:
-        optional: true
-      eslint-import-resolver-typescript:
-        optional: true
-      eslint-import-resolver-webpack:
-        optional: true
-    dependencies:
-      '@typescript-eslint/parser': 6.7.4(eslint@8.50.0)(typescript@5.2.2)
-      debug: 3.2.7
-      eslint: 8.50.0
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.7.4)(eslint-plugin-import@2.28.1)(eslint@8.50.0)
     transitivePeerDependencies:
       - supports-color
@@ -4333,7 +4293,7 @@ packages:
     dependencies:
       fast-glob: 3.3.1
       postcss: 8.4.30
-      tailwindcss: 3.3.3
+      tailwindcss: 3.3.3(ts-node@10.9.1)
     dev: false
 
   /eslint-plugin-testing-library@6.0.2(eslint@8.50.0)(typescript@5.2.2):
@@ -7127,7 +7087,7 @@ packages:
       postcss-value-parser: 4.2.0
     dev: false
 
-  /postcss-cli@10.1.0(postcss@8.4.31):
+  /postcss-cli@10.1.0(postcss@8.4.31)(ts-node@10.9.1):
     resolution: {integrity: sha512-Zu7PLORkE9YwNdvOeOVKPmWghprOtjFQU3srMUGbdz3pHJiFh7yZ4geiZFMkjMfB0mtTFR3h8RemR62rPkbOPA==}
     engines: {node: '>=14'}
     hasBin: true
@@ -7141,7 +7101,7 @@ packages:
       globby: 13.2.2
       picocolors: 1.0.0
       postcss: 8.4.31
-      postcss-load-config: 4.0.1(postcss@8.4.31)
+      postcss-load-config: 4.0.1(postcss@8.4.31)(ts-node@10.9.1)
       postcss-reporter: 7.0.5(postcss@8.4.31)
       pretty-hrtime: 1.0.3
       read-cache: 1.0.0
@@ -7330,7 +7290,7 @@ packages:
       postcss: 8.4.31
     dev: false
 
-  /postcss-load-config@4.0.1(postcss@8.4.30):
+  /postcss-load-config@4.0.1(postcss@8.4.30)(ts-node@10.9.1):
     resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
     engines: {node: '>= 14'}
     peerDependencies:
@@ -7344,9 +7304,10 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.30
+      ts-node: 10.9.1(@types/node@20.8.2)(typescript@5.2.2)
       yaml: 2.3.2
 
-  /postcss-load-config@4.0.1(postcss@8.4.31):
+  /postcss-load-config@4.0.1(postcss@8.4.31)(ts-node@10.9.1):
     resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
     engines: {node: '>= 14'}
     peerDependencies:
@@ -7360,6 +7321,7 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.31
+      ts-node: 10.9.1(@types/node@20.8.2)(typescript@5.2.2)
       yaml: 2.3.2
     dev: false
 
@@ -8521,7 +8483,7 @@ packages:
     dependencies:
       postcss: 8.4.31
       postcss-scss: 4.0.8(postcss@8.4.31)
-      stylelint: 15.10.3
+      stylelint: 15.10.3(typescript@5.2.2)
       stylelint-config-recommended: 13.0.0(stylelint@15.10.3)
       stylelint-scss: 5.2.1(stylelint@15.10.3)
     dev: false
@@ -8532,7 +8494,7 @@ packages:
     peerDependencies:
       stylelint: ^15.10.0
     dependencies:
-      stylelint: 15.10.3
+      stylelint: 15.10.3(typescript@5.2.2)
     dev: false
 
   /stylelint-config-standard-scss@11.0.0(postcss@8.4.31)(stylelint@15.10.3):
@@ -8545,7 +8507,7 @@ packages:
         optional: true
     dependencies:
       postcss: 8.4.31
-      stylelint: 15.10.3
+      stylelint: 15.10.3(typescript@5.2.2)
       stylelint-config-recommended-scss: 13.0.0(postcss@8.4.31)(stylelint@15.10.3)
       stylelint-config-standard: 34.0.0(stylelint@15.10.3)
     dev: false
@@ -8556,7 +8518,7 @@ packages:
     peerDependencies:
       stylelint: ^15.10.0
     dependencies:
-      stylelint: 15.10.3
+      stylelint: 15.10.3(typescript@5.2.2)
       stylelint-config-recommended: 13.0.0(stylelint@15.10.3)
     dev: false
 
@@ -8566,7 +8528,7 @@ packages:
       stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
     dependencies:
       postcss-value-parser: 4.2.0
-      stylelint: 15.10.3
+      stylelint: 15.10.3(typescript@5.2.2)
     dev: false
 
   /stylelint-no-unsupported-browser-features@7.0.0(stylelint@15.10.3):
@@ -8578,7 +8540,7 @@ packages:
       doiuse: 6.0.2
       lodash: 4.17.21
       postcss: 8.4.31
-      stylelint: 15.10.3
+      stylelint: 15.10.3(typescript@5.2.2)
     dev: false
 
   /stylelint-order@6.0.3(stylelint@15.10.3):
@@ -8588,7 +8550,7 @@ packages:
     dependencies:
       postcss: 8.4.31
       postcss-sorting: 8.0.2(postcss@8.4.31)
-      stylelint: 15.10.3
+      stylelint: 15.10.3(typescript@5.2.2)
     dev: false
 
   /stylelint-scss@5.2.1(stylelint@15.10.3):
@@ -8601,10 +8563,10 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
-      stylelint: 15.10.3
+      stylelint: 15.10.3(typescript@5.2.2)
     dev: false
 
-  /stylelint@15.10.3:
+  /stylelint@15.10.3(typescript@5.2.2):
     resolution: {integrity: sha512-aBQMMxYvFzJJwkmg+BUUg3YfPyeuCuKo2f+LOw7yYbU8AZMblibwzp9OV4srHVeQldxvSFdz0/Xu8blq2AesiA==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
@@ -8615,7 +8577,7 @@ packages:
       '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.0.13)
       balanced-match: 2.0.0
       colord: 2.9.3
-      cosmiconfig: 8.3.6
+      cosmiconfig: 8.3.6(typescript@5.2.2)
       css-functions-list: 3.2.0
       css-tree: 2.3.1
       debug: 4.3.4
@@ -8732,7 +8694,7 @@ packages:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  /tailwindcss@3.3.3:
+  /tailwindcss@3.3.3(ts-node@10.9.1):
     resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -8754,7 +8716,7 @@ packages:
       postcss: 8.4.30
       postcss-import: 15.1.0(postcss@8.4.30)
       postcss-js: 4.0.1(postcss@8.4.30)
-      postcss-load-config: 4.0.1(postcss@8.4.30)
+      postcss-load-config: 4.0.1(postcss@8.4.30)(ts-node@10.9.1)
       postcss-nested: 6.0.1(postcss@8.4.30)
       postcss-selector-parser: 6.0.13
       resolve: 1.22.6
@@ -8965,64 +8927,64 @@ packages:
       yargs: 17.7.2
     dev: true
 
-  /turbo-darwin-64@1.10.14:
-    resolution: {integrity: sha512-I8RtFk1b9UILAExPdG/XRgGQz95nmXPE7OiGb6ytjtNIR5/UZBS/xVX/7HYpCdmfriKdVwBKhalCoV4oDvAGEg==}
+  /turbo-darwin-64@1.10.15:
+    resolution: {integrity: sha512-Sik5uogjkRTe1XVP9TC2GryEMOJCaKE2pM/O9uLn4koQDnWKGcLQv+mDU+H+9DXvKLnJnKCD18OVRkwK5tdpoA==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64@1.10.14:
-    resolution: {integrity: sha512-KAdUWryJi/XX7OD0alOuOa0aJ5TLyd4DNIYkHPHYcM6/d7YAovYvxRNwmx9iv6Vx6IkzTnLeTiUB8zy69QkG9Q==}
+  /turbo-darwin-arm64@1.10.15:
+    resolution: {integrity: sha512-xwqyFDYUcl2xwXyGPmHkmgnNm4Cy0oNzMpMOBGRr5x64SErS7QQLR4VHb0ubiR+VAb8M+ECPklU6vD1Gm+wekg==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64@1.10.14:
-    resolution: {integrity: sha512-BOBzoREC2u4Vgpap/WDxM6wETVqVMRcM8OZw4hWzqCj2bqbQ6L0wxs1LCLWVrghQf93JBQtIGAdFFLyCSBXjWQ==}
+  /turbo-linux-64@1.10.15:
+    resolution: {integrity: sha512-dM07SiO3RMAJ09Z+uB2LNUSkPp3I1IMF8goH5eLj+d8Kkwoxd/+qbUZOj9RvInyxU/IhlnO9w3PGd3Hp14m/nA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64@1.10.14:
-    resolution: {integrity: sha512-D8T6XxoTdN5D4V5qE2VZG+/lbZX/89BkAEHzXcsSUTRjrwfMepT3d2z8aT6hxv4yu8EDdooZq/2Bn/vjMI32xw==}
+  /turbo-linux-arm64@1.10.15:
+    resolution: {integrity: sha512-MkzKLkKYKyrz4lwfjNXH8aTny5+Hmiu4SFBZbx+5C0vOlyp6fV5jZANDBvLXWiDDL4DSEAuCEK/2cmN6FVH1ow==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64@1.10.14:
-    resolution: {integrity: sha512-zKNS3c1w4i6432N0cexZ20r/aIhV62g69opUn82FLVs/zk3Ie0GVkSB6h0rqIvMalCp7enIR87LkPSDGz9K4UA==}
+  /turbo-windows-64@1.10.15:
+    resolution: {integrity: sha512-3TdVU+WEH9ThvQGwV3ieX/XHebtYNHv9HARHauPwmVj3kakoALkpGxLclkHFBLdLKkqDvmHmXtcsfs6cXXRHJg==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64@1.10.14:
-    resolution: {integrity: sha512-rkBwrTPTxNSOUF7of8eVvvM+BkfkhA2OvpHM94if8tVsU+khrjglilp8MTVPHlyS9byfemPAmFN90oRIPB05BA==}
+  /turbo-windows-arm64@1.10.15:
+    resolution: {integrity: sha512-l+7UOBCbfadvPMYsX08hyLD+UIoAkg6ojfH+E8aud3gcA1padpjCJTh9gMpm3QdMbKwZteT5uUM+wyi6Rbbyww==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo@1.10.14:
-    resolution: {integrity: sha512-hr9wDNYcsee+vLkCDIm8qTtwhJ6+UAMJc3nIY6+PNgUTtXcQgHxCq8BGoL7gbABvNWv76CNbK5qL4Lp9G3ZYRA==}
+  /turbo@1.10.15:
+    resolution: {integrity: sha512-mKKkqsuDAQy1wCCIjCdG+jOCwUflhckDMSRoeBPcIL/CnCl7c5yRDFe7SyaXloUUkt4tUR0rvNIhVCcT7YeQpg==}
     hasBin: true
     optionalDependencies:
-      turbo-darwin-64: 1.10.14
-      turbo-darwin-arm64: 1.10.14
-      turbo-linux-64: 1.10.14
-      turbo-linux-arm64: 1.10.14
-      turbo-windows-64: 1.10.14
-      turbo-windows-arm64: 1.10.14
+      turbo-darwin-64: 1.10.15
+      turbo-darwin-arm64: 1.10.15
+      turbo-linux-64: 1.10.15
+      turbo-linux-arm64: 1.10.15
+      turbo-windows-64: 1.10.15
+      turbo-windows-arm64: 1.10.15
     dev: true
 
   /type-check@0.4.0:
@@ -9616,7 +9578,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
