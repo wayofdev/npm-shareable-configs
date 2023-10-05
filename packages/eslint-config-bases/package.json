@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/eslint-config-bases",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "private": false,
   "description": "A shareable eslint base configuration for projects.",
   "keywords": [
@@ -155,7 +155,7 @@
   },
   "peerDependencies": {
     "@graphql-eslint/eslint-plugin": "^3.17.0",
-    "@wayofdev/lint-staged-config": "^2.1.2",
+    "@wayofdev/lint-staged-config": "^2.1.3",
     "eslint": "^8.45.0",
     "graphql": "^16.6.0",
     "prettier": "^3.0.0",

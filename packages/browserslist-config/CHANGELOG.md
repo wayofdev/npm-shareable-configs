@@ -1,5 +1,14 @@
 # @wayofdev/browserslist-config
 
+## 3.0.3
+
+### Patch Changes
+
+- [#394](https://github.com/wayofdev/npm-shareable-configs/pull/394) [`c2d3dac`](https://github.com/wayofdev/npm-shareable-configs/commit/c2d3dacf2b1381f47302951b8c5b8bab816088e1) Thanks [@igomur](https://github.com/igomur)! - chore: update versions
+
+- Updated dependencies [[`c2d3dac`](https://github.com/wayofdev/npm-shareable-configs/commit/c2d3dacf2b1381f47302951b8c5b8bab816088e1)]:
+  - @wayofdev/lint-staged-config@2.1.3
+
 ## 3.0.2
 
 ### Patch Changes

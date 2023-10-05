@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/secretlint-config",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "private": false,
   "description": "A shareable secretlint configuration for projects.",
   "keywords": [
@@ -39,7 +39,7 @@
     "rimraf": "^5.0.5"
   },
   "peerDependencies": {
-    "@wayofdev/lint-staged-config": "^2.1.2",
+    "@wayofdev/lint-staged-config": "^2.1.3",
     "secretlint": ">= 6"
   },
   "publishConfig": {
