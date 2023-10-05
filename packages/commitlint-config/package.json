@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/commitlint-config",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "private": false,
   "description": "A shareable commitlint configuration for projects.",
   "keywords": [
@@ -49,7 +49,7 @@
   },
   "peerDependencies": {
     "@commitlint/cli": ">= 17",
-    "@wayofdev/lint-staged-config": "^2.1.2"
+    "@wayofdev/lint-staged-config": "^2.1.3"
   },
   "publishConfig": {
     "access": "public"
