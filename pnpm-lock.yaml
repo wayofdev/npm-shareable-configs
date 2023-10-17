@@ -134,8 +134,8 @@ importers:
         specifier: ^1.5.1
         version: 1.5.1
       '@tanstack/eslint-plugin-query':
-        specifier: ^4.36.0
-        version: 4.36.1(eslint@8.51.0)
+        specifier: ^5.0.0
+        version: 5.0.0(eslint@8.51.0)(typescript@5.2.2)
       '@testing-library/jest-dom':
         specifier: ^6.1.3
         version: 6.1.4(@types/jest@29.5.5)
@@ -2027,12 +2027,16 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@tanstack/eslint-plugin-query@4.36.1(eslint@8.51.0):
-    resolution: {integrity: sha512-qFIYV/BuwWzg0t5mSRMcb+rzrOVtCO9EizYxeClFxuFq/c54cNhAQCnDrA3iCxFz/fqRv7I9rxxnR/ZWkX15cQ==}
+  /@tanstack/eslint-plugin-query@5.0.0(eslint@8.51.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-jHGeUY9cdM1pp/C4y24vynaFjWZDBhx9xPap5v4ysXiQRZAe2W8bdMq6PcnnKJJG8XsGLrvgK6G+hkcGO3yHqw==}
     peerDependencies:
-      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+      eslint: ^8.0.0
     dependencies:
+      '@typescript-eslint/utils': 5.62.0(eslint@8.51.0)(typescript@5.2.2)
       eslint: 8.51.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
     dev: false
 
   /@testing-library/dom@9.3.3:
