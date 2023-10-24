@@ -1,5 +1,11 @@
 # @wayofdev/eslint-config-bases
 
+## 3.0.5
+
+### Patch Changes
+
+- [#425](https://github.com/wayofdev/npm-shareable-configs/pull/425) [`267f6d8`](https://github.com/wayofdev/npm-shareable-configs/commit/267f6d8cfc474eb2983590e287170350799a056c) Thanks [@igomur](https://github.com/igomur)! - Enforce PascalCase for enum names
+
 ## 3.0.4
 
 ### Patch Changes
