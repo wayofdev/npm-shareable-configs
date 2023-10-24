@@ -151,6 +151,10 @@ module.exports = {
         format: ['PascalCase'],
       },
       {
+        selector: 'enum',
+        format: ['PascalCase'],
+      },
+      {
         selector: ['typeProperty'],
         format: ['camelCase'],
         // For graphql __typename
