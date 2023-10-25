@@ -40,7 +40,7 @@
     "lint:types": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "18.0.0"
+    "@commitlint/config-conventional": "18.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.8.2",
