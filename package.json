@@ -72,7 +72,7 @@
     "@wayofdev/secretlint-config": "workspace:*",
     "actionlint": "2.0.6",
     "commitizen": "4.3.0",
-    "eslint": "8.52.0",
+    "eslint": "8.53.0",
     "husky": "8.0.3",
     "is-ci": "3.0.1",
     "lint-staged": "15.0.2",
