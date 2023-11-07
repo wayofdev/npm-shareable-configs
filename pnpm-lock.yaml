@@ -21,8 +21,8 @@ importers:
         specifier: 18.1.0
         version: 18.1.0
       '@types/node':
-        specifier: 20.8.10
-        version: 20.8.10
+        specifier: 20.9.0
+        version: 20.9.0
       '@types/prettier':
         specifier: 2.7.3
         version: 2.7.3
@@ -1780,7 +1780,7 @@ packages:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.5
       '@types/istanbul-reports': 3.0.3
-      '@types/node': 20.8.10
+      '@types/node': 20.9.0
       '@types/yargs': 17.0.29
       chalk: 4.1.2
 
@@ -2147,7 +2147,7 @@ packages:
   /@types/concat-stream@2.0.1:
     resolution: {integrity: sha512-v5HP9ZsRbzFq5XRo2liUZPKzwbGK5SuGVMWZjE6iJOm/JNdESk3/rkfcPe0lcal0C32PTLVlYUYqGpMGNdDsDg==}
     dependencies:
-      '@types/node': 20.8.10
+      '@types/node': 20.9.0
     dev: false
 
   /@types/debug@4.1.10:
@@ -2239,6 +2239,12 @@ packages:
     resolution: {integrity: sha512-TlgT8JntpcbmKUFzjhsyhGfP2fsiz1Mv56im6enJ905xG1DAYesxJaeSbGqQmAw8OWPdhyJGhGSQGKRNJ45u9w==}
     dependencies:
       undici-types: 5.26.5
+    dev: true
+
+  /@types/node@20.9.0:
+    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
+    dependencies:
+      undici-types: 5.26.5
 
   /@types/normalize-package-data@2.4.3:
     resolution: {integrity: sha512-ehPtgRgaULsFG8x0NeYJvmyH1hmlfsNLujHe9dQEia/7MAJYdzMSi19JtchUHjmBA6XC/75dK55mzZH+RyieSg==}
@@ -2296,7 +2302,7 @@ packages:
   /@types/ws@8.5.8:
     resolution: {integrity: sha512-flUksGIQCnJd6sZ1l5dqCEG/ksaoAg/eUwiLAGTJQcfgvZJKF++Ta4bJA6A5aPSJmsr+xlseHn4KLgVlNnvPTg==}
     dependencies:
-      '@types/node': 20.8.10
+      '@types/node': 20.9.0
     dev: true
 
   /@types/yargs-parser@21.0.2:
@@ -5548,7 +5554,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 20.8.10
+      '@types/node': 20.9.0
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
