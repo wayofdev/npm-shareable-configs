@@ -57,8 +57,8 @@ importers:
         specifier: 15.1.0
         version: 15.1.0
       markdownlint:
-        specifier: 0.32.0
-        version: 0.32.0
+        specifier: 0.32.1
+        version: 0.32.1
       markdownlint-cli:
         specifier: 0.37.0
         version: 0.37.0
@@ -5990,8 +5990,8 @@ packages:
       markdown-it: 13.0.1
       markdownlint-micromark: 0.1.7
 
-  /markdownlint@0.32.0:
-    resolution: {integrity: sha512-DIA2LclWqWmyU1Z73mTYa9/oilWJGdCW+tiPpziwmut/O7LxmEI8xKeg3vhEezXOyMaTV76HSX3/HmypRC2/8w==}
+  /markdownlint@0.32.1:
+    resolution: {integrity: sha512-3sx9xpi4xlHlokGyHO9k0g3gJbNY4DI6oNEeEYq5gQ4W7UkiJ90VDAnuDl2U+yyXOUa6BX+0gf69ZlTUGIBp6A==}
     engines: {node: '>=18'}
     dependencies:
       markdown-it: 13.0.2
