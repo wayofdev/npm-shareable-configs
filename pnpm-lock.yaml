@@ -128,8 +128,8 @@ importers:
         specifier: ^0.21.0
         version: 0.21.0
       '@html-eslint/parser':
-        specifier: ^0.20.0
-        version: 0.20.0
+        specifier: ^0.21.0
+        version: 0.21.0
       '@rushstack/eslint-patch':
         specifier: ^1.5.1
         version: 1.5.1
@@ -1899,8 +1899,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@html-eslint/parser@0.20.0:
-    resolution: {integrity: sha512-qXrn2vIdqpb5f+diIDegVOAHIX4nJzCTuat9UZDFA8FN+MqVJNALGneTAOARQnW9au0P+NOmGAjyPtZF2rLmbw==}
+  /@html-eslint/parser@0.21.0:
+    resolution: {integrity: sha512-MzmIP/yq/4UVeRgUTFnKmPbomRu6NthcCT/68yrZi1GWhFwW0h3CIDy0wQI+gj3MDlcROzV8QOAG5uxCjCYA+A==}
     engines: {node: '>=8.10.0'}
     dependencies:
       es-html-parser: 0.0.9
