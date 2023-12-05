@@ -84,7 +84,7 @@
     "secretlint": "8.0.0",
     "shell-quote": "1.8.1",
     "sort-package-json": "2.6.0",
-    "turbo": "1.10.16",
+    "turbo": "1.11.0",
     "typescript": "5.3.2"
   },
   "peerDependencies": {
