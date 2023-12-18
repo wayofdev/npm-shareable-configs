@@ -38,7 +38,7 @@
     "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/browserslist-config.eslintcache"
   },
   "dependencies": {
-    "browserslist": "^4.22.1"
+    "browserslist": "^4.22.2"
   },
   "devDependencies": {
     "rimraf": "^5.0.5"

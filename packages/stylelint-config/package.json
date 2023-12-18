@@ -37,16 +37,16 @@
   },
   "dependencies": {
     "@ronilaukkarinen/stylelint-a11y": "^1.2.7",
-    "stylelint": "^15.10.3",
+    "stylelint": "^15.11.0",
     "stylelint-config-recommended": "^13.0.0",
     "stylelint-config-standard": "^34.0.0",
-    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-config-standard-scss": "^11.1.0",
     "stylelint-high-performance-animation": "^1.9.0",
     "stylelint-no-unsupported-browser-features": "^7.0.0",
-    "stylelint-order": "^6.0.3"
+    "stylelint-order": "^6.0.4"
   },
   "devDependencies": {
-    "@types/node": "^20.8.2",
+    "@types/node": "^20.10.5",
     "es-check": "^7.1.1"
   },
   "peerDependencies": {
