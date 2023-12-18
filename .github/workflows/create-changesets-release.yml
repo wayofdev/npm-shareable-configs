@@ -10,7 +10,7 @@ jobs:
   release:
     uses: wayofdev/gh-actions/.github/workflows/create-changesets-release.yml@master
     with:
-      node: 18
+      node: 20
       repository: wayofdev/npm-shareable-configs
     secrets:
       # to trigger other workflows, pass PAT token instead of GITHUB_TOKEN
