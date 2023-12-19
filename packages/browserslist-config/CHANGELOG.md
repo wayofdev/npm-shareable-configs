@@ -1,5 +1,14 @@
 # @wayofdev/browserslist-config
 
+## 3.0.4
+
+### Patch Changes
+
+- [#504](https://github.com/wayofdev/npm-shareable-configs/pull/504) [`faf28ba`](https://github.com/wayofdev/npm-shareable-configs/commit/faf28baf1ca3fe4cc0f0539c530a87b5c53c228a) Thanks [@igomur](https://github.com/igomur)! - Update labeler and gh actions
+
+- Updated dependencies [[`faf28ba`](https://github.com/wayofdev/npm-shareable-configs/commit/faf28baf1ca3fe4cc0f0539c530a87b5c53c228a)]:
+  - @wayofdev/lint-staged-config@2.1.4
+
 ## 3.0.3
 
 ### Patch Changes
