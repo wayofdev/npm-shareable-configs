@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/postcss-config",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "private": false,
   "description": "A shareable postcss configuration for projects.",
   "keywords": [
@@ -54,7 +54,7 @@
     "es-check": "^7.1.1"
   },
   "peerDependencies": {
-    "@wayofdev/lint-staged-config": "^2.1.4",
+    "@wayofdev/lint-staged-config": "^2.1.5",
     "postcss": ">= 8",
     "sanitize.css": ">= 13",
     "tailwindcss": ">= 3"

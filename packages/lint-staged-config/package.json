@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/lint-staged-config",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "private": false,
   "description": "A shareable lint-staged configuration for projects.",
   "keywords": [
