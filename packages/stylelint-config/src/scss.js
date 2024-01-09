@@ -18,7 +18,7 @@ module.exports = {
     // based on the SCSS guidelines documented in https://sass-guidelin.es/
     'stylelint-config-sass-guidelines',
     // accessibility rules
-    'stylelint-a11y/recommended',
+    '@double-great/stylelint-a11y/recommended',
   ],
   // https://github.com/ismay/stylelint-no-unsupported-browser-features#recommendations
   rules: {
@@ -29,6 +29,6 @@ module.exports = {
       },
     ],
     'plugin/no-low-performance-animation-properties': true,
-    "declaration-property-value-no-unknown": true
+    'declaration-property-value-no-unknown': true,
   },
 }

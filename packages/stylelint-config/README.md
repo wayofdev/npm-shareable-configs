@@ -138,7 +138,7 @@ Under the hood, these configurations include various plugins and extends to enfo
   - `stylelint-high-performance-animation`
 - **Extends**
   - `stylelint-config-standard`
-  - `stylelint-a11y`
+  - `@double-great/stylelint-a11y/recommendedstylelint-a11y`
 
 ### `scss.js`
 
@@ -149,7 +149,7 @@ Under the hood, these configurations include various plugins and extends to enfo
 - **Extends**
   - `stylelint-config-standard-scss`
   - `stylelint-config-sass-guidelines`
-  - `stylelint-a11y`
+  - `@double-great/stylelint-a11y/recommended`
 
 <br>
 

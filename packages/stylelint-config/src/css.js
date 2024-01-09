@@ -12,7 +12,7 @@ module.exports = {
     // best practices and catching errors in css
     'stylelint-config-standard',
     // accessibility rules
-    'stylelint-a11y/recommended',
+    '@double-great/stylelint-a11y/recommended',
   ],
   // https://github.com/ismay/stylelint-no-unsupported-browser-features#recommendations
   rules: {
@@ -23,6 +23,6 @@ module.exports = {
       },
     ],
     'plugin/no-low-performance-animation-properties': true,
-    "declaration-property-value-no-unknown": true
+    'declaration-property-value-no-unknown': true,
   },
 }
