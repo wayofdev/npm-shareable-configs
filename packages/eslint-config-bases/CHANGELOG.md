@@ -1,5 +1,14 @@
 # @wayofdev/eslint-config-bases
 
+## 3.0.7
+
+### Patch Changes
+
+- [#521](https://github.com/wayofdev/npm-shareable-configs/pull/521) [`7b77b8d`](https://github.com/wayofdev/npm-shareable-configs/commit/7b77b8df34441b679c2e1e30953c9e2ab1b6954d) Thanks [@igomur](https://github.com/igomur)! - Update all to latest (stylelint 15->16)
+
+- Updated dependencies [[`7b77b8d`](https://github.com/wayofdev/npm-shareable-configs/commit/7b77b8df34441b679c2e1e30953c9e2ab1b6954d)]:
+  - @wayofdev/lint-staged-config@2.1.5
+
 ## 3.0.6
 
 ### Patch Changes
