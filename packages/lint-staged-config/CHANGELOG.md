@@ -1,5 +1,11 @@
 # @wayofdev/lint-staged-config
 
+## 2.2.0
+
+### Minor Changes
+
+- [#527](https://github.com/wayofdev/npm-shareable-configs/pull/527) [`629e9af`](https://github.com/wayofdev/npm-shareable-configs/commit/629e9affe9a12dbacec50edac1e3bec9898f5f2e) Thanks [@igomur](https://github.com/igomur)! - Updated concatFilesForPrettier function from lint-staged-config to allow ignore files
+
 ## 2.1.5
 
 ### Patch Changes

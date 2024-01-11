@@ -1,5 +1,12 @@
 # @wayofdev/stylelint-config
 
+## 4.0.0
+
+### Patch Changes
+
+- Updated dependencies [[`629e9af`](https://github.com/wayofdev/npm-shareable-configs/commit/629e9affe9a12dbacec50edac1e3bec9898f5f2e)]:
+  - @wayofdev/lint-staged-config@2.2.0
+
 ## 3.0.5
 
 ### Patch Changes
