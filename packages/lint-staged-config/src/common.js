@@ -32,14 +32,24 @@ const eslintGlobalRulesForFix = [
  * Lint-staged command for running eslint in packages or apps.
  * @param {{cwd: string, files: string[], fix: boolean, fixType?: ('problem'|'suggestion'|'layout'|'directive')[], cache: boolean, rules?: string[], maxWarnings?: number}} params
  */
-const getEslintFixCmd = ({ cwd, files, rules, fix, fixType, cache, maxWarnings }) => {
+const getEslintFixCmd = ({
+  cwd,
+  files,
+  rules,
+  fix,
+  fixType,
+  cache,
+  maxWarnings,
+}) => {
   const cliRules = [...(rules ?? []), ...eslintGlobalRulesForFix]
     .filter(rule => rule.trim().length > 0)
     .map(r => `"${r.trim()}"`)
 
   // For lint-staged it's safer to not apply the fix command if it changes the AST
   // @see https://eslint.org/docs/user-guide/command-line-interface#--fix-type
-  const cliFixType = [...(fixType ?? ['layout'])].filter(type => type.trim().length > 0)
+  const cliFixType = [...(fixType ?? ['layout'])].filter(
+    type => type.trim().length > 0
+  )
 
   const args = [
     cache ? '--cache' : '',
@@ -64,10 +74,17 @@ const getEslintFixCmd = ({ cwd, files, rules, fix, fixType, cache, maxWarnings }
  * @link https://github.com/okonet/lint-staged/issues/676
  *
  * @param {string[]} filenames
+ * @param {string[]} [ignoreFilenames]
  * @returns {string} Return concatenated and escaped filenames
  */
-const concatFilesForPrettier = filenames =>
-  filenames.map(filename => `"${isWin ? filename : escape([filename])}"`).join(' ')
+const concatFilesForPrettier = (filenames, ignoreFilenames = []) =>
+  filenames
+    .filter(
+      filename =>
+        !ignoreFilenames.includes(filename.split('/').slice(-1)[0] || '')
+    )
+    .map(filename => `"${isWin ? filename : escape([filename])}"`)
+    .join(' ')
 
 const concatFilesForStylelint = concatFilesForPrettier
 
