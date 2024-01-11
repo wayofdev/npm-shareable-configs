@@ -1,6 +1,6 @@
 {
   "name": "@wayofdev/browserslist-config",
-  "version": "3.0.4",
+  "version": "4.0.0",
   "private": false,
   "description": "A shareable browserslist configuration for projects.",
   "keywords": [
@@ -44,7 +44,7 @@
     "rimraf": "^5.0.5"
   },
   "peerDependencies": {
-    "@wayofdev/lint-staged-config": "^2.1.4"
+    "@wayofdev/lint-staged-config": "^2.2.0"
   },
   "publishConfig": {
     "access": "public"
