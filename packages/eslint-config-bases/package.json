@@ -107,7 +107,7 @@
   },
   "dependencies": {
     "@html-eslint/eslint-plugin": "^0.23.0",
-    "@html-eslint/parser": "^0.22.0",
+    "@html-eslint/parser": "^0.23.0",
     "@rushstack/eslint-patch": "^1.6.1",
     "@tanstack/eslint-plugin-query": "^5.17.7",
     "@testing-library/jest-dom": "^6.2.0",
