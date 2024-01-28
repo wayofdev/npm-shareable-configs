@@ -78,7 +78,7 @@
     "lint-staged": "15.2.0",
     "markdownlint": "0.33.0",
     "markdownlint-cli": "0.38.0",
-    "npm-run-all2": "5.0.0",
+    "npm-run-all2": "5.0.2",
     "prettier": "3.2.4",
     "rimraf": "5.0.5",
     "secretlint": "8.1.0",
