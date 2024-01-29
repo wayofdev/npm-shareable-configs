@@ -33,7 +33,7 @@
     "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix --cache --cache-location ../../.cache/eslint/markdownlint-config.eslintcache"
   },
   "dependencies": {
-    "markdownlint-cli": "^0.38.0"
+    "markdownlint-cli": "^0.39.0"
   },
   "peerDependencies": {
     "@wayofdev/lint-staged-config": "^2.2.0",
