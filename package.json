@@ -81,7 +81,7 @@
     "npm-run-all2": "6.1.2",
     "prettier": "3.2.5",
     "rimraf": "5.0.5",
-    "secretlint": "8.1.1",
+    "secretlint": "8.1.2",
     "shell-quote": "1.8.1",
     "sort-package-json": "2.7.0",
     "turbo": "1.12.4",
@@ -90,7 +90,7 @@
   "peerDependencies": {
     "actionlint": "2.0.6",
     "markdownlint": "0.33.0",
-    "secretlint": "8.1.1",
+    "secretlint": "8.1.2",
     "sort-package-json": "2.7.0"
   },
   "packageManager": "pnpm@8.15.3",
