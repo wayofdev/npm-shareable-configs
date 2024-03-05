@@ -229,7 +229,7 @@ importers:
         version: 18.2.63
       '@types/react-dom':
         specifier: ^18.2.18
-        version: 18.2.19
+        version: 18.2.20
       es-check:
         specifier: ^7.1.1
         version: 7.1.1
@@ -288,7 +288,7 @@ importers:
         version: 18.2.63
       '@types/react-dom':
         specifier: ^18.2.18
-        version: 18.2.19
+        version: 18.2.20
       es-check:
         specifier: ^7.1.1
         version: 7.1.1
@@ -2193,7 +2193,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.24.0
       '@testing-library/dom': 9.3.4
-      '@types/react-dom': 18.2.19
+      '@types/react-dom': 18.2.20
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -2359,8 +2359,8 @@ packages:
   /@types/prop-types@15.7.11:
     resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==}
 
-  /@types/react-dom@18.2.19:
-    resolution: {integrity: sha512-aZvQL6uUbIJpjZk4U8JZGbau9KDeAwMfmhyWorxgBkqDIEf6ROjRozcmPIicqsUwPUjbkDfHKgGee1Lq65APcA==}
+  /@types/react-dom@18.2.20:
+    resolution: {integrity: sha512-HXN/biJY8nv20Cn9ZbCFq3liERd4CozVZmKbaiZ9KiKTrWqsP7eoGDO6OOGvJQwoVFuiXaiJ7nBBjiFFbRmQMQ==}
     dependencies:
       '@types/react': 18.2.63
 
