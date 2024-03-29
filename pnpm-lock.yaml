@@ -132,7 +132,7 @@ importers:
         version: 0.24.0
       '@rushstack/eslint-patch':
         specifier: ^1.6.1
-        version: 1.9.0
+        version: 1.10.0
       '@tanstack/eslint-plugin-query':
         specifier: ^5.17.7
         version: 5.28.6(eslint@8.57.0)(typescript@5.4.3)
@@ -2153,8 +2153,8 @@ packages:
     resolution: {integrity: sha512-l3YHBLAol6d/IKnB9LhpD0cEZWAoe3eFKUyTYWmFmCO2Q/WOckxLQAUyMZWwZV2M/m3+4vgRoaolFqaII82/TA==}
     dev: true
 
-  /@rushstack/eslint-patch@1.9.0:
-    resolution: {integrity: sha512-AAWymnpvHbGty1BmgbdfbqQDboXs6xN6h2yAacO4yKVyyUUBnpYkp+P9jjPrV9zrAGw7JVVriRtGOHPInnfjZQ==}
+  /@rushstack/eslint-patch@1.10.0:
+    resolution: {integrity: sha512-ih6xH1dOGBTP/RNc/QbnVLLa/s80SkXydI7tnyq+a2eIdd7gDsmSpD1Jz7T1oCa+GIsVTyQCR3cW0tlYB97iFg==}
     dev: false
 
   /@secretlint/config-creator@8.1.2:
