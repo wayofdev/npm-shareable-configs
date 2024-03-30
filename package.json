@@ -83,7 +83,7 @@
     "rimraf": "5.0.5",
     "secretlint": "8.1.2",
     "shell-quote": "1.8.1",
-    "sort-package-json": "2.9.0",
+    "sort-package-json": "2.10.0",
     "turbo": "1.13.0",
     "typescript": "5.4.3"
   },
@@ -91,7 +91,7 @@
     "actionlint": "2.0.6",
     "markdownlint": "0.34.0",
     "secretlint": "8.1.2",
-    "sort-package-json": "2.9.0"
+    "sort-package-json": "2.10.0"
   },
   "packageManager": "pnpm@8.15.5",
   "engines": {
