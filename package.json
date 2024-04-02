@@ -64,7 +64,7 @@
     "@changesets/cli": "2.27.1",
     "@commitlint/cli": "19.2.1",
     "@commitlint/config-conventional": "19.1.0",
-    "@types/node": "20.12.2",
+    "@types/node": "20.12.3",
     "@types/prettier": "3.0.0",
     "@types/shell-quote": "1.7.5",
     "@wayofdev/eslint-config-bases": "workspace:*",
