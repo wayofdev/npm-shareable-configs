@@ -141,7 +141,7 @@ importers:
         version: 6.4.2(@types/jest@29.5.12)
       '@testing-library/react':
         specifier: ^14.1.2
-        version: 14.2.2(react-dom@18.2.0)(react@18.2.0)
+        version: 14.3.0(react-dom@18.2.0)(react@18.2.0)
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.0.0
         version: 7.5.0(@typescript-eslint/parser@7.5.0)(eslint@8.57.0)(typescript@5.4.4)
@@ -2134,8 +2134,8 @@ packages:
       redent: 3.0.0
     dev: false
 
-  /@testing-library/react@14.2.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-SOUuM2ysCvjUWBXTNfQ/ztmnKDmqaiPV3SvoIuyxMUca45rbSWWAT/qB8CUs/JQ/ux/8JFs9DNdFQ3f6jH3crA==}
+  /@testing-library/react@14.3.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-AYJGvNFMbCa5vt1UtDCa/dcaABrXq8gph6VN+cffIx0UeA0qiGqS+sT60+sb+Gjc8tGXdECWYQgaF0khf8b+Lg==}
     engines: {node: '>=14'}
     peerDependencies:
       react: ^18.0.0
@@ -2146,7 +2146,6 @@ packages:
       '@types/react-dom': 18.2.24
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-    dev: false
 
   /@textlint/ast-node-types@12.6.1:
     resolution: {integrity: sha512-uzlJ+ZsCAyJm+lBi7j0UeBbj+Oy6w/VWoGJ3iHRHE5eZ8Z4iK66mq+PG/spupmbllLtz77OJbY89BYqgFyjXmA==}
