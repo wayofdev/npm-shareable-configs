@@ -85,7 +85,7 @@
     "shell-quote": "1.8.1",
     "sort-package-json": "2.10.0",
     "turbo": "1.13.2",
-    "typescript": "5.4.4"
+    "typescript": "5.4.5"
   },
   "peerDependencies": {
     "actionlint": "2.0.6",
