@@ -15,11 +15,11 @@ importers:
         specifier: 2.27.1
         version: 2.27.1
       '@commitlint/cli':
-        specifier: 19.2.2
-        version: 19.2.2(@types/node@20.12.7)(typescript@5.4.5)
+        specifier: 19.5.0
+        version: 19.5.0(@types/node@20.12.7)(typescript@5.4.5)
       '@commitlint/config-conventional':
-        specifier: 19.2.2
-        version: 19.2.2
+        specifier: 19.5.0
+        version: 19.5.0
       '@types/node':
         specifier: 20.12.7
         version: 20.12.7
@@ -106,8 +106,8 @@ importers:
         specifier: '>= 17'
         version: 19.2.2(@types/node@20.12.7)(typescript@5.4.5)
       '@commitlint/config-conventional':
-        specifier: 19.2.2
-        version: 19.2.2
+        specifier: 19.5.0
+        version: 19.5.0
       '@wayofdev/lint-staged-config':
         specifier: ^2.2.0
         version: link:../lint-staged-config
@@ -881,12 +881,30 @@ packages:
     transitivePeerDependencies:
       - '@types/node'
       - typescript
+    dev: false
 
-  /@commitlint/config-conventional@19.2.2:
-    resolution: {integrity: sha512-mLXjsxUVLYEGgzbxbxicGPggDuyWNkf25Ht23owXIH+zV2pv1eJuzLK3t1gDY5Gp6pxdE60jZnWUY5cvgL3ufw==}
+  /@commitlint/cli@19.5.0(@types/node@20.12.7)(typescript@5.4.5):
+    resolution: {integrity: sha512-gaGqSliGwB86MDmAAKAtV9SV1SHdmN8pnGq4EJU4+hLisQ7IFfx4jvU4s+pk6tl0+9bv6yT+CaZkufOinkSJIQ==}
+    engines: {node: '>=v18'}
+    hasBin: true
+    dependencies:
+      '@commitlint/format': 19.5.0
+      '@commitlint/lint': 19.5.0
+      '@commitlint/load': 19.5.0(@types/node@20.12.7)(typescript@5.4.5)
+      '@commitlint/read': 19.5.0
+      '@commitlint/types': 19.5.0
+      tinyexec: 0.3.0
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - '@types/node'
+      - typescript
+    dev: true
+
+  /@commitlint/config-conventional@19.5.0:
+    resolution: {integrity: sha512-OBhdtJyHNPryZKg0fFpZNOBM1ZDbntMvqMuSmpfyP86XSfwzGw4CaoYRG4RutUPg0BTK07VMRIkNJT6wi2zthg==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       conventional-changelog-conventionalcommits: 7.0.2
 
   /@commitlint/config-validator@19.0.3:
@@ -895,6 +913,14 @@ packages:
     dependencies:
       '@commitlint/types': 19.0.3
       ajv: 8.12.0
+
+  /@commitlint/config-validator@19.5.0:
+    resolution: {integrity: sha512-CHtj92H5rdhKt17RmgALhfQt95VayrUo2tSqY9g2w+laAXyk7K/Ef6uPm9tn5qSIwSmrLjKaXK9eiNuxmQrDBw==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@commitlint/types': 19.5.0
+      ajv: 8.12.0
+    dev: true
 
   /@commitlint/ensure@19.0.3:
     resolution: {integrity: sha512-SZEpa/VvBLoT+EFZVb91YWbmaZ/9rPH3ESrINOl0HD2kMYsjvl0tF7nMHh0EpTcv4+gTtZBAe1y/SS6/OhfZzQ==}
@@ -906,10 +932,28 @@ packages:
       lodash.snakecase: 4.1.1
       lodash.startcase: 4.4.0
       lodash.upperfirst: 4.3.1
+    dev: false
+
+  /@commitlint/ensure@19.5.0:
+    resolution: {integrity: sha512-Kv0pYZeMrdg48bHFEU5KKcccRfKmISSm9MvgIgkpI6m+ohFTB55qZlBW6eYqh/XDfRuIO0x4zSmvBjmOwWTwkg==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@commitlint/types': 19.5.0
+      lodash.camelcase: 4.3.0
+      lodash.kebabcase: 4.1.1
+      lodash.snakecase: 4.1.1
+      lodash.startcase: 4.4.0
+      lodash.upperfirst: 4.3.1
+    dev: true
 
   /@commitlint/execute-rule@19.0.0:
     resolution: {integrity: sha512-mtsdpY1qyWgAO/iOK0L6gSGeR7GFcdW7tIjcNFxcWkfLDF5qVbPHKuGATFqRMsxcO8OUKNj0+3WOHB7EHm4Jdw==}
     engines: {node: '>=v18'}
+
+  /@commitlint/execute-rule@19.5.0:
+    resolution: {integrity: sha512-aqyGgytXhl2ejlk+/rfgtwpPexYyri4t8/n4ku6rRJoRhGZpLFMqrZ+YaubeGysCP6oz4mMA34YSTaSOKEeNrg==}
+    engines: {node: '>=v18'}
+    dev: true
 
   /@commitlint/format@19.0.3:
     resolution: {integrity: sha512-QjjyGyoiVWzx1f5xOteKHNLFyhyweVifMgopozSgx1fGNrGV8+wp7k6n1t6StHdJ6maQJ+UUtO2TcEiBFRyR6Q==}
@@ -917,6 +961,15 @@ packages:
     dependencies:
       '@commitlint/types': 19.0.3
       chalk: 5.3.0
+    dev: false
+
+  /@commitlint/format@19.5.0:
+    resolution: {integrity: sha512-yNy088miE52stCI3dhG/vvxFo9e4jFkU1Mj3xECfzp/bIS/JUay4491huAlVcffOoMK1cd296q0W92NlER6r3A==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@commitlint/types': 19.5.0
+      chalk: 5.3.0
+    dev: true
 
   /@commitlint/is-ignored@19.2.2:
     resolution: {integrity: sha512-eNX54oXMVxncORywF4ZPFtJoBm3Tvp111tg1xf4zWXGfhBPKpfKG6R+G3G4v5CPlRROXpAOpQ3HMhA9n1Tck1g==}
@@ -924,6 +977,15 @@ packages:
     dependencies:
       '@commitlint/types': 19.0.3
       semver: 7.6.0
+    dev: false
+
+  /@commitlint/is-ignored@19.5.0:
+    resolution: {integrity: sha512-0XQ7Llsf9iL/ANtwyZ6G0NGp5Y3EQ8eDQSxv/SRcfJ0awlBY4tHFAvwWbw66FVUaWICH7iE5en+FD9TQsokZ5w==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@commitlint/types': 19.5.0
+      semver: 7.6.0
+    dev: true
 
   /@commitlint/lint@19.2.2:
     resolution: {integrity: sha512-xrzMmz4JqwGyKQKTpFzlN0dx0TAiT7Ran1fqEBgEmEj+PU98crOFtysJgY+QdeSagx6EDRigQIXJVnfrI0ratA==}
@@ -933,6 +995,17 @@ packages:
       '@commitlint/parse': 19.0.3
       '@commitlint/rules': 19.0.3
       '@commitlint/types': 19.0.3
+    dev: false
+
+  /@commitlint/lint@19.5.0:
+    resolution: {integrity: sha512-cAAQwJcRtiBxQWO0eprrAbOurtJz8U6MgYqLz+p9kLElirzSCc0vGMcyCaA1O7AqBuxo11l1XsY3FhOFowLAAg==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@commitlint/is-ignored': 19.5.0
+      '@commitlint/parse': 19.5.0
+      '@commitlint/rules': 19.5.0
+      '@commitlint/types': 19.5.0
+    dev: true
 
   /@commitlint/load@19.2.0(@types/node@20.12.7)(typescript@5.4.5):
     resolution: {integrity: sha512-XvxxLJTKqZojCxaBQ7u92qQLFMMZc4+p9qrIq/9kJDy8DOrEa7P1yx7Tjdc2u2JxIalqT4KOGraVgCE7eCYJyQ==}
@@ -952,9 +1025,34 @@ packages:
       - '@types/node'
       - typescript
 
+  /@commitlint/load@19.5.0(@types/node@20.12.7)(typescript@5.4.5):
+    resolution: {integrity: sha512-INOUhkL/qaKqwcTUvCE8iIUf5XHsEPCLY9looJ/ipzi7jtGhgmtH7OOFiNvwYgH7mA8osUWOUDV8t4E2HAi4xA==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@commitlint/config-validator': 19.5.0
+      '@commitlint/execute-rule': 19.5.0
+      '@commitlint/resolve-extends': 19.5.0
+      '@commitlint/types': 19.5.0
+      chalk: 5.3.0
+      cosmiconfig: 9.0.0(typescript@5.4.5)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.12.7)(cosmiconfig@9.0.0)(typescript@5.4.5)
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      lodash.uniq: 4.5.0
+    transitivePeerDependencies:
+      - '@types/node'
+      - typescript
+    dev: true
+
   /@commitlint/message@19.0.0:
     resolution: {integrity: sha512-c9czf6lU+9oF9gVVa2lmKaOARJvt4soRsVmbR7Njwp9FpbBgste5i7l/2l5o8MmbwGh4yE1snfnsy2qyA2r/Fw==}
     engines: {node: '>=v18'}
+    dev: false
+
+  /@commitlint/message@19.5.0:
+    resolution: {integrity: sha512-R7AM4YnbxN1Joj1tMfCyBryOC5aNJBdxadTZkuqtWi3Xj0kMdutq16XQwuoGbIzL2Pk62TALV1fZDCv36+JhTQ==}
+    engines: {node: '>=v18'}
+    dev: true
 
   /@commitlint/parse@19.0.3:
     resolution: {integrity: sha512-Il+tNyOb8VDxN3P6XoBBwWJtKKGzHlitEuXA5BP6ir/3loWlsSqDr5aecl6hZcC/spjq4pHqNh0qPlfeWu38QA==}
@@ -963,6 +1061,16 @@ packages:
       '@commitlint/types': 19.0.3
       conventional-changelog-angular: 7.0.0
       conventional-commits-parser: 5.0.0
+    dev: false
+
+  /@commitlint/parse@19.5.0:
+    resolution: {integrity: sha512-cZ/IxfAlfWYhAQV0TwcbdR1Oc0/r0Ik1GEessDJ3Lbuma/MRO8FRQX76eurcXtmhJC//rj52ZSZuXUg0oIX0Fw==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@commitlint/types': 19.5.0
+      conventional-changelog-angular: 7.0.0
+      conventional-commits-parser: 5.0.0
+    dev: true
 
   /@commitlint/read@19.2.1:
     resolution: {integrity: sha512-qETc4+PL0EUv7Q36lJbPG+NJiBOGg7SSC7B5BsPWOmei+Dyif80ErfWQ0qXoW9oCh7GTpTNRoaVhiI8RbhuaNw==}
@@ -973,6 +1081,18 @@ packages:
       execa: 8.0.1
       git-raw-commits: 4.0.0
       minimist: 1.2.8
+    dev: false
+
+  /@commitlint/read@19.5.0:
+    resolution: {integrity: sha512-TjS3HLPsLsxFPQj6jou8/CZFAmOP2y+6V4PGYt3ihbQKTY1Jnv0QG28WRKl/d1ha6zLODPZqsxLEov52dhR9BQ==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@commitlint/top-level': 19.5.0
+      '@commitlint/types': 19.5.0
+      git-raw-commits: 4.0.0
+      minimist: 1.2.8
+      tinyexec: 0.3.0
+    dev: true
 
   /@commitlint/resolve-extends@19.1.0:
     resolution: {integrity: sha512-z2riI+8G3CET5CPgXJPlzftH+RiWYLMYv4C9tSLdLXdr6pBNimSKukYP9MS27ejmscqCTVA4almdLh0ODD2KYg==}
@@ -985,6 +1105,18 @@ packages:
       lodash.mergewith: 4.6.2
       resolve-from: 5.0.0
 
+  /@commitlint/resolve-extends@19.5.0:
+    resolution: {integrity: sha512-CU/GscZhCUsJwcKTJS9Ndh3AKGZTNFIOoQB2n8CmFnizE0VnEuJoum+COW+C1lNABEeqk6ssfc1Kkalm4bDklA==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@commitlint/config-validator': 19.5.0
+      '@commitlint/types': 19.5.0
+      global-directory: 4.0.1
+      import-meta-resolve: 4.0.0
+      lodash.mergewith: 4.6.2
+      resolve-from: 5.0.0
+    dev: true
+
   /@commitlint/rules@19.0.3:
     resolution: {integrity: sha512-TspKb9VB6svklxNCKKwxhELn7qhtY1rFF8ls58DcFd0F97XoG07xugPjjbVnLqmMkRjZDbDIwBKt9bddOfLaPw==}
     engines: {node: '>=v18'}
@@ -994,19 +1126,51 @@ packages:
       '@commitlint/to-lines': 19.0.0
       '@commitlint/types': 19.0.3
       execa: 8.0.1
+    dev: false
+
+  /@commitlint/rules@19.5.0:
+    resolution: {integrity: sha512-hDW5TPyf/h1/EufSHEKSp6Hs+YVsDMHazfJ2azIk9tHPXS6UqSz1dIRs1gpqS3eMXgtkT7JH6TW4IShdqOwhAw==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@commitlint/ensure': 19.5.0
+      '@commitlint/message': 19.5.0
+      '@commitlint/to-lines': 19.5.0
+      '@commitlint/types': 19.5.0
+    dev: true
 
   /@commitlint/to-lines@19.0.0:
     resolution: {integrity: sha512-vkxWo+VQU5wFhiP9Ub9Sre0FYe019JxFikrALVoD5UGa8/t3yOJEpEhxC5xKiENKKhUkTpEItMTRAjHw2SCpZw==}
     engines: {node: '>=v18'}
+    dev: false
+
+  /@commitlint/to-lines@19.5.0:
+    resolution: {integrity: sha512-R772oj3NHPkodOSRZ9bBVNq224DOxQtNef5Pl8l2M8ZnkkzQfeSTr4uxawV2Sd3ui05dUVzvLNnzenDBO1KBeQ==}
+    engines: {node: '>=v18'}
+    dev: true
 
   /@commitlint/top-level@19.0.0:
     resolution: {integrity: sha512-KKjShd6u1aMGNkCkaX4aG1jOGdn7f8ZI8TR1VEuNqUOjWTOdcDSsmglinglJ18JTjuBX5I1PtjrhQCRcixRVFQ==}
     engines: {node: '>=v18'}
     dependencies:
       find-up: 7.0.0
+    dev: false
+
+  /@commitlint/top-level@19.5.0:
+    resolution: {integrity: sha512-IP1YLmGAk0yWrImPRRc578I3dDUI5A2UBJx9FbSOjxe9sTlzFiwVJ+zeMLgAtHMtGZsC8LUnzmW1qRemkFU4ng==}
+    engines: {node: '>=v18'}
+    dependencies:
+      find-up: 7.0.0
+    dev: true
 
   /@commitlint/types@19.0.3:
     resolution: {integrity: sha512-tpyc+7i6bPG9mvaBbtKUeghfyZSDgWquIDfMgqYtTbmZ9Y9VzEm2je9EYcQ0aoz5o7NvGS+rcDec93yO08MHYA==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@types/conventional-commits-parser': 5.0.0
+      chalk: 5.3.0
+
+  /@commitlint/types@19.5.0:
+    resolution: {integrity: sha512-DSHae2obMSMkAtTBSOulg5X7/z+rGLxcXQIkg3OmWvY6wifojge5uVMydfhUvs7yQj+V7jNmRZ2Xzl8GJyqRgg==}
     engines: {node: '>=v18'}
     dependencies:
       '@types/conventional-commits-parser': 5.0.0
@@ -8697,6 +8861,10 @@ packages:
 
   /through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
+
+  /tinyexec@0.3.0:
+    resolution: {integrity: sha512-tVGE0mVJPGb0chKhqmsoosjsS+qUnJVGJpZgsHYQcGoPlG3B51R3PouqTgEGH2Dc9jjFyOqOpix6ZHNMXp1FZg==}
+    dev: true
 
   /tmp@0.0.33:
     resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
